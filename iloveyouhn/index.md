@@ -1,4 +1,7 @@
-
+---
+layout: false
+---
+{% raw %}
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -91,7 +94,7 @@ $(document).ready(function(e) {
 });
 </script>
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+</head>
 
 <body>
 	<center>
@@ -142,4 +145,5 @@ $(document).ready(function(e) {
 
 
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
+</body></html>
+{% endraw %}

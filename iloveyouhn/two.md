@@ -1,4 +1,7 @@
-
+---
+layout: false
+---
+{% raw %}
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -14,7 +17,7 @@
 	<script type="text/javascript" src="./twojscss/jquery.js"></script>
 	<script type="text/javascript" src="./twojscss/garden.js"></script>
     <script type="text/javascript" src="./twojscss/functions.js"></script>
-<meta name="generator" content="Hexo 4.2.0"></head>
+</head>
 
 <body>
 	<div id="mainDiv">
@@ -102,7 +105,8 @@
 		}
 	
 	</script>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</body>
 </html>
 
 
+{% endraw %}
