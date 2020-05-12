@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>博客搭建增加百度统计功能</title>
+      <link href="/2020/05/12/BLOG01-HEXO-BDTJ/"/>
+      <url>/2020/05/12/BLOG01-HEXO-BDTJ/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>每天进步一点，不做curd工程师与Api调用工程师</p></blockquote><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近晚上有时间就忙着倒腾自己的博客网站：<a href="https://www.coder-programming.cn/" target="_blank" rel="noopener">https://www.coder-programming.cn/</a></p><p>网站还在建设当中，我会慢慢分享自己的搭建博客的过程和遇到的问题，在这里与大家一起分享！</p><p>百度统计是百度推出的一款免费的专业网站流量分析工具，能够告诉用户访客是如何找到并浏览用户的网站，在网站上做了些什么，非常有趣，接下来我们把百度统计添加到自己博客当中</p><p>访问<a href="https://tongji.baidu.com/" target="_blank" rel="noopener">百度统计首页</a>，注册一个账号后登陆，添加你的博客网站</p><p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/01.png" alt="01"></p><p>点击<strong>增加网站</strong>,填写个人网站的信息。</p><p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/02.png" alt="02"></p><p>接着点击代码获取，复制该代码<br><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/03.png" alt="03"></p><p>然后到目录<code>\themes\hexo-theme-material-x\layout\_partial\head.ejs</code>，里面粘贴你刚刚复制的代码。<br>代码如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (config.baidu_analytics_key) &#123; %&gt;</span><br><span class="line">    &lt;!-- ba --&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">    var _hmt &#x3D; _hmt || [];</span><br><span class="line">    (function() &#123;</span><br><span class="line">      var hm &#x3D; document.createElement(&quot;script&quot;);</span><br><span class="line">      hm.src &#x3D; &quot;https:&#x2F;&#x2F;hm.baidu.com&#x2F;hm.js?&lt;%&#x3D; config.baidu_analytics_key %&gt;&quot;;</span><br><span class="line">      var s &#x3D; document.getElementsByTagName(&quot;script&quot;)[0];</span><br><span class="line">      s.parentNode.insertBefore(hm, s);</span><br><span class="line">    &#125;)();</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure><p>修改博客根目录下的 _config.yml 文件(注意：不是主题下的_config.yml)，将你的key填写进去：</p><p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/05.png" alt="05"></p><p>所有操作完成后可以在百度统计管理页面检查代码是否安装成功，如果代码安装正确，一般20分钟后，可以查看网站分析数据</p><p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/06.png" alt="06"></p><p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/07.png" alt="07"></p><p>另外推荐：<a href="https://web.umeng.com/main.php?c=user&a=index" target="_blank" rel="noopener">友盟</a>，2010年4月在北京成立，安全、可靠、公正、第三方的网站流量统计分析系统</p><p>参考：<br><a href="https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/" target="_blank" rel="noopener">https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/</a></p><h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><p><a href="https://www.processon.com/i/5cd53c2fe4b01941c8cf1c21" target="_blank" rel="noopener">ProcessOn是一个在线作图工具的聚合平台~</a></p><h2 id="文末"><a href="#文末" class="headerlink" title="文末"></a>文末</h2><blockquote><p>欢迎关注个人微信公众号：<strong>Coder编程</strong><br>欢迎关注<strong>Coder编程</strong>公众号，主要分享数据结构与算法、Java相关知识体系、框架知识及原理、Spring全家桶、微服务项目实战、DevOps实践之路、每日一篇互联网大厂面试或笔试题以及PMP项目管理知识等。更多精彩内容正在路上~<br>新建了一个qq群：315211365，欢迎大家进群交流一起学习。谢谢了！也可以介绍给身边有需要的朋友。</p></blockquote><blockquote><p>文章收录至<br>Github: <a href="https://github.com/CoderMerlin/coder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://gitee.com/573059382/coder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~<br><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming-wechat.webp.jpg" alt="微信公众号"></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HEXO </tag>
+            
+            <tag> 百度统计 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java学习路线整理</title>
       <link href="/2020/03/19/java/"/>
       <url>/2020/03/19/java/</url>
