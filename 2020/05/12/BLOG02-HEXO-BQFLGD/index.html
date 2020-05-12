@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Archives: 2020/1 | Coder编程</title>
+  <title>博客搭建-设置标签/分类/归档相关页面 | Coder编程</title>
   
   
 
@@ -74,7 +74,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover  half'>
+    <cover class='cover post half'>
       
         
   <h1 class='title'>Coder编程</h1>
@@ -307,24 +307,10 @@
   <div class="l_body">
     <div class='body-wrapper'>
       <div class='l_main'>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post reveal ">
   
+
+  <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    
 
 
   <section class='meta'>
@@ -333,11 +319,13 @@
     <div class="meta" id="header-meta">
       
         
-  <h2 class="title">
-    <a href="/2020/01/14/good/">
-      分享一些摘抄的优美句子~
-    </a>
-  </h2>
+  
+    <h1 class="title">
+      <a href="/2020/05/12/BLOG02-HEXO-BQFLGD/">
+        博客搭建-设置标签/分类/归档相关页面
+      </a>
+    </h1>
+  
 
 
       
@@ -365,7 +353,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2020-01-14</p>
+    <p>2020-05-12</p>
   </a>
 </div>
 
@@ -375,11 +363,29 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/%E7%BE%8E%E6%96%87/' rel="nofollow">
+    <a href='/categories/HEXO/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>美文</p>
+      <p>HEXO</p>
     </a>
   </div>
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
 
 
           
@@ -391,14 +397,14 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>2k字</p>
+        <p>588字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
       <a class='notlink'>
         <i class="fas fa-hourglass-half" aria-hidden="true"></i>
         <p>阅读时长≈</p>
-        <p>6分</p>
+        <p>2分</p>
       </a>
     </div>
   
@@ -418,151 +424,177 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <p>我是你路上最后一个过客，最后一个春天，最后一场雪，最后一次求生的战争<br>——保尔 艾吕雅﻿﻿</p>
-      
-        <div class="readmore">
-          <a href="/2020/01/14/good/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/tags/%E7%BE%8E%E6%96%87/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 美文</a>
-        
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <blockquote>
+<p>每天进步一点，不做curd工程师与Api调用工程师</p>
+</blockquote>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近晚上有时间就忙着倒腾自己的博客网站：<a href="https://www.coder-programming.cn/" target="_blank" rel="noopener">https://www.coder-programming.cn/</a></p>
+<p>网站还在建设当中，我会慢慢分享自己的搭建博客的过程和遇到的问题，在这里与大家一起分享！</p>
+<h3 id="设置标签页面"><a href="#设置标签页面" class="headerlink" title="设置标签页面"></a>设置标签页面</h3><p>主题的 _config.yml 文件中，找到如下配置<code>menu_desktop</code> 或者 <code>menu_mobile</code>。(注意：填写的路径要对应上)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BOLG03/04.png" alt="配置项"></p>
+<p>在<code>\source\tags</code> 中新建index.md。写入以下内容即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: tag</span><br><span class="line">index: true</span><br><span class="line">title: 所有标签</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>在需要发布的文章同样注意加入tags。举个栗子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Java学习路线整理</span><br><span class="line">updated: 2020-03-19 00:34:14</span><br><span class="line">date: 2020-03-19 00:34:14</span><br><span class="line">categories: </span><br><span class="line">  - [Java]</span><br><span class="line">  - [面试]</span><br><span class="line">tags:</span><br><span class="line">  - [Java]</span><br><span class="line">  - [面试]</span><br><span class="line">  </span><br><span class="line">top: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>效果如图：<br><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BOLG03/02.png" alt="标签图"></p>
+<h3 id="设置分类页面"><a href="#设置分类页面" class="headerlink" title="设置分类页面"></a>设置分类页面</h3><p>主题的 _config.yml 文件中，找到如下配置<code>menu_desktop</code> 或者 <code>menu_mobile</code>。(注意：填写的路径要对应上)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BOLG03/04.png" alt="配置项"></p>
+<p>在<code>\source\categories</code> 中新建index.md。写入以下内容即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: category</span><br><span class="line">title: 所有分类</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>在需要发布的文章同样注意加入tags。举个栗子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Java学习路线整理</span><br><span class="line">updated: 2020-03-19 00:34:14</span><br><span class="line">date: 2020-03-19 00:34:14</span><br><span class="line">categories: </span><br><span class="line">  - [Java]</span><br><span class="line">  - [面试]</span><br><span class="line">tags:</span><br><span class="line">  - [Java]</span><br><span class="line">  - [面试]</span><br><span class="line">  </span><br><span class="line">top: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>效果如图：<br><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BOLG03/01.png" alt="分类图"></p>
+<h3 id="设置归档页面"><a href="#设置归档页面" class="headerlink" title="设置归档页面"></a>设置归档页面</h3><p><strong>归档页面不要添加任何文件！</strong><br><strong>归档页面不要添加任何文件！</strong><br><strong>归档页面不要添加任何文件！</strong><br>重要的事说三遍！</p>
+<p>只需要在主题的 _config.yml 文件中，找到如下配置<code>menu_desktop</code> 或者 <code>menu_mobile</code>。(注意：填写的路径要对应上), 填写<code>archives/</code>即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BOLG03/04.png" alt="配置项"></p>
+<p>效果如图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BOLG03/03.png" alt="归档图"></p>
+<h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><p><a href="[https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247484326&idx=1&sn=0f11d4a0d23ac377a83f9fba1d4a67d4&chksm=96e672b5a191fba32b18844de26ba6dc2060a8e16b184d73c6f9dd45ca0498062eaa9273d86c&token=475512204&lang=zh_CN#rd](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247484326&idx=1&sn=0f11d4a0d23ac377a83f9fba1d4a67d4&chksm=96e672b5a191fba32b18844de26ba6dc2060a8e16b184d73c6f9dd45ca0498062eaa9273d86c&token=475512204&lang=zh_CN#rd)">[博客搭建] 增加百度统计功能</a></p>
+<p><a href="https://www.processon.com/i/5cd53c2fe4b01941c8cf1c21" target="_blank" rel="noopener">ProcessOn是一个在线作图工具的聚合平台~</a></p>
+<h2 id="文末"><a href="#文末" class="headerlink" title="文末"></a>文末</h2><blockquote>
+<p>欢迎关注个人微信公众号：<strong>Coder编程</strong><br>欢迎关注<strong>Coder编程</strong>公众号，主要分享数据结构与算法、Java相关知识体系、框架知识及原理、Spring全家桶、微服务项目实战、DevOps实践之路、每日一篇互联网大厂面试或笔试题以及PMP项目管理知识等。更多精彩内容正在路上~<br>新建了一个qq群：315211365，欢迎大家进群交流一起学习。谢谢了！也可以介绍给身边有需要的朋友。</p>
+</blockquote>
+<blockquote>
+<p>文章收录至<br>Github: <a href="https://github.com/CoderMerlin/coder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://gitee.com/573059382/coder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~<br><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming-wechat.webp.jpg" alt="微信公众号"></p>
+</blockquote>
+
       </div>
-    
-  </section>
-</article>
-
-          </div>
+      
+      
+        <br>
         
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
       
         
-          <div class='post-wrapper'>
-            <article class="post reveal ">
-  
-
-
-  <section class='meta'>
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/2020/01/13/hello-world/">
-      Hello World
-    </a>
-  </h2>
-
-
-      
-      <div class='new-meta-box'>
-        
-          
-        
-          
-            
-  <div class='new-meta-item author'>
-    
-      <a href="http://yoursite.com" rel="nofollow">
-        
-          <img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png">
-        
-        <p>Coder编程</p>
-      </a>
-    
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-05-12T16:49:26+08:00">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2020-01-13</p>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>更新于 2020年5月12日</p>
   </a>
 </div>
 
-          
+        
+      
         
           
-            
-
-          
-        
-          
-            
   
-    <div class="new-meta-item wordcount">
-      <a class='notlink'>
-        <i class="fas fa-keyboard" aria-hidden="true"></i>
-        <p>字数统计:</p>
-        <p>73字</p>
-      </a>
-    </div>
-    <div class="new-meta-item readtime">
-      <a class='notlink'>
-        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
-        <p>阅读时长≈</p>
-        <p>1分</p>
-      </a>
-    </div>
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/HEXO/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>HEXO</p></a></div>
 
-          
+
+        
+      
         
           
-            
-
-          
-        
-      </div>
-      
-        <hr>
-      
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-        <div class="readmore">
-          <a href="/2020/01/13/hello-world/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
-  </section>
-</article>
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/05/12/BLOG02-HEXO-BQFLGD/&title=博客搭建-设置标签/分类/归档相关页面 | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2020/05/12/BLOG02-HEXO-BQFLGD/&title=博客搭建-设置标签/分类/归档相关页面 | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/05/12/BLOG02-HEXO-BQFLGD/&title=博客搭建-设置标签/分类/归档相关页面 | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
 
+
+
+        
+      
+    </div>
+  </section>
+
+
+      
+      
+          <div class="prev-next">
+              
+              
+                  <section class="next">
+                      <span class="art-item-right" aria-hidden="true">
+                          <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h4>
+                              <a href="/2020/05/12/BLOG01-HEXO-BDTJ/" rel="prev" title="博客搭建增加百度统计功能">
+                                  
+                                      博客搭建增加百度统计功能
+                                  
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/HEXO/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> HEXO</a> <a class="tag" href="/tags/%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 百度统计</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
           </div>
-        
       
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
+    </section>
+  </article>
+
+
+
+  <!-- 显示推荐文章和评论 -->
+
+
 
   
 
 
-	
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '博客搭建-设置标签/分类/归档相关页面',
+      tools: true
+    }
+  </script>
+
+
 </div>
 <aside class='l_side'>
   
@@ -715,102 +747,39 @@
         
           
           
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
             
-              <section class='widget list'>
-  
+              
+  <section class='widget toc-wrapper'>
+    
 <header class='pure'>
-  <div><i class="fas fa-thumbs-up fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;强烈推荐</div>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
   
 </header>
 
-  <div class='content pure'>
-    <ul class="entry">
-      
-        <li><a class="flat-box" title="https://xaoxuu.com/wiki/hexo.sh/" href="https://xaoxuu.com/wiki/hexo.sh/"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;Hexo脚本（Mac）
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://xaoxuu.com/wiki/vim-cn.sh/" href="https://xaoxuu.com/wiki/vim-cn.sh/"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;图床脚本（Mac）
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://yasuotu.com" href="https://yasuotu.com"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;图片在线压缩
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://realfavicongenerator.net" href="https://realfavicongenerator.net"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;生成Favicon
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://mxclub.github.io/resume/" href="https://mxclub.github.io/resume/"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;简历主题
-          </div>
-          
-        </a></li>
-      
-    </ul>
-  </div>
-</section>
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置标签页面"><span class="toc-text">设置标签页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置分类页面"><span class="toc-text">设置分类页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置归档页面"><span class="toc-text">设置归档页面</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐"><span class="toc-text">推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文末"><span class="toc-text">文末</span></a>
+    </div>
+  </section>
+
 
             
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
           
         
       
@@ -1039,6 +1008,140 @@
           
         
       
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget list'>
+  
+<header class='pure'>
+  <div><i class="fas fa-thumbs-up fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;强烈推荐</div>
+  
+</header>
+
+  <div class='content pure'>
+    <ul class="entry">
+      
+        <li><a class="flat-box" title="https://xaoxuu.com/wiki/hexo.sh/" href="https://xaoxuu.com/wiki/hexo.sh/"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;Hexo脚本（Mac）
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://xaoxuu.com/wiki/vim-cn.sh/" href="https://xaoxuu.com/wiki/vim-cn.sh/"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;图床脚本（Mac）
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://yasuotu.com" href="https://yasuotu.com"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;图片在线压缩
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://realfavicongenerator.net" href="https://realfavicongenerator.net"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;生成Favicon
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://mxclub.github.io/resume/" href="https://mxclub.github.io/resume/"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;简历主题
+          </div>
+          
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+            
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
     
 
   
@@ -1159,14 +1262,6 @@
       <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">7.9k</span>
     </div>
 </footer>
-
-
-
-	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-	
-
-	
-
 
       <script>setLoadingBarProgress(60);</script>
     </div>
