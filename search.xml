@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>博客搭建-博客搭建完整教程</title>
+      <link href="/2020/05/14/BLOG03-HEXO-JC/"/>
+      <url>/2020/05/14/BLOG03-HEXO-JC/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>每天进步一点，不做curd工程师与Api调用工程师！</p></blockquote><blockquote><p>欢迎大家访问我的博客：<a href="https://codermerlin.github.io/" target="_blank" rel="noopener">Coder编程——个人博客</a></p></blockquote><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>其实早在三年前，刚毕业那会就在网上学着搭建自己的个人博客。后面由于其他原因（主要是<strong>懒</strong>）就没再继续管理。如今又为何重新拾起呢？</p><p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/emoticon/htwyakszb.jpg" alt="后退我要开始装逼啦"></p><p>第一：自己本身从毕业到工作也已经有了三年时间，或多或少有了一些工作经验和感悟。<br>第二：平时有时间的时候，自己也会看看博客，写写文章（划划水）。<br>第三：工作这么久，也要记录一下自己的学习记录，分享给大家。<br>….</p><p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/emoticon/hlbbzdl.jpg" alt="我知道了"></p><p>下面的开始写教程了，这篇教程主要参考：</p><ul><li><a href="https://www.itrhx.com/" target="_blank" rel="noopener">https://www.itrhx.com/</a></li></ul><p>他的教程写的非常详细！本文也主要参考他写的内容，并修改~</p><p>推荐文章： <a href="http://www.cnblogs.com/jhzhu/p/3893297.html" target="_blank" rel="noopener">《我为什么写博客》</a> （By 知明所以）<br>　　　　 　<a href="http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/" target="_blank" rel="noopener">《为什么你应该（从现在开始就）写博客》</a> (By 刘未鹏 | Mind Hacks)</p><h2 id="1-概念"><a href="#1-概念" class="headerlink" title="1. 概念"></a>1. 概念</h2><h3 id="1-1-Github-Pages"><a href="#1-1-Github-Pages" class="headerlink" title="1.1 Github Pages"></a>1.1 Github Pages</h3><p><strong>Github Pages</strong>可以被认为是用户编写的、托管在github上的静态网页。使用Github Pages可以为你提供一个免费的服务器，免去了自己搭建服务器和写数据库的麻烦。此外还可以绑定自己的域名。</p><p>类似Github Pages的</p><ul><li>Gitee Pages</li><li>Gitlab Pages</li><li>Coding</li></ul><p>等等</p><p>后续我也会写文章专门介绍，这几个Pages的搭建过程，欢迎大家关注~</p><h3 id="1-2-Hexo"><a href="#1-2-Hexo" class="headerlink" title="1.2 Hexo"></a>1.2 Hexo</h3><p><strong>Hexo</strong> 是一个快速、简洁且高效的博客框架。<strong>Hexo</strong> 使用 <strong>Markdown</strong>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p><p>正在编写。。。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> HEXO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HEXO </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客搭建-设置标签/分类/归档相关页面</title>
       <link href="/2020/05/12/BLOG02-HEXO-BQFLGD/"/>
       <url>/2020/05/12/BLOG02-HEXO-BQFLGD/</url>
