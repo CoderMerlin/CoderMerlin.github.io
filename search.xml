@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>玩转 IDEA 系列教程——强烈推荐官方中文(汉化)插件！</title>
+      <link href="/2020/06/04/idea/idea01/"/>
+      <url>/2020/06/04/idea/idea01/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://upload-images.jianshu.io/upload_images/7326374-6ced95eb61b5c7f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="玩转 IDEA 系列教程"></p><blockquote><p>每天进步一点，不做curd工程师与Api调用工程师<br>欢迎访问个人博客网站：<a href="https://www.coder-programming.cn/" target="_blank" rel="noopener">https://www.coder-programming.cn/</a></p></blockquote><p>IDEA2020.1版本的到来，官方也悄悄更新了IDEA的中文插件。至今为止也有一段时间了，本人也下载使用过，对于英语底子薄弱的同学来说，中文插件还是非常友好的！</p><p>有兴趣的童鞋也可以下载尝尝鲜~</p><p>接下来，我们来介绍如何安装这款插件！</p><h3 id="一、在线安装"><a href="#一、在线安装" class="headerlink" title="一、在线安装"></a>一、在线安装</h3><p>打开设置——&gt;插件  </p><p>输入框<strong>搜索</strong>：<code>Chinese (Simplified) Language Pack</code></p><p><img src="https://upload-images.jianshu.io/upload_images/7326374-83502d2553bef53b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="settings"></p><p><img src="https://upload-images.jianshu.io/upload_images/7326374-865b2992d6e8bf3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="搜索安装"></p><p>之后重启即可使用！</p><h3 id="二、离线安装"><a href="#二、离线安装" class="headerlink" title="二、离线安装"></a>二、离线安装</h3><p>离线下载地址：<a href="https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack-eap" target="_blank" rel="noopener">https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack-eap</a></p><blockquote><p>注意事项：需要根据自身的IDEA版本号进行相应的选择下载！</p></blockquote><h4 id="下载离线包"><a href="#下载离线包" class="headerlink" title="下载离线包"></a>下载离线包</h4><p><img src="https://upload-images.jianshu.io/upload_images/7326374-2e619f00d788d070.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="下载地址"></p><p><img src="https://upload-images.jianshu.io/upload_images/7326374-d931e1f8b8cb89a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="查看对应的版本号"></p><p><img src="https://upload-images.jianshu.io/upload_images/7326374-5f306ae6f01494f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="build.png"></p><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><blockquote><p>安装离线包有两张方法</p></blockquote><p>方式一：</p><p>File -&gt; Settings -&gt; Plugins -&gt; 安装本地插件包</p><p><img src="https://upload-images.jianshu.io/upload_images/7326374-5e6b0d36aaae4838.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="本地安装"></p><p>方式二：</p><p>直接将插件包托入到IDEA框内即可！</p><p><img src="https://upload-images.jianshu.io/upload_images/7326374-964e7ab9ae57523c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="离线安装方式2"></p><p>之后重启即可使用！</p><h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="https://upload-images.jianshu.io/upload_images/7326374-77788a7f9f4174f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装完成"></p><h2 id="文末"><a href="#文末" class="headerlink" title="文末"></a>文末</h2><p>文章收录至<br>Github: <a href="https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FCoderMerlin%2Fcoder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://links.jianshu.com/go?to=https%3A%2F%2Fgitee.com%2F573059382%2Fcoder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~</p><p><img src="https://upload-images.jianshu.io/upload_images/7326374-0c9d0fbd2c954edb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="微信公众号"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>interview/java-base</title>
       <link href="/2020/05/18/interview/java-base/"/>
       <url>/2020/05/18/interview/java-base/</url>
