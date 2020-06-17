@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>博客搭建-增加百度统计功能 | Coder编程</title>
+  <title>Java基础笔试练习（二） | Coder编程</title>
   
   
 
@@ -316,15 +316,15 @@
   <section class='meta'>
     
     
-      <a title='博客搭建-增加百度统计功能' href='/2020/05/12/BLOG01-HEXO-BDTJ/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/hexo.png'></a>
+      <a title='Java基础笔试练习（二）' href='/2019/09/16/interview/java/B-bishi02/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/Java-log.png'></a>
     
     <div class="meta" id="header-meta">
       
         
   
     <h1 class="title">
-      <a href="/2020/05/12/BLOG01-HEXO-BDTJ/">
-        博客搭建-增加百度统计功能
+      <a href="/2019/09/16/interview/java/B-bishi02/">
+        Java基础笔试练习（二）
       </a>
     </h1>
   
@@ -355,7 +355,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2020-05-12</p>
+    <p>2019-09-16</p>
   </a>
 </div>
 
@@ -365,9 +365,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/HEXO/' rel="nofollow">
+    <a href='/categories/%E7%AC%94%E8%AF%95/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>HEXO</p>
+      <p>Java&nbsp;/&nbsp;笔试</p>
     </a>
   </div>
 
@@ -399,14 +399,14 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>622字</p>
+        <p>3.7k字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
       <a class='notlink'>
         <i class="fas fa-hourglass-half" aria-hidden="true"></i>
         <p>阅读时长≈</p>
-        <p>2分</p>
+        <p>14分</p>
       </a>
     </div>
   
@@ -429,31 +429,114 @@
     <section class="article typo">
       <div class="article-entry" itemprop="articleBody">
         <blockquote>
-<p>每天进步一点，不做curd工程师与Api调用工程师</p>
+<p>每天进步一点，不做curd工程师与Api调用工程师<br>欢迎访问个人网站：<a href="https://www.coder-programming.cn/" target="_blank" rel="noopener">https://www.coder-programming.cn/</a></p>
 </blockquote>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近晚上有时间就忙着倒腾自己的博客网站：<a href="https://www.coder-programming.cn/" target="_blank" rel="noopener">https://www.coder-programming.cn/</a></p>
-<p>网站还在建设当中，我会慢慢分享自己的搭建博客的过程和遇到的问题，在这里与大家一起分享！</p>
-<p>百度统计是百度推出的一款免费的专业网站流量分析工具，能够告诉用户访客是如何找到并浏览用户的网站，在网站上做了些什么，非常有趣，接下来我们把百度统计添加到自己博客当中</p>
-<p>访问<a href="https://tongji.baidu.com/" target="_blank" rel="noopener">百度统计首页</a>，注册一个账号后登陆，添加你的博客网站</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/01.png" alt="01"></p>
-<p>点击<strong>增加网站</strong>,填写个人网站的信息。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/02.png" alt="02"></p>
-<p>接着点击代码获取，复制该代码<br><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/03.png" alt="03"></p>
-<p>然后到目录<code>\themes\hexo-theme-material-x\layout\_partial\head.ejs</code>，里面粘贴你刚刚复制的代码。<br>代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (config.baidu_analytics_key) &#123; %&gt;</span><br><span class="line">    &lt;!-- ba --&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">    var _hmt &#x3D; _hmt || [];</span><br><span class="line">    (function() &#123;</span><br><span class="line">      var hm &#x3D; document.createElement(&quot;script&quot;);</span><br><span class="line">      hm.src &#x3D; &quot;https:&#x2F;&#x2F;hm.baidu.com&#x2F;hm.js?&lt;%&#x3D; config.baidu_analytics_key %&gt;&quot;;</span><br><span class="line">      var s &#x3D; document.getElementsByTagName(&quot;script&quot;)[0];</span><br><span class="line">      s.parentNode.insertBefore(hm, s);</span><br><span class="line">    &#125;)();</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
-<p>修改博客根目录下的 _config.yml 文件(注意：不是主题下的_config.yml)，将你的key填写进去：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/05.png" alt="05"></p>
-<p>所有操作完成后可以在百度统计管理页面检查代码是否安装成功，如果代码安装正确，一般20分钟后，可以查看网站分析数据</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/06.png" alt="06"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/07.png" alt="07"></p>
-<p>另外推荐：<a href="https://web.umeng.com/main.php?c=user&a=index" target="_blank" rel="noopener">友盟</a>，2010年4月在北京成立，安全、可靠、公正、第三方的网站流量统计分析系统</p>
-<p>参考：<br><a href="https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/" target="_blank" rel="noopener">https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/</a></p>
-<h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><p><a href="https://www.processon.com/i/5cd53c2fe4b01941c8cf1c21" target="_blank" rel="noopener">ProcessOn是一个在线作图工具的聚合平台~</a></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/7326374-c168c90d99f96d7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Java基础笔试练习（二）"></p>
+<h2 id="1-HashMap的数据结构是怎样的？"><a href="#1-HashMap的数据结构是怎样的？" class="headerlink" title="1. HashMap的数据结构是怎样的？"></a>1. HashMap的数据结构是怎样的？</h2><p>A.数组<br>B.链表<br>C.数组+链表<br>D.二叉树</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong></p>
+<p>JDK8以后，HashMap的数据结构是数组+链表+红黑树 </p>
+<h2 id="2-在-JAVA-编程中，Java-编译器会将-Java-程序转换为（-）？"><a href="#2-在-JAVA-编程中，Java-编译器会将-Java-程序转换为（-）？" class="headerlink" title="2. 在 JAVA 编程中，Java 编译器会将 Java 程序转换为（ ）？"></a>2. 在 JAVA 编程中，Java 编译器会将 Java 程序转换为（ ）？</h2><p>A.字节码<br>B.可执行代码<br>C.机器代码<br>D.以上都不对</p>
+<p><strong>答案：</strong><br>A</p>
+<p><strong>解析：</strong></p>
+<ul>
+<li>编译器将Java源代码编译成字节码class文件</li>
+<li>类加载到JVM里面后，执行引擎把字节码转为可执行代码</li>
+<li>执行的过程，再把可执行代码转为机器码，由底层的操作系统完成执行。 </li>
+</ul>
+<h2 id="3-下面有关JVM内存，说法错误的是？"><a href="#3-下面有关JVM内存，说法错误的是？" class="headerlink" title="3.下面有关JVM内存，说法错误的是？"></a>3.下面有关JVM内存，说法错误的是？</h2><p>A.程序计数器是一个比较小的内存区域，用于指示当前线程所执行的字节码执行到了第几行，是线程隔离的<br>B.Java方法执行内存模型，用于存储局部变量，操作数栈，动态链接，方法出口等信息，是线程隔离的<br>C.方法区用于存储JVM加载的类信息、常量、静态变量、即时编译器编译后的代码等数据，是线程隔离的<br>D.原则上讲，所有的对象都在堆区上分配内存，是线程之间共享的</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>运行时数据区包括：虚拟机栈区，堆区，方法区，本地方法栈，程序计数器</p>
+<ul>
+<li>虚拟机栈区：也就是我们常说的栈区，线程私有，存放基本类型，对象的引用和 returnAddress ，在编译期间完成分配。</li>
+<li>堆区：JAVA 堆，也称 GC 堆，所有线程共享，存放对象的实例和数组， JAVA 堆是垃圾收集器管理的主要区域。</li>
+<li>方法区：所有线程共享，存储已被虚拟机加载的类信息，常量，静态变量，即时编译器编译后的代码等数据。这个区域的内存回收目标主要是针对常量池的对象的回收和对类型的卸载。</li>
+<li>程序计数器：线程私有，每个线程都有自己独立的程序计数器，用来指示下一条指令的地址。</li>
+</ul>
+<ol start="4">
+<li>JAVA中，下列语句哪一个正确（） </li>
+</ol>
+<p>A.class中的constructor不可省略<br>B.constructor必须与class同名，但方法不能与class同名<br>C.constructor在一个对象被new时执行<br>D.一个class只能定义一个constructor</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>A 省略构造函数,编译器会自动生成。<br>D 构造函数可以重载<br>B 方法是可以和类名同名的，和构造方法唯一的区别就是，构造方法没有返回值。</p>
+<h2 id="5-在JAVA中，假设A有构造方法A-int-a-，则在类A的其他构造方法中调用该构造方法和语句格式应该为（）"><a href="#5-在JAVA中，假设A有构造方法A-int-a-，则在类A的其他构造方法中调用该构造方法和语句格式应该为（）" class="headerlink" title="5.在JAVA中，假设A有构造方法A(int a)，则在类A的其他构造方法中调用该构造方法和语句格式应该为（）"></a>5.在JAVA中，假设A有构造方法A(int a)，则在类A的其他构造方法中调用该构造方法和语句格式应该为（）</h2><p>A.this.A(x)<br>B.this(x)<br>C.super(x)<br>D.A(x)</p>
+<p><strong>答案：</strong><br>B </p>
+<p><strong>解析：</strong><br>this的作用其中一个就是在一个构造方法中调用另一个构造方法，格式为this(参数)；<br>super是调用父类的方法；<br>A(a)这种形式是在new一个类时使用。 </p>
+<h2 id="6-下列选项中属于面向对象程序设计语言特征的是（）"><a href="#6-下列选项中属于面向对象程序设计语言特征的是（）" class="headerlink" title="6.下列选项中属于面向对象程序设计语言特征的是（）"></a>6.下列选项中属于面向对象程序设计语言特征的是（）</h2><p>A.继承性<br>B.多态性<br>C.相似性<br>D.封装性</p>
+<p><strong>答案：</strong><br> A B D</p>
+<p><strong>解析：</strong><br>面对对象三大特征：封装，继承，多态 </p>
+<h2 id="7-以下哪个正确？"><a href="#7-以下哪个正确？" class="headerlink" title="7.以下哪个正确？"></a>7.以下哪个正确？</h2><p>A.abstract类只能用来派生子类，不能用来创建abstract类的对象。<br>B.final类不但可以用来派生子类，也可以用来创建final类的对象。<br>C.abstract不能与final同时修饰一个类。<br>D.abstract类定义中可以没有abstract方法。</p>
+<p><strong>答案：</strong><br>A C D</p>
+<p><strong>解析：</strong><br>1、abstract类不能用来创建abstract类的对象；<br>2、final类不能用来派生子类，因为用final修饰的类不能被继承；<br>3、如2所述，final不能与abstract同时修饰一个类，abstract类就是被用来继承的；<br>4、类中有abstract方法必须用abstract修饰，但abstract类中可以没有抽象方法，接口中也可以有abstract方法。</p>
+<h2 id="8-JAVA反射机制主要提供了以下哪些功能？"><a href="#8-JAVA反射机制主要提供了以下哪些功能？" class="headerlink" title="8. JAVA反射机制主要提供了以下哪些功能？"></a>8. JAVA反射机制主要提供了以下哪些功能？</h2><p>A.在运行时判断一个对象所属的类<br>B.在运行时构造一个类的对象<br>C.在运行时判断一个类所具有的成员变量和方法<br>D.在运行时调用一个对象的方法</p>
+<p><strong>答案：</strong><br>A B C D</p>
+<p><strong>解析：</strong><br>Java反射机制主要提供了以下功能： 在运行时判断任意一个对象所属的类；在运行时构造任意一个类的对象；在运行时判断任意一个类所具有的成员变量和方法；在运行时调用任意一个对象的方法；生成动态代理。<br>因此，答案为：ABCD </p>
+<h2 id="9-以下关于Histroy对象的属性或方法描述正确的是（）"><a href="#9-以下关于Histroy对象的属性或方法描述正确的是（）" class="headerlink" title="9.以下关于Histroy对象的属性或方法描述正确的是（）"></a>9.以下关于Histroy对象的属性或方法描述正确的是（）</h2><p>A.bcak回到浏览器载入历史URL地址列表的当前URL的前一个URL<br>B.go表示刷新当前页面<br>C.length保存历史URL地址列表的长度信息<br>D.forward转到浏览器载入历史URL地址列表的当前URL的下一个URL。</p>
+<p><strong>答案：</strong><br>A D</p>
+<p><strong>解析：</strong></p>
+<p>选A、D。考察的是浏览器的内置对象管理模型，简称BOM(Browser Object Model)中的Histroy属性和方法。</p>
+<ul>
+<li>length 返回浏览器历史列表中的URL数量。所以C中表述的长度信息是错误的。</li>
+<li>back() 加载 history列表中的前一个URL。</li>
+<li>forward() 加载  history  列表中的下一个URL。</li>
+<li>go()  加载history列表中的某个具体页面。所以B的表述刷新当前页面是错误的。</li>
+</ul>
+<h2 id="10"><a href="#10" class="headerlink" title="10."></a>10.</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">public class NameList</span><br><span class="line">&#123;</span><br><span class="line">    private List names &#x3D; new ArrayList();</span><br><span class="line">    public synchronized void add(String name)</span><br><span class="line">    &#123;</span><br><span class="line">        names.add(name);</span><br><span class="line">    &#125;</span><br><span class="line">    public synchronized void printAll()     &#123;</span><br><span class="line">        for (int i &#x3D; 0; i &lt; names.size(); i++)</span><br><span class="line">        &#123;</span><br><span class="line">            System.out.print(names.get(i) + ””);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    public static void main(String[]args)</span><br><span class="line">    &#123;</span><br><span class="line">        final NameList sl &#x3D; new NameList();</span><br><span class="line">        for (int i &#x3D; 0; i &lt; 2; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            new Thread()</span><br><span class="line">            &#123;</span><br><span class="line">                public void run()</span><br><span class="line">                &#123;</span><br><span class="line">                    sl.add(“A”);</span><br><span class="line">                    sl.add(“B”);</span><br><span class="line">                    sl.add(“C”);</span><br><span class="line">                    sl.printAll();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; .start();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Which two statements are true if this class is compiled and run? </p>
+<p>A.An exception may be thrown at runtime.<br>B.The code may run with no output, without exiting.<br>C.The code may run with no output, exiting normally(正常地).<br>D.The code may rum with output “A B A B C C “, then exit.<br>E.The code may rum with output “A B C A B C A B C “, then exit.<br>F.The code may ruin with output “A A A B C A B C C “, then exit.<br>G.The code may ruin with output “A B C A A B C A B C “, then exit.</p>
+<p><strong>答案：</strong><br>E G</p>
+<p><strong>解析：</strong></p>
+<p>在每个线程中都是顺序执行的，所以sl.printAll();必须在前三句执行之后执行，也就是输出的内容必有（连续或非连续的）ABC。而线程之间是穿插执行的，所以一个线程执行 sl.printAll();之前可能有另一个线程执行了前三句的前几句。<br>E答案相当于线程1顺序执行完然后线程2顺序执行完。<br>G答案则是线程1执行完前三句add之后线程2插一脚执行了一句add然后线程1再执行 sl.printAll();输出ABCA。接着线程2顺序执行完输出ABCABC<br>输出加起来即为ABCAABCABC。</p>
+<h2 id="11-关于容器下面说法正确的是？"><a href="#11-关于容器下面说法正确的是？" class="headerlink" title="11. 关于容器下面说法正确的是？ ( )"></a>11. 关于容器下面说法正确的是？ ( )</h2><p>A.列表(List)和集合(Set)存放的元素都是可重复的。<br>B.列表(List)和集合(Set)存放的元素都是不可重复的。<br>C.映射(Map)&lt;key,value&gt;中key是可以重复的。<br>D.映射(Map)&lt;key,value&gt;中value是可以重复的。</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>列表（List）的元素是有序、可重复的；<br>集合（Set）的元素是无序、不可重复的。 </p>
+<h2 id="12-以下说法错误的是-（）"><a href="#12-以下说法错误的是-（）" class="headerlink" title="12.以下说法错误的是?（）"></a>12.以下说法错误的是?（）</h2><p>A.数组是一个对象<br>B.数组不是一种原生类<br>C.数组的大小可以任意改变<br>D.在Java中，数组存储在堆中连续内存空间里</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>在java中,数组是一个对象,不是一种原生类,对象所以存放在堆中,又因为数组特性,是连续的,只有C不对</p>
+<h2 id="13-下列哪个修饰符可以使在一个类中定义的成员变量只能被同一包中的类访问？"><a href="#13-下列哪个修饰符可以使在一个类中定义的成员变量只能被同一包中的类访问？" class="headerlink" title="13.下列哪个修饰符可以使在一个类中定义的成员变量只能被同一包中的类访问？"></a>13.下列哪个修饰符可以使在一个类中定义的成员变量只能被同一包中的类访问？</h2><p>A.private<br>B.无修饰符<br>C.public<br>D.protected</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br><img src="https://upload-images.jianshu.io/upload_images/7326374-da4c30aa9fc41454.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="解析"></p>
+<h2 id="14-关于以下程序代码的说明正确的是"><a href="#14-关于以下程序代码的说明正确的是" class="headerlink" title="14.关于以下程序代码的说明正确的是?"></a>14.关于以下程序代码的说明正确的是?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public class HasStatic &#123;</span><br><span class="line">	private static int x &#x3D; 100;</span><br><span class="line"></span><br><span class="line">	public static void main(String args[]) &#123;</span><br><span class="line">		HasStatic hs1 &#x3D; new HasStatic();</span><br><span class="line">		hs1.x++;</span><br><span class="line">		HasStatic hs2 &#x3D; new HasStatic();</span><br><span class="line">		hs2.x++;</span><br><span class="line">		hs1 &#x3D; new HasStatic();</span><br><span class="line">		;</span><br><span class="line">		hs1.x++;</span><br><span class="line">		HasStatic.x--;</span><br><span class="line">		System.out.println(&quot;x&#x3D;&quot; + x);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>A.程序通过编译，输出结果为：x=103<br>B.10行不能通过编译，因为x是私有静态变量<br>C.5行不能通过编译，因为引用了私有静态变量<br>D.程序通过编译，输出结果为：x=102</p>
+<p><strong>答案：</strong><br>D </p>
+<p><strong>解析：</strong><br>此题选择D。<br>首先要了解static的意思。</p>
+<p>static表示“全局”或者“静态”的意思，用来修饰成员变量和成员方法，也可以形成静态static代码块，但是Java语言中没有全局变量的概念。<br>static变量在第一次使用的时候初始化，但只会有一份成员对象。<br>所以这里不仅可以调用，而且每一次调用都确实修改了x的值，也就是变化情况是这样的：<br>x=101<br>x=102<br>x=103<br>x=102</p>
+<h2 id="15-如何放掉一个指定占据的内存空间？（）"><a href="#15-如何放掉一个指定占据的内存空间？（）" class="headerlink" title="15.如何放掉一个指定占据的内存空间？（）"></a>15.如何放掉一个指定占据的内存空间？（）</h2><p>A.调用free()方法<br>B.代用system.gc()方法<br>C.赋值给该项对象的引用为null<br>D.程序员无法明确强制垃圾回收器运行</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>在《java虚拟机》一书中明确讲了，释放掉占据的内存空间是由gc完成，但是程序员无法明确强制其运行，该空间在不被引用的时候不一定会立即被释放，这取决于GC本身，无法由程序员通过代码控制。 </p>
+<h2 id="16-一般情况下，以下哪个选项不是关系数据模型与对象模型之间匹配关系？"><a href="#16-一般情况下，以下哪个选项不是关系数据模型与对象模型之间匹配关系？" class="headerlink" title="16.一般情况下，以下哪个选项不是关系数据模型与对象模型之间匹配关系？"></a>16.一般情况下，以下哪个选项不是关系数据模型与对象模型之间匹配关系？</h2><p>A.表对应类<br>B.记录对应对象<br>C.表的字段对应类的属性<br>D.表之间的参考关系对应类之间的依赖关系</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>一般关系数据模型和对象数据模型之间有以下对应关系：表对应类，记录对应对象，表的字段对应类的属性</p>
+<h2 id="17-下列关于Java并发的说法中正确的是（）"><a href="#17-下列关于Java并发的说法中正确的是（）" class="headerlink" title="17.下列关于Java并发的说法中正确的是（）"></a>17.下列关于Java并发的说法中正确的是（）</h2><p>A.CopyOnWriteArrayList适用于写多读少的并发场景<br>B.ReadWriteLock适用于读多写少的并发场景<br>C.ConcurrentHashMap的写操作不需要加锁，读操作需要加锁<br>D.只要在定义int类型的成员变量i的时候加上volatile关键字，那么多线程并发执行i++这样的操作的时候就是线程安全的了</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>A，CopyOnWriteArrayList适用于写少读多的并发场景<br>B，ReadWriteLock即为读写锁，他要求写与写之间互斥，读与写之间互斥，读与读之间可以并发执行。在读多写少的情况下可以提高效率<br>C，ConcurrentHashMap是同步的HashMap，读写都加锁<br>D，volatile只保证多线程操作的可见性，不保证原子性 </p>
+<h2 id="18-以下代码执行后输出结果为（-）"><a href="#18-以下代码执行后输出结果为（-）" class="headerlink" title="18.以下代码执行后输出结果为（ ）"></a>18.以下代码执行后输出结果为（ ）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class Test</span><br><span class="line">&#123;</span><br><span class="line">    public static Test t1 &#x3D; new Test();</span><br><span class="line">    &#123;</span><br><span class="line">         System.out.println(&quot;blockA&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    static</span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(&quot;blockB&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    public static void main(String[] args)</span><br><span class="line">    &#123;</span><br><span class="line">        Test t2 &#x3D; new Test();</span><br><span class="line">    &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>A.blockAblockBblockA<br>B.blockAblockAblockB<br>C.blockBblockBblockA<br>D.blockBblockAblockB</p>
+<p><strong>答案：</strong><br>A</p>
+<p><strong>解析：</strong><br>静态块：用static申明，JVM加载类时执行，仅执行一次<br>构造块：类中直接用{}定义，每一次创建对象时执行<br>执行顺序优先级：静态块&gt;main()&gt;构造块&gt;构造方法  静态块按照申明顺序执行，先执行Test t1 = new Test();<br>所有先输出blockA，然后执行静态块，输出blockB，最后执行main<br>方法中的Test t2 = new Test();输出blockA。 </p>
+<h2 id="19-有关hashMap跟hashTable的区别，说法正确的是？"><a href="#19-有关hashMap跟hashTable的区别，说法正确的是？" class="headerlink" title="19.有关hashMap跟hashTable的区别，说法正确的是？"></a>19.有关hashMap跟hashTable的区别，说法正确的是？</h2><p>A.HashMap和Hashtable都实现了Map接口<br>B.HashMap是非synchronized，而Hashtable是synchronized<br>C.HashTable使用Enumeration，HashMap使用Iterator<br>D.HashMap允许将 null 作为一个 entry 的 key 或者 value，而 Hashtable 不允许。</p>
+<p><strong>答案：</strong><br>ABCD</p>
+<p><strong>解析：</strong></p>
+<p>A正确。Map是一个接口，hashtable,hashmap都是它的实现。<br>B正确。由于Hashtable是线程安全的也是synchronized，所以在单线程环境下它比HashMap要慢。如果你不需要同步，只需要单一线程，那么使用HashMap性能要好过Hashtable。<br>C正确。HashMap的迭代器(Iterator)是fail-fast迭代器，而Hashtable的enumerator迭代器不是fail-fast的。所以当有其它线程改变了HashMap的结构（增加或者移除元素），将会抛出ConcurrentModificationException，但迭代器本身的remove()方法移除元素则不会抛出ConcurrentModificationException异常。但这并不是一个一定发生的行为，要看JVM。这条同样也是Enumeration和Iterator的区别。<br>D正确。 哈希值的使用不同，HashTable直接使用对象的hashCode，代码是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int hash &#x3D; key.hashCode();</span><br><span class="line">int index &#x3D; (hash &amp; 0x7FFFFFFF) % tab.length;</span><br></pre></td></tr></table></figure>
+<p>而HashMap重新计算hash值，而且用与代替求模：<br>int hash = hash(k);<br>int i = indexFor(hash, table.length); </p>
+<h2 id="20-以下可以正确获取结果集的有"><a href="#20-以下可以正确获取结果集的有" class="headerlink" title="20.以下可以正确获取结果集的有?"></a>20.以下可以正确获取结果集的有?</h2><p>A.Statement sta=con.createStatement();<br>ResultSet rst=sta.executeQuery(“select * from book”);</p>
+<p>B.Statement sta=con.createStatement(“select * from book”); ResultSet rst=sta.executeQuery();</p>
+<p>C.PreparedStatement pst=con.prepareStatement();<br>ResultSet rst=pst.executeQuery(“select * from book”);</p>
+<p>D.PreparedStatement pst=con.prepareStatement(“select * from book”);<br>ResultSet rst=pst.executeQuery();</p>
+<p><strong>答案：</strong><br>A D  </p>
+<p><strong>解析：</strong><br>A,D是正确的；创建Statement是不传参的，PreparedStatement是需要传入sql语句<br>说一下preparedStatement和statement的区别与联系：在JDBC应用中,如果你已经是稍有水平开发者,你就应该始终以PreparedStatement代替Statement.也就是说,在任何时候都不要使用Statement。<br>PreparedStatement 接口继承 Statement,PreparedStatement 实例包含已编译的 SQL 语句,所以其执行速度要快于Statement对象。Statement为一条Sql语句生成执行计划，如果要执行两条sql语句select colume from table where colume=1;select colume from table where colume=2; 会生成两个执行计划一千个查询就生成一千个执行计划！ PreparedStatement用于使用绑定变量重用执行计划 select colume from table where colume=:x; 通过set不同数据只需要生成一次执行计划，可以重用</p>
+<h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><p><a href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIwMTg3NzYyOA==&hid=10&sn=34bfdf3ba4ff1ef1852e392195616f4e" target="_blank" rel="noopener">笔试内容集合</a> 持续更新中….</p>
 <h2 id="文末"><a href="#文末" class="headerlink" title="文末"></a>文末</h2><blockquote>
-<p>欢迎关注个人微信公众号：<strong>Coder编程</strong><br>欢迎关注<strong>Coder编程</strong>公众号，主要分享数据结构与算法、Java相关知识体系、框架知识及原理、Spring全家桶、微服务项目实战、DevOps实践之路、每日一篇互联网大厂面试或笔试题以及PMP项目管理知识等。更多精彩内容正在路上~<br>新建了一个qq群：315211365，欢迎大家进群交流一起学习。谢谢了！也可以介绍给身边有需要的朋友。</p>
+<p>欢迎关注个人微信公众号：<strong>Coder编程</strong><br>获取最新原创技术文章和免费学习资料，更有大量精品思维导图、面试资料、PMP备考资料等你来领，方便你随时随地学习技术知识！</p>
 </blockquote>
 <blockquote>
-<p>文章收录至<br>Github: <a href="https://github.com/CoderMerlin/coder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://gitee.com/573059382/coder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~<br><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming-wechat.webp.jpg" alt="微信公众号"></p>
+<p>文章收录至<br>Github: <a href="https://github.com/CoderMerlin/coder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://gitee.com/573059382/coder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~<br><img src="https://upload-images.jianshu.io/upload_images/7326374-283e473b53f21625?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="微信公众号"></p>
 </blockquote>
 
       </div>
@@ -467,10 +550,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-05-12T17:15:28+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-16T20:06:00+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2020年5月12日</p>
+    <p>更新于 2019年9月16日</p>
   </a>
 </div>
 
@@ -479,7 +562,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/HEXO/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>HEXO</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>百度统计</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AC%94%E8%AF%95/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>笔试</p></a></div>
 
 
         
@@ -492,7 +575,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/05/12/BLOG01-HEXO-BDTJ/&title=博客搭建-增加百度统计功能 | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/09/16/interview/java/B-bishi02/&title=Java基础笔试练习（二） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -504,7 +587,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2020/05/12/BLOG01-HEXO-BDTJ/&title=博客搭建-增加百度统计功能 | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2019/09/16/interview/java/B-bishi02/&title=Java基础笔试练习（二） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -516,7 +599,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/05/12/BLOG01-HEXO-BDTJ/&title=博客搭建-增加百度统计功能 | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/09/16/interview/java/B-bishi02/&title=Java基础笔试练习（二） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -544,16 +627,16 @@
                       <span class="art-item-left">
                           <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
                           <h4>
-                              <a href="/2020/05/12/BLOG02-HEXO-BQFLGD/" rel="prev" title="博客搭建-设置标签/分类/归档相关页面">
+                              <a href="/2019/11/14/interview/java/A-thread01/" rel="prev" title="Java面试集锦：25道线程类相关面试题与答案（一）">
                                 
-                                    博客搭建-设置标签/分类/归档相关页面
+                                    Java面试集锦：25道线程类相关面试题与答案（一）
                                 
                               </a>
                           </h4>
                           
                               
                               <h6 class="tags">
-                                  <a class="tag" href="/tags/HEXO/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> HEXO</a>
+                                  <a class="tag" href="/tags/Java/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Java</a> <a class="tag" href="/tags/%E9%9D%A2%E8%AF%95/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 面试</a> <a class="tag" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 多线程</a>
                               </h6>
                           
                       </span>
@@ -564,16 +647,16 @@
                       <span class="art-item-right" aria-hidden="true">
                           <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                           <h4>
-                              <a href="/2020/03/19/java/" rel="prev" title="Java学习路线整理">
+                              <a href="/2019/09/11/interview/java/B-bishi01/" rel="prev" title="Java基础笔试练习（一）">
                                   
-                                      Java学习路线整理
+                                      Java基础笔试练习（一）
                                   
                               </a>
                           </h4>
                           
                               
                               <h6 class="tags">
-                                  <a class="tag" href="/tags/Java/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Java</a> <a class="tag" href="/tags/%E9%9D%A2%E8%AF%95/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 面试</a>
+                                  <a class="tag" href="/tags/Java/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Java</a> <a class="tag" href="/tags/%E7%AC%94%E8%AF%95/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 笔试</a>
                               </h6>
                           
                       </span>
@@ -603,7 +686,7 @@
 
   <script>
     window.subData = {
-      title: '博客搭建-增加百度统计功能',
+      title: 'Java基础笔试练习（二）',
       tools: true
     }
   </script>
@@ -767,7 +850,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐"><span class="toc-text">推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文末"><span class="toc-text">文末</span></a>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-HashMap的数据结构是怎样的？"><span class="toc-text">1. HashMap的数据结构是怎样的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-在-JAVA-编程中，Java-编译器会将-Java-程序转换为（-）？"><span class="toc-text">2. 在 JAVA 编程中，Java 编译器会将 Java 程序转换为（ ）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-下面有关JVM内存，说法错误的是？"><span class="toc-text">3.下面有关JVM内存，说法错误的是？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-在JAVA中，假设A有构造方法A-int-a-，则在类A的其他构造方法中调用该构造方法和语句格式应该为（）"><span class="toc-text">5.在JAVA中，假设A有构造方法A(int a)，则在类A的其他构造方法中调用该构造方法和语句格式应该为（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-下列选项中属于面向对象程序设计语言特征的是（）"><span class="toc-text">6.下列选项中属于面向对象程序设计语言特征的是（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-以下哪个正确？"><span class="toc-text">7.以下哪个正确？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-JAVA反射机制主要提供了以下哪些功能？"><span class="toc-text">8. JAVA反射机制主要提供了以下哪些功能？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-以下关于Histroy对象的属性或方法描述正确的是（）"><span class="toc-text">9.以下关于Histroy对象的属性或方法描述正确的是（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10"><span class="toc-text">10.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-关于容器下面说法正确的是？"><span class="toc-text">11. 关于容器下面说法正确的是？ ( )</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-以下说法错误的是-（）"><span class="toc-text">12.以下说法错误的是?（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-下列哪个修饰符可以使在一个类中定义的成员变量只能被同一包中的类访问？"><span class="toc-text">13.下列哪个修饰符可以使在一个类中定义的成员变量只能被同一包中的类访问？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-关于以下程序代码的说明正确的是"><span class="toc-text">14.关于以下程序代码的说明正确的是?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15-如何放掉一个指定占据的内存空间？（）"><span class="toc-text">15.如何放掉一个指定占据的内存空间？（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16-一般情况下，以下哪个选项不是关系数据模型与对象模型之间匹配关系？"><span class="toc-text">16.一般情况下，以下哪个选项不是关系数据模型与对象模型之间匹配关系？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#17-下列关于Java并发的说法中正确的是（）"><span class="toc-text">17.下列关于Java并发的说法中正确的是（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#18-以下代码执行后输出结果为（-）"><span class="toc-text">18.以下代码执行后输出结果为（ ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#19-有关hashMap跟hashTable的区别，说法正确的是？"><span class="toc-text">19.有关hashMap跟hashTable的区别，说法正确的是？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20-以下可以正确获取结果集的有"><span class="toc-text">20.以下可以正确获取结果集的有?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐"><span class="toc-text">推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文末"><span class="toc-text">文末</span></a></li></ol>
     </div>
   </section>
 
