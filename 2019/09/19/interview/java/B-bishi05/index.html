@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Java基础笔试练习（一） | Coder编程</title>
+  <title>Java基础笔试练习（五） | Coder编程</title>
   
   
 
@@ -316,15 +316,15 @@
   <section class='meta'>
     
     
-      <a title='Java基础笔试练习（一）' href='/2019/09/11/interview/java/B-bishi01/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/Java-log.png'></a>
+      <a title='Java基础笔试练习（五）' href='/2019/09/19/interview/java/B-bishi05/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/Java-log.png'></a>
     
     <div class="meta" id="header-meta">
       
         
   
     <h1 class="title">
-      <a href="/2019/09/11/interview/java/B-bishi01/">
-        Java基础笔试练习（一）
+      <a href="/2019/09/19/interview/java/B-bishi05/">
+        Java基础笔试练习（五）
       </a>
     </h1>
   
@@ -355,7 +355,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-09-11</p>
+    <p>2019-09-19</p>
   </a>
 </div>
 
@@ -399,14 +399,14 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>1.5k字</p>
+        <p>3.6k字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
       <a class='notlink'>
         <i class="fas fa-hourglass-half" aria-hidden="true"></i>
         <p>阅读时长≈</p>
-        <p>5分</p>
+        <p>14分</p>
       </a>
     </div>
   
@@ -431,63 +431,126 @@
         <blockquote>
 <p>每天进步一点，不做curd工程师与Api调用工程师<br>欢迎访问个人网站：<a href="https://www.coder-programming.cn/" target="_blank" rel="noopener">https://www.coder-programming.cn/</a></p>
 </blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/7326374-9b65a59238ede835.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Java基础笔试练习（一）"></p>
-<h2 id="1-若在某一个类定义中定义有如下的方法：-abstract-void-performDial-该方法属于（）"><a href="#1-若在某一个类定义中定义有如下的方法：-abstract-void-performDial-该方法属于（）" class="headerlink" title="1. 若在某一个类定义中定义有如下的方法： abstract void performDial( ); 该方法属于（） ?"></a>1. 若在某一个类定义中定义有如下的方法： abstract void performDial( ); 该方法属于（） ?</h2><p>A.本地方法<br>B.最终方法<br>C.静态方法<br>D.抽象方法</p>
-<p><strong>答案：</strong> D</p>
-<p><strong>解析：</strong></p>
-<ul>
-<li>本地方法：简单地讲，一个native Method就是一个java调用非java代码的接口；native方法表示该方法要用另外一种依赖平台的编程语言实现。</li>
-<li>最终方法：final void B(){},这样定义的方法就是最终方法，最终方法在子类中不可以被重写，也就是说，如果有个子类继承了这个最终方法所在的类，那么这个子类中不能出现void B(){}这样的方法。 </li>
-<li>最终类：final class A {},这样定义的类就是最终类，最终类不能被继承。 </li>
-<li>abstract修饰抽象类 </li>
-</ul>
-<h2 id="2-在为传统面向对象语言的程序做单元测试的时候-经常用到mock对象。Mock对象通过反射数。请问反射最大程度破坏了面向对象的以下哪个特性？"><a href="#2-在为传统面向对象语言的程序做单元测试的时候-经常用到mock对象。Mock对象通过反射数。请问反射最大程度破坏了面向对象的以下哪个特性？" class="headerlink" title="2.在为传统面向对象语言的程序做单元测试的时候,经常用到mock对象。Mock对象通过反射数。请问反射最大程度破坏了面向对象的以下哪个特性？"></a>2.在为传统面向对象语言的程序做单元测试的时候,经常用到mock对象。Mock对象通过反射数。请问反射最大程度破坏了面向对象的以下哪个特性？</h2><p>A.封装<br>B.多态<br>C.继承<br>D.抽象</p>
-<p><strong>答案：</strong>  A</p>
-<p><strong>解析：</strong><br>A.封装<br>反射破坏代码的封装性，破坏原有的访问修饰符访问限制 </p>
-<h2 id="3-以下程序的执行结果是："><a href="#3-以下程序的执行结果是：" class="headerlink" title="3.以下程序的执行结果是："></a>3.以下程序的执行结果是：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">static boolean foo(char c) &#123;</span><br><span class="line">		System.out.print(c);</span><br><span class="line">		return true;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">public static void main1(String[] args) &#123;</span><br><span class="line">	int i &#x3D; 0;</span><br><span class="line">	for (foo(&#39;A&#39;); foo(&#39;B&#39;) &amp;&amp; (i &lt; 2); foo(&#39;C&#39;)) &#123;</span><br><span class="line">		i++;</span><br><span class="line">		foo(&#39;D&#39;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/7326374-8a182e3da5ea417e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Java基础笔试练习（五）"></p>
+<h2 id="1-以下关于Integer与int的区别错误的是？"><a href="#1-以下关于Integer与int的区别错误的是？" class="headerlink" title="1.以下关于Integer与int的区别错误的是？"></a>1.以下关于Integer与int的区别错误的是？</h2><p>A.int是java提供的8种原始数据类型之一<br>B.Integer是java为int提供的封装类<br>C.int的默认值为0<br>D.Integer的默认值为1</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>略</p>
+<h2 id="2-给定以下方法声明，调用执行mystery（1234）的输出结果？"><a href="#2-给定以下方法声明，调用执行mystery（1234）的输出结果？" class="headerlink" title="2.给定以下方法声明，调用执行mystery（1234）的输出结果？"></a>2.给定以下方法声明，调用执行mystery（1234）的输出结果？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;precondition:  x &gt;&#x3D;0</span><br><span class="line">public void mystery (int x)</span><br><span class="line">&#123;</span><br><span class="line">System.out.print(x % 10);</span><br><span class="line"> </span><br><span class="line">if ((x &#x2F; 10) !&#x3D; 0)</span><br><span class="line">&#123;</span><br><span class="line">mystery(x &#x2F; 10);</span><br><span class="line">&#125;</span><br><span class="line">System.out.print(x % 10);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>A.ABDCBDCB<br>B.ABCDABCD<br>C.编译时出错<br>D.运行时抛出异常</p>
-<p><strong>答案：</strong><br>A</p>
-<p><strong>解析：</strong><br>略，代码敲一遍就知道了= =！</p>
-<ol start="4">
-<li>一个完整的URL地址由(),(),端口和文件四部分组成。 </li>
-</ol>
-<p>A.协议 用户名<br>B.协议 主机名<br>C.主机名 ip<br>D.以上都不正确</p>
-<p><strong>答案：</strong><br>B </p>
-<p><strong>解析：</strong><br><strong>URL(Uniform Resource Locator) *<em>，统一资源定位符，能够对因特网的资源进行定位。<br>*</em>URL</strong>一般有四部分组成： &lt;协议&gt;://&lt;主机&gt;:&lt;端口&gt;/&lt;路径&gt;</p>
-<ul>
-<li>现在最常用的&lt;协议&gt;为http协议。</li>
-<li>&lt;主机&gt;是指主机在因特网上的域名。</li>
-<li>http协议的默认&lt;端口&gt;为80（可以省略）。</li>
-<li>&lt;路径&gt;是指要活的的文件的路径。 </li>
-</ul>
-<h2 id="5-以下程序的输出结果是？"><a href="#5-以下程序的输出结果是？" class="headerlink" title="5.以下程序的输出结果是？"></a>5.以下程序的输出结果是？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public class Example &#123;</span><br><span class="line">    String str &#x3D; new String(&quot;good&quot;);</span><br><span class="line">    char[] ch &#x3D; &#123; &#39;a&#39;, &#39;b&#39;, &#39;c&#39; &#125;;</span><br><span class="line"> </span><br><span class="line">    public static void main(String args[]) &#123;</span><br><span class="line">        Example ex &#x3D; new Example();</span><br><span class="line">        ex.change(ex.str, ex.ch);</span><br><span class="line">        System.out.print(ex.str + &quot; and &quot;);</span><br><span class="line">        System.out.print(ex.ch);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">   public static void change(String str, char ch[])      </span><br><span class="line">   &#123;</span><br><span class="line">        str &#x3D; &quot;test ok&quot;;</span><br><span class="line">        ch[0] &#x3D; &#39;g&#39;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>A.good and abc<br>B.good and gbc<br>C.test ok and abc<br>D.test ok and gbc</p>
-<p><strong>答案：</strong><br>B </p>
-<p><strong>解析：</strong><br>考察值传递和引用传递。对于值传递，拷贝的值用完之后就会被释放，对原值没有任何影响，但是对于引用传递，拷贝的是对象的引用，和原值指向的同一块地址，即操作的是同一个对象，所以操作之间会相互影响<br>所以对于String str是值传递，操作之间互不影响，原值保持不变。而ch是数组，拷贝的是对象的引用，值发生了改变，因此选择B </p>
-<h2 id="6-下面有关servlet-service描述错误的是？"><a href="#6-下面有关servlet-service描述错误的是？" class="headerlink" title="6.下面有关servlet service描述错误的是？"></a>6.下面有关servlet service描述错误的是？</h2><p>A.不管是post还是get方法提交过来的连接，都会在service中处理<br>B.doGet/doPost 则是在 javax.servlet.GenericServlet 中实现的<br>C.service()是在javax.servlet.Servlet接口中定义的<br>D.service判断请求类型，决定是调用doGet还是doPost方法</p>
-<p><strong>答案：</strong><br>B </p>
-<p><strong>解析：</strong><br>doGet/doPost 则是在 javax.servlet.http.HttpServlet 中实现的</p>
-<h2 id="7-以下代码运行输出的是"><a href="#7-以下代码运行输出的是" class="headerlink" title="7.以下代码运行输出的是"></a>7.以下代码运行输出的是</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public class Person&#123;</span><br><span class="line">    private String name &#x3D; &quot;Person&quot;;</span><br><span class="line">    int age&#x3D;0;</span><br><span class="line">&#125;</span><br><span class="line">public class Child extends Person&#123;</span><br><span class="line">    public String grade;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        Person p &#x3D; new Child();</span><br><span class="line">        System.out.println(p.name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>A.输出：Person<br>B.没有输出<br>C.编译出错<br>D.运行出错</p>
+<p>A.1441<br>B.43211234<br>C.3443<br>D.12344321</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>递归调用</p>
+<h2 id="3-下面不是类及类成员的访问控制符的是-。（不考虑内部类的情况）"><a href="#3-下面不是类及类成员的访问控制符的是-。（不考虑内部类的情况）" class="headerlink" title="3.下面不是类及类成员的访问控制符的是( )。（不考虑内部类的情况）"></a>3.下面不是类及类成员的访问控制符的是( )。（不考虑内部类的情况）</h2><p>A.public<br>B.private<br>C.static<br>D.protected</p>
 <p><strong>答案：</strong><br>C</p>
-<p><strong>解析：</strong><br>Java中对字段属性是静态绑定，方法成员是动态绑定，这里错在：在子类中试图访问父类的private字段，所以编译不通过，将private去掉就可访问，不是动态绑定的问题，它本来就属于静态绑定。</p>
-<h2 id="8-在-myjsp-jsp-中，关于下面的代码说法错误的是："><a href="#8-在-myjsp-jsp-中，关于下面的代码说法错误的是：" class="headerlink" title="8.  在 myjsp.jsp 中，关于下面的代码说法错误的是： (  )"></a>8.  在 myjsp.jsp 中，关于下面的代码说法错误的是： (  )</h2><p>&lt;%@ page language=”java” import=”java.util.*” errorPage=”error.jsp” isErrorPage=”false” %&gt; </p>
-<p>A.该页面可以使用 exception 对象<br>B.该页面发生异常会转向 error.jsp<br>C.存在 errorPage 属性时，isErrorPage 是默认为 false<br>D.error.jsp 页面一定要有isErrorPage 属性且值为 true</p>
+<p><strong>解析：</strong><br>类访问控制符只有三种：public ，private， protected  static和访问控制无关</p>
+<h2 id="4-下列修饰符中与访问控制权限无关的是？（-）"><a href="#4-下列修饰符中与访问控制权限无关的是？（-）" class="headerlink" title="4.下列修饰符中与访问控制权限无关的是？（ ）"></a>4.下列修饰符中与访问控制权限无关的是？（ ）</h2><p>A.private<br>B.public<br>C.protected<br>D.final</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>private :        修饰私有变量<br>public :         修饰公有变量<br>protected:    修饰受保护变量<br>没有final, final用于保护变量不受改变</p>
+<h2 id="5-局部变量能否和成员变量重名？"><a href="#5-局部变量能否和成员变量重名？" class="headerlink" title="5.局部变量能否和成员变量重名？"></a>5.局部变量能否和成员变量重名？</h2><p>A.可以，局部变量可以与成员变量重名，这时可用“this”来指向成员变量<br>B.可以，这时可用“local”关键字来指向局部变量<br>C.不能，局部变量不能与成员变量重名<br>D.不能，在一个类中不能有重名变量，不管是成员变量还是函数中的局部变量</p>
 <p><strong>答案：</strong><br>A</p>
-<p><strong>解析：</strong><br>exception是JSP九大内置对象之一，其实例代表其他页面的异常和错误。只有当页面是错误处理页面时，即isErroePage为true时，该对象才可以使用。对于C项，errorPage的实质就是JSP的异常处理机制,发生异常时才会跳转到errorPage指定的页面，没必要给errorPage再设置一个errorPage。所以当errorPage属性存在时， isErrorPage属性值为false </p>
-<h2 id="9-Java对象的初始化方式有（-）"><a href="#9-Java对象的初始化方式有（-）" class="headerlink" title="9.Java对象的初始化方式有（ ）"></a>9.Java对象的初始化方式有（ ）</h2><p>A.初始化块<br>B.构造器<br>C.定义变量时指定初始化值<br>D.其它各项都不对</p>
-<p><strong>答案：</strong><br>A B C</p>
+<p><strong>解析：</strong><br>JAVA访问变量采用就近原则，局部变量与成员变量重名时，局部变量比较近，使用局部变量</p>
+<h2 id="6-下列说法正确的是"><a href="#6-下列说法正确的是" class="headerlink" title="6.下列说法正确的是()"></a>6.下列说法正确的是()</h2><p>A.在类方法中可用this来调用本类的类方法<br>B.在类方法中调用本类的类方法可直接调用<br>C.在类方法中只能调用本类的类方法<br>D.在类方法中绝对不能调用实例方法</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>在类方法中调用本类的类方法可直接调用。 实例方法也叫做对象方法。<br>类方法是属于整个类的，而实例方法是属于类的某个对象的。<br>由于类方法是属于整个类的，并不属于类的哪个对象，所以类方法的方法体中不能有与类的对象有关的内容。即类方法体有如下限制：<br>(1) 类方法中不能引用对象变量；<br>(2) 类方法中不能调用类的对象方法；<br>(3) 在类方法中不能使用super、this关键字。<br>(4)类方法不能被覆盖。<br>如果违反这些限制，就会导致程序编译错误。<br>与类方法相比，对象方法几乎没有什么限制：<br>(1) 对象方法中可以引用对象变量，也可以引用类变量；<br>(2) 对象方法中可以调用类方法；<br>(3) 对象方法中可以使用super、this关键字。</p>
+<h2 id="7-关于依赖注入，下列选项中说法错误的是（）？"><a href="#7-关于依赖注入，下列选项中说法错误的是（）？" class="headerlink" title="7.关于依赖注入，下列选项中说法错误的是（）？"></a>7.关于依赖注入，下列选项中说法错误的是（）？</h2><p>A.依赖注入能够独立开发各组件，然后根据组件间关系进行组装<br>B.依赖注入提供使用接口编程<br>C.依赖注入使组件之间相互依赖，相互制约<br>D.依赖注入指对象在使用时动态注入</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>依赖注入目的是减少组件之间的耦合度，使开发变得简单。</p>
+<h2 id="8-运行下面代码，输出的结果是（）"><a href="#8-运行下面代码，输出的结果是（）" class="headerlink" title="8.运行下面代码，输出的结果是（）"></a>8.运行下面代码，输出的结果是（）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class A &#123;</span><br><span class="line">    public A() &#123;</span><br><span class="line">        System.out.println(&quot;class A&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    &#123; System.out.println(&quot;I&#39;m A class&quot;); &#125;</span><br><span class="line">    static &#123; System.out.println(&quot;class A static&quot;); &#125;</span><br><span class="line">&#125;</span><br><span class="line">public class B extends A &#123;</span><br><span class="line">    public B() &#123;</span><br><span class="line">        System.out.println(&quot;class B&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    &#123; System.out.println(&quot;I&#39;m B class&quot;); &#125;</span><br><span class="line">    static &#123; System.out.println(&quot;class B static&quot;); &#125;</span><br><span class="line">     </span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line"> new B();</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>A.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class A static </span><br><span class="line">class B static </span><br><span class="line">I&#39;m A class </span><br><span class="line">class A</span><br><span class="line">I&#39;m B class </span><br><span class="line">class B</span><br></pre></td></tr></table></figure>
+<p>B.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class A static</span><br><span class="line">I&#39;m A class</span><br><span class="line">class A</span><br><span class="line">class B static</span><br><span class="line">I&#39;m B class</span><br><span class="line">class B</span><br></pre></td></tr></table></figure>
+<p>C.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class A static</span><br><span class="line">class B static</span><br><span class="line">class A</span><br><span class="line">I&#39;m A class </span><br><span class="line">class B</span><br><span class="line">I&#39;m B class</span><br></pre></td></tr></table></figure>
+<p>D.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class A static</span><br><span class="line">class A</span><br><span class="line">I&#39;m A class</span><br><span class="line">class B static</span><br><span class="line">class B</span><br><span class="line">I&#39;m B class</span><br></pre></td></tr></table></figure>
+
+
+<p><strong>答案：</strong><br>A</p>
+<p><strong>解析：</strong><br>此题考虑 Java 中构造器、初始化块、静态初始化块的执行顺序。</p>
+<p>静态初始化块 &gt; 初始化块 &gt; 构造器<br>父类 &gt; 子类<br>综合下来顺序就是：</p>
+<p>父类静态初始化块<br>子类静态初始化块<br>父类初始化块<br>父类构造器<br>子类初始化块<br>子类构造器<br>需要注意静态初始化块是在类第一次加载的时候就会进行初始化。</p>
+<h2 id="9-下面哪个标识符是合法的？"><a href="#9-下面哪个标识符是合法的？" class="headerlink" title="9.下面哪个标识符是合法的？"></a>9.下面哪个标识符是合法的？</h2><p>A.”9HelloWorld”<br>B.”_Hello World”<br>C.”Hello*World”<br>D.”Hello$World”</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>标识符是以字母开头的字母数字序列：<br>数字是指0~9，字母指大小写英文字母、下划线（_)和美元符号（$），也可以是Unicode字符集中的字符，如汉字；<br>字母、数字等字符的任意组合，不能包含+、- <em>等字符；<br>不能使用关键字；<br>大小写敏感<br>由此可以看出：<br>A：不可以数字开头<br>B：用下划线开头符合，但是中间有空格<br>C:不能包含“</em>”<br>排除ABC，答案即是D</p>
+<h2 id="10-以下程序执行的结果是："><a href="#10-以下程序执行的结果是：" class="headerlink" title="10.以下程序执行的结果是："></a>10.以下程序执行的结果是：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class X&#123;</span><br><span class="line">    Y y&#x3D;new Y();</span><br><span class="line">    public X()&#123;</span><br><span class="line">        System.out.print(&quot;X&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class Y&#123;</span><br><span class="line">    public Y()&#123;</span><br><span class="line">        System.out.print(&quot;Y&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">public class Z extends X&#123;</span><br><span class="line">    Y y&#x3D;new Y();</span><br><span class="line">    public Z()&#123;</span><br><span class="line">        System.out.print(&quot;Z&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        new Z();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>A.ZYXX<br>B.ZYXY<br>C.YXYZ<br>D.XYZX</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>1.父类静态代码块 （java虚拟机加载类时，就会执行该块代码，故只执行一次）<br>2 .子类静态代码块 （java虚拟机加载类时，就会执行该块代码，故只执行一次）<br>3. 父类属性对象初始化<br>4.父类普通代码块（每次new,每次执行 ）<br>5. 父类构造函数（每次new,每次执行）<br>6.子 类 属性对象初始化<br>7.子类普通代码块（每次new,每次执行 ）<br>8.子 类构造函数（每次new,每次执行）</p>
+<h2 id="11-以下声明合法的是"><a href="#11-以下声明合法的是" class="headerlink" title="11.以下声明合法的是"></a>11.以下声明合法的是</h2><p>A.default  String  s<br>B.public  final  static  native  int  w( )<br>C.abstract  double  d<br>D.abstract  final  double  hyperbolicCosine( )</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>A：java的访问权限有public、protected、private和default的，default不能修饰变量<br>C：普通变量不能用abstract修饰，abstract一般修饰方法和类<br>D：被定义为abstract的类需要被子类继承，但是被修饰为final的类是不能被继承和改写的心存疑问可以实验一下，看是否能通过编译.</p>
+<h2 id="12-java用（）机制实现了进程之间的同步执行"><a href="#12-java用（）机制实现了进程之间的同步执行" class="headerlink" title="12.java用（）机制实现了进程之间的同步执行"></a>12.java用（）机制实现了进程之间的同步执行</h2><p>A.虚拟机<br>B.多个CPU<br>C.异步调用<br>D.监视器</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>同步执行，需要监视器，即锁。</p>
+<h2 id="13-What-is-displayed-when-the-following-is-executed"><a href="#13-What-is-displayed-when-the-following-is-executed" class="headerlink" title="13.What is displayed when the following is executed;"></a>13.What is displayed when the following is executed;</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">double d1&#x3D;-0.5;</span><br><span class="line">System.out.println(&quot;Ceil d1&#x3D;&quot;+Math.ceil(d1));</span><br><span class="line">System.out.println(&quot;floor d1&#x3D;&quot;+Math.floor(d1));</span><br></pre></td></tr></table></figure>
+
+
+<p>A.Ceil d1=-0.0   floor d1=-1.0<br>B.Ceil d1=0.0    floor d1=-1.0<br>C.Ceil d1=-0.0  floor d1=-0.0<br>D.Ceil d1=0.0   floor d1=0.0<br>E.Ceil d1=0     floor d1=-1</p>
+<p><strong>答案：</strong><br>A</p>
 <p><strong>解析：</strong></p>
-<p>对象的初始化方式：<br>1.new时初始化 ；<br>2.静态工厂 newInstance；<br>3.反射Class.forName()；<br>4.clone方式；<br>5.反序列化；</p>
-<h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><p><a href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIwMTg3NzYyOA==&hid=10&sn=34bfdf3ba4ff1ef1852e392195616f4e" target="_blank" rel="noopener">Java笔试内容集合</a> 持续更新中….</p>
+<h2 id="14-有关下述Java代码描述正确的选项是-。"><a href="#14-有关下述Java代码描述正确的选项是-。" class="headerlink" title="14.有关下述Java代码描述正确的选项是____。"></a>14.有关下述Java代码描述正确的选项是____。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public class TestClass &#123;</span><br><span class="line">   private static void testMethod()&#123;</span><br><span class="line">        System.out.println(&quot;testMethod&quot;);</span><br><span class="line">   &#125;</span><br><span class="line">   public static void main(String[] args) &#123;</span><br><span class="line">        ((TestClass)null).testMethod();</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>A.编译不通过<br>B.编译通过，运行异常，报NullPointerException<br>C.编译通过，运行异常，报IllegalArgumentException<br>D.编译通过，运行异常，报NoSuchMethodException<br>E.编译通过，运行异常，报Exception<br>F.运行正常，输出testMethod</p>
+<p><strong>答案：</strong><br>F</p>
+<p><strong>解析：</strong><br>1）此处是类对方法的调用，不是对象对方法的调用。<br>2）方法是static静态方法，直接使用”类.方法”即可，因为静态方法使用不依赖对象是否被创建。null可以被强制类型转换成任意类型（不是任意类型对象），于是可以通过它来执行静态方法。<br>3）非静态的方法用”对象.方法”的方式，必须依赖对象被创建后才能使用，若将testMethod()方法前的static去掉，则会报 空指针异常 。此处也验证了2）的观点<br>当然，不管是否静态方法，都是已经存在的，只是访问方式不同。</p>
+<h2 id="15-下面哪些具体实现类可以用于存储键，值对，并且方法调用提供了基本的多线程安全支持："><a href="#15-下面哪些具体实现类可以用于存储键，值对，并且方法调用提供了基本的多线程安全支持：" class="headerlink" title="15.下面哪些具体实现类可以用于存储键，值对，并且方法调用提供了基本的多线程安全支持：()"></a>15.下面哪些具体实现类可以用于存储键，值对，并且方法调用提供了基本的多线程安全支持：()</h2><p>A.java.util.ConcurrentHashMap<br>B.java.util.Map<br>C.java.util.TreeMap<br>D.java.util.SortMap<br>E.java.util.Hashtable<br>F.java.util.HashMap</p>
+<p><strong>答案：</strong><br>A E</p>
+<p><strong>解析：</strong></p>
+<ul>
+<li>ConcurrentHashMap简称CHM,CHM 允许并发的读和线程安全的更新操作。在执行写操作时，CHM 只锁住部分的 Map，并发的更新是通过内部根据并发级别将 Map 分割成小部分实现的，高的并发级别会造成时间和空间的浪费，低的并发级别在写线程多时会引起线程间的竞争，CHM 的所有操作都是线程安全，CHM 返回的迭代器是弱一致性， fail-safe 并且不会抛出ConcurrentModificationException 异常，CHM不允许null的键值。可以使用 CHM 代替 HashTable，但要记住 CHM 不会锁住整个 Map</li>
+<li>除了Hashtable，其他是非线性安全的。</li>
+</ul>
+<h2 id="16-JavaWEB中有一个类，当会话种邦定了属性或者删除了属性时，他会得到通知，这个类是："><a href="#16-JavaWEB中有一个类，当会话种邦定了属性或者删除了属性时，他会得到通知，这个类是：" class="headerlink" title="16.JavaWEB中有一个类，当会话种邦定了属性或者删除了属性时，他会得到通知，这个类是：( )"></a>16.JavaWEB中有一个类，当会话种邦定了属性或者删除了属性时，他会得到通知，这个类是：( )</h2><p>A.HttpSessionAttributeListener<br>B.HttpSessionBindingListener<br>C.HttpSessionObjectListener<br>D.HttpSessionListener;<br>E.HttpSession<br>F.HttpSessionActivationListener</p>
+<p><strong>答案：</strong><br>A</p>
+<p><strong>解析：</strong><br>HttpSessionAttributeListener：可以实现此侦听器接口获取此web应用程序中会话属性列表更改的通知；<br>HttpSessionBindingListener：当该对象从一个会话中被绑定或者解绑时通知该对象，这个对象由HttpSessionBindingEvent对象通知。这可能是servlet程序显式地从会话中解绑定属性的结果，可能是由于会话无效，也可能是由于会话超时；<br>HttpSessionObjectListener：没有该接口API；<br>HttpSessionListener：当web应用程序中的活动会话列表发生更改时通知该接口的实现类，为了接收该通知事件，必须在web应用程序的部署描述符中配置实现类；<br>HttpSessionActivationListener：绑定到会话的对象可以侦听容器事件，通知它们会话将被钝化，会话将被激活。需要一个在虚拟机之间迁移会话或持久会话的容器来通知所有绑定到实现该接口会话的属性。</p>
+<h2 id="17-在java中重写方法应遵循规则的包括（）"><a href="#17-在java中重写方法应遵循规则的包括（）" class="headerlink" title="17.在java中重写方法应遵循规则的包括（）"></a>17.在java中重写方法应遵循规则的包括（）</h2><p>A.访问修饰符的限制一定要大于被重写方法的访问修饰符<br>B.可以有不同的访问修饰符<br>C.参数列表必须完全与被重写的方法相同<br>D.必须具有不同的参数列表</p>
+<p><strong>答案：</strong><br>B C</p>
+<p><strong>解析：</strong><br><strong>方法重写</strong></p>
+<ul>
+<li>参数列表必须完全与被重写方法的相同；</li>
+<li>返回类型必须完全与被重写方法的返回类型相同；</li>
+<li>访问权限不能比父类中被重写的方法的访问权限更低。例如：如果父类的一个方法被声明为public，那么在子类中重写该方法就不能声明为protected。</li>
+<li>父类的成员方法只能被它的子类重写。</li>
+<li>声明为final的方法不能被重写。</li>
+<li>声明为static的方法不能被重写，但是能够被再次声明。</li>
+<li>子类和父类在同一个包中，那么子类可以重写父类所有方法，除了声明为private和final的方法。</li>
+<li>子类和父类不在同一个包中，那么子类只能够重写父类的声明为public和protected的非final方法。</li>
+<li>重写的方法能够抛出任何非强制异常，无论被重写的方法是否抛出异常。但是，重写的方法不能抛出新的强制性异常，或者比被重写方法声明的更广泛的强制性异常，反之则可以。</li>
+<li>构造方法不能被重写。</li>
+<li>如果不能继承一个方法，则不能重写这个方法。</li>
+</ul>
+<p><strong>方法重载</strong></p>
+<ul>
+<li>被重载的方法必须改变参数列表(参数个数或类型或顺序不一样)；</li>
+<li>被重载的方法可以改变返回类型；</li>
+<li>被重载的方法可以改变访问修饰符；</li>
+<li>被重载的方法可以声明新的或更广的检查异常；</li>
+<li>方法能够在同一个类中或者在一个子类中被重载。</li>
+<li>无法以返回值类型作为重载函数的区分标准。</li>
+</ul>
+<h2 id="18-What-might-cause-the-current-thread-to-stop-or-pause-executing"><a href="#18-What-might-cause-the-current-thread-to-stop-or-pause-executing" class="headerlink" title="18.What might cause the current thread to stop or pause executing"></a>18.What might cause the current thread to stop or pause executing</h2><p>A.An InterruptedException is thrown.<br>B.The thread executes a wait() call.<br>C.The thread constructs a new Thread.<br>D.A thread of higher priority becomes ready.<br>E.The thread executes a waitforID()call on a MediaTracker.</p>
+<p><strong>答案：</strong><br>A B E</p>
+<p><strong>解析：</strong><br>略</p>
+<h2 id="19-下列说法错误的有（-）"><a href="#19-下列说法错误的有（-）" class="headerlink" title="19.下列说法错误的有（ ）"></a>19.下列说法错误的有（ ）</h2><p>A.Java面向对象语言容许单独的过程与函数存在<br>B.Java面向对象语言容许单独的方法存在<br>C.Java语言中的非静态方法属于类中的成员（member）<br>D.Java语言中的方法必定隶属于某一类（对象），调用方法与C语言的过程或C++语言的函数相同</p>
+<p><strong>答案：</strong><br>A B C D</p>
+<p><strong>解析：</strong><br>Java的静态方法属于类的成员，实例方法属于对象的成员。</p>
+<h2 id="20-下列流当中，属于处理流的是：（）"><a href="#20-下列流当中，属于处理流的是：（）" class="headerlink" title="20.下列流当中，属于处理流的是：（）"></a>20.下列流当中，属于处理流的是：（）</h2><p>A.FilelnputStream<br>B.lnputStream<br>C.DatalnputStream<br>D.BufferedlnputStream</p>
+<p><strong>答案：</strong><br>C D</p>
+<p><strong>解析：</strong><br>此题考察对于java流的理解<br>节点流是实际工作的流，<br>处理流（我们叫包装流可能容易理解一点）设计的目的是让对流中数据的操作，转化成我们能更简单明了的看懂的数据（而不是二进制的字节等）的操作，但实际上增加了很多类，是io流变的更复杂<br>字节流必是一个接点流，字符流就是一个操作流<br>使用时，必须是有一个结点流，然后才能用操作流来包装结点流，即把结点流当参数传个操作流</p>
+<blockquote>
+<p>注：以上笔试题均来自网络，由笔者整理得出</p>
+</blockquote>
+<h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><p><a href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIwMTg3NzYyOA==&hid=10&sn=34bfdf3ba4ff1ef1852e392195616f4e" target="_blank" rel="noopener">Java笔试内容集合</a> 欢迎关注，持续更新中….</p>
 <h2 id="文末"><a href="#文末" class="headerlink" title="文末"></a>文末</h2><blockquote>
 <p>欢迎关注个人微信公众号：<strong>Coder编程</strong><br>获取最新原创技术文章和免费学习资料，更有大量精品思维导图、面试资料、PMP备考资料等你来领，方便你随时随地学习技术知识！</p>
 </blockquote>
 <blockquote>
-<p>文章收录至<br>Github: <a href="https://github.com/CoderMerlin/coder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://gitee.com/573059382/coder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~<br><img src="https://upload-images.jianshu.io/upload_images/7326374-dcdca3329b2e2104?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="微信公众号"></p>
+<p>文章收录至<br>Github: <a href="https://github.com/CoderMerlin/coder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://gitee.com/573059382/coder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~<br><img src="https://upload-images.jianshu.io/upload_images/7326374-f40a013aaaefba88?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="微信公众号"></p>
 </blockquote>
 
       </div>
@@ -501,10 +564,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-11T20:06:09+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-19T20:06:00+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2019年9月11日</p>
+    <p>更新于 2019年9月19日</p>
   </a>
 </div>
 
@@ -526,7 +589,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/09/11/interview/java/B-bishi01/&title=Java基础笔试练习（一） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/09/19/interview/java/B-bishi05/&title=Java基础笔试练习（五） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -538,7 +601,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2019/09/11/interview/java/B-bishi01/&title=Java基础笔试练习（一） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2019/09/19/interview/java/B-bishi05/&title=Java基础笔试练习（五） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -550,7 +613,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/09/11/interview/java/B-bishi01/&title=Java基础笔试练习（一） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/09/19/interview/java/B-bishi05/&title=Java基础笔试练习（五） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -578,16 +641,16 @@
                       <span class="art-item-left">
                           <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
                           <h4>
-                              <a href="/2019/09/16/interview/java/B-bishi02/" rel="prev" title="Java基础笔试练习（二）">
+                              <a href="/2019/11/14/interview/java/A-thread01/" rel="prev" title="Java面试集锦：25道线程类相关面试题与答案（一）">
                                 
-                                    Java基础笔试练习（二）
+                                    Java面试集锦：25道线程类相关面试题与答案（一）
                                 
                               </a>
                           </h4>
                           
                               
                               <h6 class="tags">
-                                  <a class="tag" href="/tags/Java/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Java</a> <a class="tag" href="/tags/%E7%AC%94%E8%AF%95/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 笔试</a>
+                                  <a class="tag" href="/tags/Java/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Java</a> <a class="tag" href="/tags/%E9%9D%A2%E8%AF%95/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 面试</a> <a class="tag" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 多线程</a>
                               </h6>
                           
                       </span>
@@ -598,16 +661,16 @@
                       <span class="art-item-right" aria-hidden="true">
                           <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                           <h4>
-                              <a href="/2019/04/24/pmp/PMP03/" rel="prev" title="PMP备考指南之第二章：项目运作环境">
+                              <a href="/2019/09/18/interview/java/B-bishi04/" rel="prev" title="Java基础笔试练习（四）">
                                   
-                                      PMP备考指南之第二章：项目运作环境
+                                      Java基础笔试练习（四）
                                   
                               </a>
                           </h4>
                           
                               
                               <h6 class="tags">
-                                  <a class="tag" href="/tags/PMP/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> PMP</a>
+                                  <a class="tag" href="/tags/Java/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Java</a> <a class="tag" href="/tags/%E7%AC%94%E8%AF%95/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 笔试</a>
                               </h6>
                           
                       </span>
@@ -637,7 +700,7 @@
 
   <script>
     window.subData = {
-      title: 'Java基础笔试练习（一）',
+      title: 'Java基础笔试练习（五）',
       tools: true
     }
   </script>
@@ -801,7 +864,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-若在某一个类定义中定义有如下的方法：-abstract-void-performDial-该方法属于（）"><span class="toc-text">1. 若在某一个类定义中定义有如下的方法： abstract void performDial( ); 该方法属于（） ?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-在为传统面向对象语言的程序做单元测试的时候-经常用到mock对象。Mock对象通过反射数。请问反射最大程度破坏了面向对象的以下哪个特性？"><span class="toc-text">2.在为传统面向对象语言的程序做单元测试的时候,经常用到mock对象。Mock对象通过反射数。请问反射最大程度破坏了面向对象的以下哪个特性？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-以下程序的执行结果是："><span class="toc-text">3.以下程序的执行结果是：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-以下程序的输出结果是？"><span class="toc-text">5.以下程序的输出结果是？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-下面有关servlet-service描述错误的是？"><span class="toc-text">6.下面有关servlet service描述错误的是？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-以下代码运行输出的是"><span class="toc-text">7.以下代码运行输出的是</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-在-myjsp-jsp-中，关于下面的代码说法错误的是："><span class="toc-text">8.  在 myjsp.jsp 中，关于下面的代码说法错误的是： (  )</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-Java对象的初始化方式有（-）"><span class="toc-text">9.Java对象的初始化方式有（ ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐"><span class="toc-text">推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文末"><span class="toc-text">文末</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-以下关于Integer与int的区别错误的是？"><span class="toc-text">1.以下关于Integer与int的区别错误的是？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-给定以下方法声明，调用执行mystery（1234）的输出结果？"><span class="toc-text">2.给定以下方法声明，调用执行mystery（1234）的输出结果？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-下面不是类及类成员的访问控制符的是-。（不考虑内部类的情况）"><span class="toc-text">3.下面不是类及类成员的访问控制符的是( )。（不考虑内部类的情况）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-下列修饰符中与访问控制权限无关的是？（-）"><span class="toc-text">4.下列修饰符中与访问控制权限无关的是？（ ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-局部变量能否和成员变量重名？"><span class="toc-text">5.局部变量能否和成员变量重名？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-下列说法正确的是"><span class="toc-text">6.下列说法正确的是()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-关于依赖注入，下列选项中说法错误的是（）？"><span class="toc-text">7.关于依赖注入，下列选项中说法错误的是（）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-运行下面代码，输出的结果是（）"><span class="toc-text">8.运行下面代码，输出的结果是（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-下面哪个标识符是合法的？"><span class="toc-text">9.下面哪个标识符是合法的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-以下程序执行的结果是："><span class="toc-text">10.以下程序执行的结果是：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-以下声明合法的是"><span class="toc-text">11.以下声明合法的是</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-java用（）机制实现了进程之间的同步执行"><span class="toc-text">12.java用（）机制实现了进程之间的同步执行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-What-is-displayed-when-the-following-is-executed"><span class="toc-text">13.What is displayed when the following is executed;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-有关下述Java代码描述正确的选项是-。"><span class="toc-text">14.有关下述Java代码描述正确的选项是____。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15-下面哪些具体实现类可以用于存储键，值对，并且方法调用提供了基本的多线程安全支持："><span class="toc-text">15.下面哪些具体实现类可以用于存储键，值对，并且方法调用提供了基本的多线程安全支持：()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16-JavaWEB中有一个类，当会话种邦定了属性或者删除了属性时，他会得到通知，这个类是："><span class="toc-text">16.JavaWEB中有一个类，当会话种邦定了属性或者删除了属性时，他会得到通知，这个类是：( )</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#17-在java中重写方法应遵循规则的包括（）"><span class="toc-text">17.在java中重写方法应遵循规则的包括（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#18-What-might-cause-the-current-thread-to-stop-or-pause-executing"><span class="toc-text">18.What might cause the current thread to stop or pause executing</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#19-下列说法错误的有（-）"><span class="toc-text">19.下列说法错误的有（ ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20-下列流当中，属于处理流的是：（）"><span class="toc-text">20.下列流当中，属于处理流的是：（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐"><span class="toc-text">推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文末"><span class="toc-text">文末</span></a></li></ol>
     </div>
   </section>
 

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Java基础笔试练习（二） | Coder编程</title>
+  <title>Java基础笔试练习（四） | Coder编程</title>
   
   
 
@@ -316,15 +316,15 @@
   <section class='meta'>
     
     
-      <a title='Java基础笔试练习（二）' href='/2019/09/16/interview/java/B-bishi02/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/Java-log.png'></a>
+      <a title='Java基础笔试练习（四）' href='/2019/09/18/interview/java/B-bishi04/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/Java-log.png'></a>
     
     <div class="meta" id="header-meta">
       
         
   
     <h1 class="title">
-      <a href="/2019/09/16/interview/java/B-bishi02/">
-        Java基础笔试练习（二）
+      <a href="/2019/09/18/interview/java/B-bishi04/">
+        Java基础笔试练习（四）
       </a>
     </h1>
   
@@ -355,7 +355,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-09-16</p>
+    <p>2019-09-18</p>
   </a>
 </div>
 
@@ -399,14 +399,14 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>3.7k字</p>
+        <p>4.1k字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
       <a class='notlink'>
         <i class="fas fa-hourglass-half" aria-hidden="true"></i>
         <p>阅读时长≈</p>
-        <p>14分</p>
+        <p>16分</p>
       </a>
     </div>
   
@@ -431,112 +431,113 @@
         <blockquote>
 <p>每天进步一点，不做curd工程师与Api调用工程师<br>欢迎访问个人网站：<a href="https://www.coder-programming.cn/" target="_blank" rel="noopener">https://www.coder-programming.cn/</a></p>
 </blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/7326374-c168c90d99f96d7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Java基础笔试练习（二）"></p>
-<h2 id="1-HashMap的数据结构是怎样的？"><a href="#1-HashMap的数据结构是怎样的？" class="headerlink" title="1. HashMap的数据结构是怎样的？"></a>1. HashMap的数据结构是怎样的？</h2><p>A.数组<br>B.链表<br>C.数组+链表<br>D.二叉树</p>
-<p><strong>答案：</strong><br>C</p>
-<p><strong>解析：</strong></p>
-<p>JDK8以后，HashMap的数据结构是数组+链表+红黑树 </p>
-<h2 id="2-在-JAVA-编程中，Java-编译器会将-Java-程序转换为（-）？"><a href="#2-在-JAVA-编程中，Java-编译器会将-Java-程序转换为（-）？" class="headerlink" title="2. 在 JAVA 编程中，Java 编译器会将 Java 程序转换为（ ）？"></a>2. 在 JAVA 编程中，Java 编译器会将 Java 程序转换为（ ）？</h2><p>A.字节码<br>B.可执行代码<br>C.机器代码<br>D.以上都不对</p>
-<p><strong>答案：</strong><br>A</p>
-<p><strong>解析：</strong></p>
-<ul>
-<li>编译器将Java源代码编译成字节码class文件</li>
-<li>类加载到JVM里面后，执行引擎把字节码转为可执行代码</li>
-<li>执行的过程，再把可执行代码转为机器码，由底层的操作系统完成执行。 </li>
-</ul>
-<h2 id="3-下面有关JVM内存，说法错误的是？"><a href="#3-下面有关JVM内存，说法错误的是？" class="headerlink" title="3.下面有关JVM内存，说法错误的是？"></a>3.下面有关JVM内存，说法错误的是？</h2><p>A.程序计数器是一个比较小的内存区域，用于指示当前线程所执行的字节码执行到了第几行，是线程隔离的<br>B.Java方法执行内存模型，用于存储局部变量，操作数栈，动态链接，方法出口等信息，是线程隔离的<br>C.方法区用于存储JVM加载的类信息、常量、静态变量、即时编译器编译后的代码等数据，是线程隔离的<br>D.原则上讲，所有的对象都在堆区上分配内存，是线程之间共享的</p>
-<p><strong>答案：</strong><br>C</p>
-<p><strong>解析：</strong><br>运行时数据区包括：虚拟机栈区，堆区，方法区，本地方法栈，程序计数器</p>
-<ul>
-<li>虚拟机栈区：也就是我们常说的栈区，线程私有，存放基本类型，对象的引用和 returnAddress ，在编译期间完成分配。</li>
-<li>堆区：JAVA 堆，也称 GC 堆，所有线程共享，存放对象的实例和数组， JAVA 堆是垃圾收集器管理的主要区域。</li>
-<li>方法区：所有线程共享，存储已被虚拟机加载的类信息，常量，静态变量，即时编译器编译后的代码等数据。这个区域的内存回收目标主要是针对常量池的对象的回收和对类型的卸载。</li>
-<li>程序计数器：线程私有，每个线程都有自己独立的程序计数器，用来指示下一条指令的地址。</li>
-</ul>
-<ol start="4">
-<li>JAVA中，下列语句哪一个正确（） </li>
+<p><img src="https://upload-images.jianshu.io/upload_images/7326374-05e294342b1b1794.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Java基础笔试练习（四）"></p>
+<h2 id="1-编译Java-Application-源程序文件将产生相应的字节码文件，这些字节码文件的扩展名为-。"><a href="#1-编译Java-Application-源程序文件将产生相应的字节码文件，这些字节码文件的扩展名为-。" class="headerlink" title="1.编译Java  Application 源程序文件将产生相应的字节码文件，这些字节码文件的扩展名为(      )。"></a>1.编译Java  Application 源程序文件将产生相应的字节码文件，这些字节码文件的扩展名为(      )。</h2><p>A.java<br>B.class<br>C.html<br>D.exe</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>Java源程序的后缀名为“.java”,经过编译之后生成的字节码文件后缀名为“.class”</p>
+<h2 id="2-问以下哪个说法是正确的？（）"><a href="#2-问以下哪个说法是正确的？（）" class="headerlink" title="2. 问以下哪个说法是正确的？（）"></a>2. 问以下哪个说法是正确的？（）</h2><p>A 派生出子类 B, B 派生出子类 C,并且在 java 源代码有如下声明：</p>
+<ol>
+<li>A a0=new A();</li>
+<li>A a1=new B();</li>
+<li>A a2=new C();</li>
 </ol>
-<p>A.class中的constructor不可省略<br>B.constructor必须与class同名，但方法不能与class同名<br>C.constructor在一个对象被new时执行<br>D.一个class只能定义一个constructor</p>
-<p><strong>答案：</strong><br>C</p>
-<p><strong>解析：</strong><br>A 省略构造函数,编译器会自动生成。<br>D 构造函数可以重载<br>B 方法是可以和类名同名的，和构造方法唯一的区别就是，构造方法没有返回值。</p>
-<h2 id="5-在JAVA中，假设A有构造方法A-int-a-，则在类A的其他构造方法中调用该构造方法和语句格式应该为（）"><a href="#5-在JAVA中，假设A有构造方法A-int-a-，则在类A的其他构造方法中调用该构造方法和语句格式应该为（）" class="headerlink" title="5.在JAVA中，假设A有构造方法A(int a)，则在类A的其他构造方法中调用该构造方法和语句格式应该为（）"></a>5.在JAVA中，假设A有构造方法A(int a)，则在类A的其他构造方法中调用该构造方法和语句格式应该为（）</h2><p>A.this.A(x)<br>B.this(x)<br>C.super(x)<br>D.A(x)</p>
-<p><strong>答案：</strong><br>B </p>
-<p><strong>解析：</strong><br>this的作用其中一个就是在一个构造方法中调用另一个构造方法，格式为this(参数)；<br>super是调用父类的方法；<br>A(a)这种形式是在new一个类时使用。 </p>
-<h2 id="6-下列选项中属于面向对象程序设计语言特征的是（）"><a href="#6-下列选项中属于面向对象程序设计语言特征的是（）" class="headerlink" title="6.下列选项中属于面向对象程序设计语言特征的是（）"></a>6.下列选项中属于面向对象程序设计语言特征的是（）</h2><p>A.继承性<br>B.多态性<br>C.相似性<br>D.封装性</p>
-<p><strong>答案：</strong><br> A B D</p>
-<p><strong>解析：</strong><br>面对对象三大特征：封装，继承，多态 </p>
-<h2 id="7-以下哪个正确？"><a href="#7-以下哪个正确？" class="headerlink" title="7.以下哪个正确？"></a>7.以下哪个正确？</h2><p>A.abstract类只能用来派生子类，不能用来创建abstract类的对象。<br>B.final类不但可以用来派生子类，也可以用来创建final类的对象。<br>C.abstract不能与final同时修饰一个类。<br>D.abstract类定义中可以没有abstract方法。</p>
-<p><strong>答案：</strong><br>A C D</p>
-<p><strong>解析：</strong><br>1、abstract类不能用来创建abstract类的对象；<br>2、final类不能用来派生子类，因为用final修饰的类不能被继承；<br>3、如2所述，final不能与abstract同时修饰一个类，abstract类就是被用来继承的；<br>4、类中有abstract方法必须用abstract修饰，但abstract类中可以没有抽象方法，接口中也可以有abstract方法。</p>
-<h2 id="8-JAVA反射机制主要提供了以下哪些功能？"><a href="#8-JAVA反射机制主要提供了以下哪些功能？" class="headerlink" title="8. JAVA反射机制主要提供了以下哪些功能？"></a>8. JAVA反射机制主要提供了以下哪些功能？</h2><p>A.在运行时判断一个对象所属的类<br>B.在运行时构造一个类的对象<br>C.在运行时判断一个类所具有的成员变量和方法<br>D.在运行时调用一个对象的方法</p>
-<p><strong>答案：</strong><br>A B C D</p>
-<p><strong>解析：</strong><br>Java反射机制主要提供了以下功能： 在运行时判断任意一个对象所属的类；在运行时构造任意一个类的对象；在运行时判断任意一个类所具有的成员变量和方法；在运行时调用任意一个对象的方法；生成动态代理。<br>因此，答案为：ABCD </p>
-<h2 id="9-以下关于Histroy对象的属性或方法描述正确的是（）"><a href="#9-以下关于Histroy对象的属性或方法描述正确的是（）" class="headerlink" title="9.以下关于Histroy对象的属性或方法描述正确的是（）"></a>9.以下关于Histroy对象的属性或方法描述正确的是（）</h2><p>A.bcak回到浏览器载入历史URL地址列表的当前URL的前一个URL<br>B.go表示刷新当前页面<br>C.length保存历史URL地址列表的长度信息<br>D.forward转到浏览器载入历史URL地址列表的当前URL的下一个URL。</p>
-<p><strong>答案：</strong><br>A D</p>
-<p><strong>解析：</strong></p>
-<p>选A、D。考察的是浏览器的内置对象管理模型，简称BOM(Browser Object Model)中的Histroy属性和方法。</p>
-<ul>
-<li>length 返回浏览器历史列表中的URL数量。所以C中表述的长度信息是错误的。</li>
-<li>back() 加载 history列表中的前一个URL。</li>
-<li>forward() 加载  history  列表中的下一个URL。</li>
-<li>go()  加载history列表中的某个具体页面。所以B的表述刷新当前页面是错误的。</li>
-</ul>
-<h2 id="10"><a href="#10" class="headerlink" title="10."></a>10.</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">public class NameList</span><br><span class="line">&#123;</span><br><span class="line">    private List names &#x3D; new ArrayList();</span><br><span class="line">    public synchronized void add(String name)</span><br><span class="line">    &#123;</span><br><span class="line">        names.add(name);</span><br><span class="line">    &#125;</span><br><span class="line">    public synchronized void printAll()     &#123;</span><br><span class="line">        for (int i &#x3D; 0; i &lt; names.size(); i++)</span><br><span class="line">        &#123;</span><br><span class="line">            System.out.print(names.get(i) + ””);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    public static void main(String[]args)</span><br><span class="line">    &#123;</span><br><span class="line">        final NameList sl &#x3D; new NameList();</span><br><span class="line">        for (int i &#x3D; 0; i &lt; 2; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            new Thread()</span><br><span class="line">            &#123;</span><br><span class="line">                public void run()</span><br><span class="line">                &#123;</span><br><span class="line">                    sl.add(“A”);</span><br><span class="line">                    sl.add(“B”);</span><br><span class="line">                    sl.add(“C”);</span><br><span class="line">                    sl.printAll();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; .start();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Which two statements are true if this class is compiled and run? </p>
-<p>A.An exception may be thrown at runtime.<br>B.The code may run with no output, without exiting.<br>C.The code may run with no output, exiting normally(正常地).<br>D.The code may rum with output “A B A B C C “, then exit.<br>E.The code may rum with output “A B C A B C A B C “, then exit.<br>F.The code may ruin with output “A A A B C A B C C “, then exit.<br>G.The code may ruin with output “A B C A A B C A B C “, then exit.</p>
-<p><strong>答案：</strong><br>E G</p>
-<p><strong>解析：</strong></p>
-<p>在每个线程中都是顺序执行的，所以sl.printAll();必须在前三句执行之后执行，也就是输出的内容必有（连续或非连续的）ABC。而线程之间是穿插执行的，所以一个线程执行 sl.printAll();之前可能有另一个线程执行了前三句的前几句。<br>E答案相当于线程1顺序执行完然后线程2顺序执行完。<br>G答案则是线程1执行完前三句add之后线程2插一脚执行了一句add然后线程1再执行 sl.printAll();输出ABCA。接着线程2顺序执行完输出ABCABC<br>输出加起来即为ABCAABCABC。</p>
-<h2 id="11-关于容器下面说法正确的是？"><a href="#11-关于容器下面说法正确的是？" class="headerlink" title="11. 关于容器下面说法正确的是？ ( )"></a>11. 关于容器下面说法正确的是？ ( )</h2><p>A.列表(List)和集合(Set)存放的元素都是可重复的。<br>B.列表(List)和集合(Set)存放的元素都是不可重复的。<br>C.映射(Map)&lt;key,value&gt;中key是可以重复的。<br>D.映射(Map)&lt;key,value&gt;中value是可以重复的。</p>
+<p>A.只有第一行能通过编译<br>B.第1、2行能通过编译，但第3行编译出错<br>C.第1、2、3行能通过编译，但第2、3行运行时出错<br>D.第1行，第2行和第3行的声明都是正确的</p>
 <p><strong>答案：</strong><br>D</p>
-<p><strong>解析：</strong><br>列表（List）的元素是有序、可重复的；<br>集合（Set）的元素是无序、不可重复的。 </p>
-<h2 id="12-以下说法错误的是-（）"><a href="#12-以下说法错误的是-（）" class="headerlink" title="12.以下说法错误的是?（）"></a>12.以下说法错误的是?（）</h2><p>A.数组是一个对象<br>B.数组不是一种原生类<br>C.数组的大小可以任意改变<br>D.在Java中，数组存储在堆中连续内存空间里</p>
-<p><strong>答案：</strong><br>C</p>
-<p><strong>解析：</strong><br>在java中,数组是一个对象,不是一种原生类,对象所以存放在堆中,又因为数组特性,是连续的,只有C不对</p>
-<h2 id="13-下列哪个修饰符可以使在一个类中定义的成员变量只能被同一包中的类访问？"><a href="#13-下列哪个修饰符可以使在一个类中定义的成员变量只能被同一包中的类访问？" class="headerlink" title="13.下列哪个修饰符可以使在一个类中定义的成员变量只能被同一包中的类访问？"></a>13.下列哪个修饰符可以使在一个类中定义的成员变量只能被同一包中的类访问？</h2><p>A.private<br>B.无修饰符<br>C.public<br>D.protected</p>
+<p><strong>解析：</strong><br>这个题考了两个点：</p>
+<ol>
+<li>继承的传递性。</li>
+<li>多态，父类引用指向子类对象。 </li>
+</ol>
+<h2 id="3-以下哪个接口的定义是正确的？（-）"><a href="#3-以下哪个接口的定义是正确的？（-）" class="headerlink" title="3.以下哪个接口的定义是正确的？（ ）"></a>3.以下哪个接口的定义是正确的？（ ）</h2><p>A.interface  B{  void print()  {  } ;}<br>B.interface  B{ static void print() ;}<br>C.abstract  interface  B  extends  A1, A2  //A1、A2为已定义的接口{ abstract  void  print(){  };}<br>D.interface  B{  void  print();}</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>A，接口中方法的默认修饰符时public abstract，抽象方法可是没有方法体的，没有大括号{}<br>B，JDK8中，接口中的方法可以被default和static修饰，但是！！！被修饰的方法必须有方法体。<br>C，注意一下，接口是可以多继承的。整个没毛病，和A选项一样，抽象方法不能有方法体 </p>
+<h2 id="4-以下会产生信息丢失的类型转换是-）"><a href="#4-以下会产生信息丢失的类型转换是-）" class="headerlink" title="4.以下会产生信息丢失的类型转换是( ）"></a>4.以下会产生信息丢失的类型转换是( ）</h2><p>A.float  a=10<br>B.int a=（int）8846.0<br>C.byte  a=10； int b=-a<br>D.double d=100</p>
 <p><strong>答案：</strong><br>B</p>
-<p><strong>解析：</strong><br><img src="https://upload-images.jianshu.io/upload_images/7326374-da4c30aa9fc41454.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="解析"></p>
-<h2 id="14-关于以下程序代码的说明正确的是"><a href="#14-关于以下程序代码的说明正确的是" class="headerlink" title="14.关于以下程序代码的说明正确的是?"></a>14.关于以下程序代码的说明正确的是?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public class HasStatic &#123;</span><br><span class="line">	private static int x &#x3D; 100;</span><br><span class="line"></span><br><span class="line">	public static void main(String args[]) &#123;</span><br><span class="line">		HasStatic hs1 &#x3D; new HasStatic();</span><br><span class="line">		hs1.x++;</span><br><span class="line">		HasStatic hs2 &#x3D; new HasStatic();</span><br><span class="line">		hs2.x++;</span><br><span class="line">		hs1 &#x3D; new HasStatic();</span><br><span class="line">		;</span><br><span class="line">		hs1.x++;</span><br><span class="line">		HasStatic.x--;</span><br><span class="line">		System.out.println(&quot;x&#x3D;&quot; + x);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>解析：</strong><br>会产生信息丢失不如说<strong>丢失精度</strong>，这样可能更容易明白，而精度丢失只会发生在从大范围到小范围的转换。上面四个选项，只有 B 是从 double 到 int ，也就是从大范围到小范围。</p>
+<h2 id="5-以下代码的输出的正确结果是"><a href="#5-以下代码的输出的正确结果是" class="headerlink" title="5.以下代码的输出的正确结果是"></a>5.以下代码的输出的正确结果是</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class Test &#123;</span><br><span class="line">	public static void main(String args[]) &#123;</span><br><span class="line">		String s &#x3D; &quot;祝你考出好成绩！&quot;;</span><br><span class="line">		System.out.println(s.length());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>A.24<br>B.16<br>C.15<br>D.8</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>java的String底层是char数组，它的length()返回数组大小，而unicode中一个汉字是可以用一个char表示的。 一个汉字等于一个字符字符是char，一个汉字也等于二个字节，字节是byte。</p>
+<h2 id="6-java中，StringBuilder和StringBuffer的区别，下面说法错误的是？"><a href="#6-java中，StringBuilder和StringBuffer的区别，下面说法错误的是？" class="headerlink" title="6.java中，StringBuilder和StringBuffer的区别，下面说法错误的是？"></a>6.java中，StringBuilder和StringBuffer的区别，下面说法错误的是？</h2><p>A.StringBuffer是线程安全的<br>B.StringBuilder是非线程安全的<br>C.StringBuffer对 String 类型进行改变的时候其实都等同于生成了一个新的 String 对象，然后将指针指向新的 String 对象。<br>D.效率比较String&lt;StringBuffer&lt;StringBuilder，但是在 String S1 = “This is only a” + “ simple” + “ test”时，String效率最高。</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>效率：String(大姐，出生于JDK1.0时代) 不可变字符序列&lt;StringBuffer(二姐，出生于JDK1.0时代)  线程安全的可变字符序列&lt;StringBuilder(小妹，出生于JDK1.5时代) 非线程安全的可变字符序列。Java中的String是一个类，而并非基本数据类型。string是值传入，不是引用传入。StringBuffer和StringBuilder可以算是双胞胎了，这两者的方法没有很大区别。但在线程安全性方面，StringBuffer允许多线程进行字符操作。这是因为在源代码中StringBuffer的很多方法都被关键字synchronized修饰了，而StringBuilder没有。StringBuilder的效率比StringBuffer稍高，如果不考虑线程安全，StringBuilder应该是首选。<strong>另外，JVM运行程序主要的时间耗费是在创建对象和回收对象上。</strong><br>关于D:因为进行字符串加运算时实际上是在堆中开辟大量空间，为了避免资源耗尽java编译器自动将String变量变为StringBulider而后进行append处理。</p>
+<h2 id="7-下列关于修饰符混用的说法，错误的是"><a href="#7-下列关于修饰符混用的说法，错误的是" class="headerlink" title="7.下列关于修饰符混用的说法，错误的是( )"></a>7.下列关于修饰符混用的说法，错误的是( )</h2><p>A.abstract不能与final并列修饰同一个类<br>B.abstract类中不应该有private的成员<br>C.abstract方法必须在abstract类或接口中<br>D.static方法中能直接调用类里的非static的属性</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>1、abstract不能与final并列修饰同一个类  对的。<br>2、abstract类中不应该有private的成员  对的    ：abstract类中可以有private 但是不应该有。<br>3、abstract方法必须在abstract类或接口中  对的   ： 若类中方法有abstract修饰的，该类必须abstract修改。接口方法默认public abstract。<br>4、static方法中能处理非static的属性  错误  ：在JVM中static方法在静态区，静态区无法调用非静态区属性。</p>
+<h2 id="8-如下语句通过算术运算和逻辑运算之后i和-j的结果是（-）"><a href="#8-如下语句通过算术运算和逻辑运算之后i和-j的结果是（-）" class="headerlink" title="8.如下语句通过算术运算和逻辑运算之后i和 j的结果是（ ）"></a>8.如下语句通过算术运算和逻辑运算之后i和 j的结果是（ ）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int i&#x3D;0;</span><br><span class="line">int j&#x3D;0;</span><br><span class="line">if((++i&gt;0)||(++j&gt;0))&#123;</span><br><span class="line">&#x2F;&#x2F;打印出i和j的值。</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>A.程序通过编译，输出结果为：x=103<br>B.10行不能通过编译，因为x是私有静态变量<br>C.5行不能通过编译，因为引用了私有静态变量<br>D.程序通过编译，输出结果为：x=102</p>
-<p><strong>答案：</strong><br>D </p>
-<p><strong>解析：</strong><br>此题选择D。<br>首先要了解static的意思。</p>
-<p>static表示“全局”或者“静态”的意思，用来修饰成员变量和成员方法，也可以形成静态static代码块，但是Java语言中没有全局变量的概念。<br>static变量在第一次使用的时候初始化，但只会有一份成员对象。<br>所以这里不仅可以调用，而且每一次调用都确实修改了x的值，也就是变化情况是这样的：<br>x=101<br>x=102<br>x=103<br>x=102</p>
-<h2 id="15-如何放掉一个指定占据的内存空间？（）"><a href="#15-如何放掉一个指定占据的内存空间？（）" class="headerlink" title="15.如何放掉一个指定占据的内存空间？（）"></a>15.如何放掉一个指定占据的内存空间？（）</h2><p>A.调用free()方法<br>B.代用system.gc()方法<br>C.赋值给该项对象的引用为null<br>D.程序员无法明确强制垃圾回收器运行</p>
+<p>A.i=0;j=0<br>B.i=1;j=1<br>C.i=0;j=1<br>D.i=1;j=0</p>
 <p><strong>答案：</strong><br>D</p>
-<p><strong>解析：</strong><br>在《java虚拟机》一书中明确讲了，释放掉占据的内存空间是由gc完成，但是程序员无法明确强制其运行，该空间在不被引用的时候不一定会立即被释放，这取决于GC本身，无法由程序员通过代码控制。 </p>
-<h2 id="16-一般情况下，以下哪个选项不是关系数据模型与对象模型之间匹配关系？"><a href="#16-一般情况下，以下哪个选项不是关系数据模型与对象模型之间匹配关系？" class="headerlink" title="16.一般情况下，以下哪个选项不是关系数据模型与对象模型之间匹配关系？"></a>16.一般情况下，以下哪个选项不是关系数据模型与对象模型之间匹配关系？</h2><p>A.表对应类<br>B.记录对应对象<br>C.表的字段对应类的属性<br>D.表之间的参考关系对应类之间的依赖关系</p>
-<p><strong>答案：</strong><br>D</p>
-<p><strong>解析：</strong><br>一般关系数据模型和对象数据模型之间有以下对应关系：表对应类，记录对应对象，表的字段对应类的属性</p>
-<h2 id="17-下列关于Java并发的说法中正确的是（）"><a href="#17-下列关于Java并发的说法中正确的是（）" class="headerlink" title="17.下列关于Java并发的说法中正确的是（）"></a>17.下列关于Java并发的说法中正确的是（）</h2><p>A.CopyOnWriteArrayList适用于写多读少的并发场景<br>B.ReadWriteLock适用于读多写少的并发场景<br>C.ConcurrentHashMap的写操作不需要加锁，读操作需要加锁<br>D.只要在定义int类型的成员变量i的时候加上volatile关键字，那么多线程并发执行i++这样的操作的时候就是线程安全的了</p>
+<p><strong>解析：</strong><br>考察的是短路逻辑的用法，即：当第一个逻辑表达式可以确定结果时，将不再进行剩余表达式的运算。</p>
+<h2 id="9-以下是java-concurrent包下的4个类，选出差别最大的一个"><a href="#9-以下是java-concurrent包下的4个类，选出差别最大的一个" class="headerlink" title="9.以下是java concurrent包下的4个类，选出差别最大的一个"></a>9.以下是java concurrent包下的4个类，选出差别最大的一个</h2><p>A.Semaphore<br>B.ReentrantLock<br>C.Future<br>D.CountDownLatch</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>A、Semaphore：类，控制某个资源可被同时访问的个数;<br>B、ReentrantLock：类，具有与使用synchronized方法和语句所访问的隐式监视器锁相同的一些基本行为和语义，但功能更强大；<br>C、Future：接口，表示异步计算的结果；<br>D、CountDownLatch： 类，可以用来在一个线程中等待多个线程完成任务的类。</p>
+<h2 id="10-下面有关java实例变量-局部变量-类变量和final变量的说法，错误的是？"><a href="#10-下面有关java实例变量-局部变量-类变量和final变量的说法，错误的是？" class="headerlink" title="10.下面有关java实例变量,局部变量,类变量和final变量的说法，错误的是？"></a>10.下面有关java实例变量,局部变量,类变量和final变量的说法，错误的是？</h2><p>A.实例变量指的是类中定义的变量，即成员变量，如果没有初始化，会有默认值。<br>B.局部变量指的是在方法中定义的变量，如果没有初始化，会有默认值<br>C.类变量指的是用static修饰的属性<br>D.final变量指的是用final 修饰的变量</p>
 <p><strong>答案：</strong><br>B</p>
-<p><strong>解析：</strong><br>A，CopyOnWriteArrayList适用于写少读多的并发场景<br>B，ReadWriteLock即为读写锁，他要求写与写之间互斥，读与写之间互斥，读与读之间可以并发执行。在读多写少的情况下可以提高效率<br>C，ConcurrentHashMap是同步的HashMap，读写都加锁<br>D，volatile只保证多线程操作的可见性，不保证原子性 </p>
-<h2 id="18-以下代码执行后输出结果为（-）"><a href="#18-以下代码执行后输出结果为（-）" class="headerlink" title="18.以下代码执行后输出结果为（ ）"></a>18.以下代码执行后输出结果为（ ）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class Test</span><br><span class="line">&#123;</span><br><span class="line">    public static Test t1 &#x3D; new Test();</span><br><span class="line">    &#123;</span><br><span class="line">         System.out.println(&quot;blockA&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    static</span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(&quot;blockB&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    public static void main(String[] args)</span><br><span class="line">    &#123;</span><br><span class="line">        Test t2 &#x3D; new Test();</span><br><span class="line">    &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>A.blockAblockBblockA<br>B.blockAblockAblockB<br>C.blockBblockBblockA<br>D.blockBblockAblockB</p>
+<p><strong>解析：</strong><br>B.定义在类中的变量是类的成员变量，可以不进行初始化，Java会自动进行初始化，如果是引用类型默认初始化为null,如果是基本类型例如int则会默认初始化为0<br>局部变量是定义在方法中的变量，必须要进行初始化。<br>被static关键字修饰的变量是静态的，静态变量随着类的加载而加载，所以也被称为类变量<br>被final修饰的变量是常量</p>
+<h2 id="11-关于JAVA的垃圾回收机制，下面哪些结论是正确？"><a href="#11-关于JAVA的垃圾回收机制，下面哪些结论是正确？" class="headerlink" title="11.关于JAVA的垃圾回收机制，下面哪些结论是正确？"></a>11.关于JAVA的垃圾回收机制，下面哪些结论是正确？</h2><p>A.程序可以任意指定释放内存的时间<br>B.JAVA程序不能依赖于垃圾回收的时间或者顺序<br>C.程序可明确地标识某个局部变量的引用不再被使用<br>D.程序可以显式地立即释放对象占有的内存</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>java提供了一个系统级的线程，即垃圾回收器线程。用来对每一个分配出去的内存空间进行跟踪。当JVM空闲时，自动回收每块可能被回收的内存，GC是完全自动的，不能被强制执行。程序员最多只能用System.gc()来建议执行垃圾回收器回收内存，但是具体的回收时间，是不可知的。当对象的引用变量被赋值为null，可能被当成垃圾。</p>
+<h2 id="12-JSP分页代码中，哪个步骤次序是正确的？"><a href="#12-JSP分页代码中，哪个步骤次序是正确的？" class="headerlink" title="12.JSP分页代码中，哪个步骤次序是正确的？"></a>12.JSP分页代码中，哪个步骤次序是正确的？</h2><p>A.先取总记录数，得到总页数，最后显示本页的数据。<br>B.先取所有的记录，得到总页数，再取总记录数，最后显示本页的数据。<br>C.先取总页数，得到总记录数，再取所有的记录，最后显示本页的数据。<br>D.先取本页的数据，得到总页数，再取总记录数，最后显示所有的记录。</p>
 <p><strong>答案：</strong><br>A</p>
-<p><strong>解析：</strong><br>静态块：用static申明，JVM加载类时执行，仅执行一次<br>构造块：类中直接用{}定义，每一次创建对象时执行<br>执行顺序优先级：静态块&gt;main()&gt;构造块&gt;构造方法  静态块按照申明顺序执行，先执行Test t1 = new Test();<br>所有先输出blockA，然后执行静态块，输出blockB，最后执行main<br>方法中的Test t2 = new Test();输出blockA。 </p>
-<h2 id="19-有关hashMap跟hashTable的区别，说法正确的是？"><a href="#19-有关hashMap跟hashTable的区别，说法正确的是？" class="headerlink" title="19.有关hashMap跟hashTable的区别，说法正确的是？"></a>19.有关hashMap跟hashTable的区别，说法正确的是？</h2><p>A.HashMap和Hashtable都实现了Map接口<br>B.HashMap是非synchronized，而Hashtable是synchronized<br>C.HashTable使用Enumeration，HashMap使用Iterator<br>D.HashMap允许将 null 作为一个 entry 的 key 或者 value，而 Hashtable 不允许。</p>
-<p><strong>答案：</strong><br>ABCD</p>
+<p><strong>解析：</strong><br>1、count(*)得到总记录数<br>2、计算总页数<br>3、获取所有记录(个人感觉这一步不需要，可以直接获取指定页数数据)<br>4、过滤显示本页数据</p>
+<h2 id="13-关于访问权限说法正确的是-？"><a href="#13-关于访问权限说法正确的是-？" class="headerlink" title="13.关于访问权限说法正确的是 ？ ( )"></a>13.关于访问权限说法正确的是 ？ ( )</h2><p>A.外部类前面可以修饰public,protected和private<br>B.成员内部类前面可以修饰public,protected和private<br>C.局部内部类前面可以修饰public,protected和private<br>D.以上说法都不正确</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>(1)对于外部类而言，它也可以使用访问控制符修饰，但外部类只能有两种访问控制级别：public和默认。因为外部类没有处于任何类的内部，也就没有其所在类的内部、所在类的子类两个范围，因此 private 和 protected 访问控制符对外部类没有意义。<br>(2)内部类的上一级程序单元是外部类，它具有 4 个作用域：同一个类（ private ）、同一个包（ protected ）和任何位置（ public ）。<br>(3)因为局部成员的作用域是所在方法，其他程序单元永远不可能访问另一个方法中的局部变量，所以所有的局部成员都不能使用访问控制修饰符修饰。</p>
+<h2 id="14-以下代码执行的结果显示是多少（-）？"><a href="#14-以下代码执行的结果显示是多少（-）？" class="headerlink" title="14.以下代码执行的结果显示是多少（ ）？"></a>14.以下代码执行的结果显示是多少（ ）？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">public class Demo &#123; </span><br><span class="line">	class Super&#123;  </span><br><span class="line">		 int flag&#x3D;1;</span><br><span class="line">         Super()&#123;</span><br><span class="line">             test();</span><br><span class="line">         &#125;  </span><br><span class="line">		 void test()&#123;</span><br><span class="line">            System.out.println(&quot;Super.test() flag&#x3D;&quot;+flag);</span><br><span class="line">         &#125;</span><br><span class="line">    &#125; </span><br><span class="line">	class Sub extends Super&#123;</span><br><span class="line">        Sub(int i)&#123;  </span><br><span class="line">			flag&#x3D;i;</span><br><span class="line">            System.out.println(&quot;Sub.Sub()flag&#x3D;&quot;+flag);</span><br><span class="line">        &#125;  </span><br><span class="line">		void test()&#123;</span><br><span class="line">            System.out.println(&quot;Sub.test()flag&#x3D;&quot;+flag);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">	public static void main(String[] args) &#123;  </span><br><span class="line">		new Demo().new Sub(5);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>A.Sub.test() flag=1,Sub.Sub() flag=5<br>B.Sub.Sub() flag=5,Sub.test() flag=5<br>C.Sub.test() flag=0,Sub.Sub() flag=5<br>D.Super.test() flag=1,Sub.Sub() flag=5</p>
+<p><strong>答案：</strong><br>A</p>
 <p><strong>解析：</strong></p>
-<p>A正确。Map是一个接口，hashtable,hashmap都是它的实现。<br>B正确。由于Hashtable是线程安全的也是synchronized，所以在单线程环境下它比HashMap要慢。如果你不需要同步，只需要单一线程，那么使用HashMap性能要好过Hashtable。<br>C正确。HashMap的迭代器(Iterator)是fail-fast迭代器，而Hashtable的enumerator迭代器不是fail-fast的。所以当有其它线程改变了HashMap的结构（增加或者移除元素），将会抛出ConcurrentModificationException，但迭代器本身的remove()方法移除元素则不会抛出ConcurrentModificationException异常。但这并不是一个一定发生的行为，要看JVM。这条同样也是Enumeration和Iterator的区别。<br>D正确。 哈希值的使用不同，HashTable直接使用对象的hashCode，代码是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int hash &#x3D; key.hashCode();</span><br><span class="line">int index &#x3D; (hash &amp; 0x7FFFFFFF) % tab.length;</span><br></pre></td></tr></table></figure>
-<p>而HashMap重新计算hash值，而且用与代替求模：<br>int hash = hash(k);<br>int i = indexFor(hash, table.length); </p>
-<h2 id="20-以下可以正确获取结果集的有"><a href="#20-以下可以正确获取结果集的有" class="headerlink" title="20.以下可以正确获取结果集的有?"></a>20.以下可以正确获取结果集的有?</h2><p>A.Statement sta=con.createStatement();<br>ResultSet rst=sta.executeQuery(“select * from book”);</p>
-<p>B.Statement sta=con.createStatement(“select * from book”); ResultSet rst=sta.executeQuery();</p>
-<p>C.PreparedStatement pst=con.prepareStatement();<br>ResultSet rst=pst.executeQuery(“select * from book”);</p>
-<p>D.PreparedStatement pst=con.prepareStatement(“select * from book”);<br>ResultSet rst=pst.executeQuery();</p>
-<p><strong>答案：</strong><br>A D  </p>
-<p><strong>解析：</strong><br>A,D是正确的；创建Statement是不传参的，PreparedStatement是需要传入sql语句<br>说一下preparedStatement和statement的区别与联系：在JDBC应用中,如果你已经是稍有水平开发者,你就应该始终以PreparedStatement代替Statement.也就是说,在任何时候都不要使用Statement。<br>PreparedStatement 接口继承 Statement,PreparedStatement 实例包含已编译的 SQL 语句,所以其执行速度要快于Statement对象。Statement为一条Sql语句生成执行计划，如果要执行两条sql语句select colume from table where colume=1;select colume from table where colume=2; 会生成两个执行计划一千个查询就生成一千个执行计划！ PreparedStatement用于使用绑定变量重用执行计划 select colume from table where colume=:x; 通过set不同数据只需要生成一次执行计划，可以重用</p>
+<p>在继承中代码的执行顺序为：<br>1.父类静态对象，父类静态代码块<br>2.子类静态对象，子类静态代码块<br>3.父类非静态对象，父类非静态代码块<br>4.父类构造函数<br>5.子类非静态对象，子类非静态代码块<br>6.子类构造函数<br>对于本题来说：在只想new Sub(5)的时候，父类先初始化了int flag=1，然后执行父类的构造函数Super（），父类构造函数中执行的test（）方法，因子类是重写了test（）方法的，因此父类构造函数中的test（）方法实际执行的是子类的test（）方法，所以输出为Sub.test() flag=1，接着执行子类构造函数Sub(5) 将flag赋值为5，因此输出结果Sub.Sub() flag=5。最终选择了A。</p>
+<h2 id="15-Java多线程有几种实现方法？"><a href="#15-Java多线程有几种实现方法？" class="headerlink" title="15.Java多线程有几种实现方法？"></a>15.Java多线程有几种实现方法？</h2><p>A.继承Thread类<br>B.实现Runnable接口<br>C.实现Thread接口<br>D.以上都不正确</p>
+<p><strong>答案：</strong><br>AB</p>
+<p><strong>解析：</strong><br>AB.<br>多线程一共有三种实现方式<br>方式1：继承Thread类，并重写run()方法<br>方式2：实现Runnable接口，实现run()方法<br>方式3：实现Callable接口，线程结束后可以有返回值，但是该方式是依赖于线程池的。</p>
+<h2 id="16-在Jdk1-7中，下述说法中抽象类与接口的区别与联系正确的有哪些？"><a href="#16-在Jdk1-7中，下述说法中抽象类与接口的区别与联系正确的有哪些？" class="headerlink" title="16.在Jdk1.7中，下述说法中抽象类与接口的区别与联系正确的有哪些？"></a>16.在Jdk1.7中，下述说法中抽象类与接口的区别与联系正确的有哪些？</h2><p>A.抽象类中可以有普通成员变量，接口中没有普通成员变量。<br>B.抽象类和接口中都可以包含静态成员常量。<br>C.一个类可以实现多个接口，但只能继承一个抽象类<br>D.抽象类中可以包含非抽象的普通方法，接口中的方法必须是抽象的，不能有非抽象的普通方法。</p>
+<p><strong>答案：</strong><br>A B C D </p>
+<p><strong>解析：</strong><br>总结一下</p>
+<ol>
+<li>一个子类只能继承一个抽象类,但能实现多个接口</li>
+<li>抽象类可以有构造方法,接口没有构造方法</li>
+<li>抽象类可以有普通成员变量,接口没有普通成员变量</li>
+<li>抽象类和接口都可有静态成员变量,抽象类中静态成员变量访问类型任意,接口只能public static final(默认)</li>
+<li>抽象类可以没有抽象方法,抽象类可以有普通方法,接口中都是抽象方法</li>
+<li>抽象类可以有静态方法,接口不能有静态方法</li>
+<li>抽象类中的方法可以是public、protected;接口方法只有public </li>
+</ol>
+<h2 id="17-根据下面这个程序的内容，判断哪些描述是正确的：（-）"><a href="#17-根据下面这个程序的内容，判断哪些描述是正确的：（-）" class="headerlink" title="17.根据下面这个程序的内容，判断哪些描述是正确的：（ ）"></a>17.根据下面这个程序的内容，判断哪些描述是正确的：（ ）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public class Test &#123;</span><br><span class="line">	public static void main(String args[]) &#123;</span><br><span class="line">	String s &#x3D; &quot;tommy&quot;;</span><br><span class="line">	Object o &#x3D; s;</span><br><span class="line">	sayHello(o); &#x2F;&#x2F;语句1</span><br><span class="line">	sayHello(s); &#x2F;&#x2F;语句2</span><br><span class="line">	&#125;</span><br><span class="line">	public static void sayHello(String to) &#123;</span><br><span class="line">		System.out.println(String.format(&quot;Hello, %s&quot;, to));</span><br><span class="line">	&#125;</span><br><span class="line">	public static void sayHello(Object to) &#123;</span><br><span class="line">		System.out.println(String.format(&quot;Welcome, %s&quot;, to));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>A.这段程序有编译错误<br>B.语句1输出为:Hello, tommy<br>C.语句2输出为:Hello, tommy<br>D.语句1输出为:Welcome, tommy<br>E.语句2输出为:Welcome, tommy<br>F.根据选用的Java编译器不同，这段程序的输出可能不同</p>
+<p><strong>答案：</strong><br>CD</p>
+<p><strong>解析：</strong><br>略</p>
+<h2 id="18-Java特性中-abstract-class和interface有什么区别（）"><a href="#18-Java特性中-abstract-class和interface有什么区别（）" class="headerlink" title="18.Java特性中,abstract class和interface有什么区别（）"></a>18.Java特性中,abstract class和interface有什么区别（）</h2><p>A.抽象类可以有构造方法，接口中不能有构造方法<br>B.抽象类中可以有普通成员变量，接口中没有普通成员变量<br>C.抽象类中不可以包含静态方法，接口中可以包含静态方法<br>D.一个类可以实现多个接口，但只能继承一个抽象类。</p>
+<p><strong>答案：</strong><br>A B D</p>
+<p><strong>解析：</strong><br>接口中的成员变量被隐式的声明为public static final ，jdk1.8后接口中可以有静态方法而且存在方法体</p>
+<h2 id="19-关于下面代码片段叙述正确的是（）"><a href="#19-关于下面代码片段叙述正确的是（）" class="headerlink" title="19.关于下面代码片段叙述正确的是（）"></a>19.关于下面代码片段叙述正确的是（）</h2><p>代码片段：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">byte b1&#x3D;1,b2&#x3D;2,b3,b6; </span><br><span class="line">final byte b4&#x3D;4,b5&#x3D;6; </span><br><span class="line">b6&#x3D;b4+b5; </span><br><span class="line">b3&#x3D;(b1+b2); </span><br><span class="line">System.out.println(b3+b6);</span><br></pre></td></tr></table></figure>
+
+<p>A.输出结果：13<br>B.语句：b6=b4+b5编译出错<br>C.语句：b3=b1+b2编译出错<br>D.运行期抛出异常</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>C.被final修饰的变量是常量，这里的b6=b4+b5可以看成是b6=10；在编译时就已经变为b6=10了。而b1和b2是byte类型，java中进行计算时候将他们提升为int类型，再进行计算，b1+b2计算后已经是int类型，赋值给b3，b3是byte类型，类型不匹配，编译不会通过，需要进行强制转换。Java中的byte，short，char进行计算时都会提升为int类型。 </p>
+<h2 id="20-下列那些方法是线程安全的-所调用的方法都存在"><a href="#20-下列那些方法是线程安全的-所调用的方法都存在" class="headerlink" title="20.下列那些方法是线程安全的(所调用的方法都存在)"></a>20.下列那些方法是线程安全的(所调用的方法都存在)</h2><p>A.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class MyServlet implements Servlet &#123;</span><br><span class="line">public void service (ServletRequest req, ServletResponse resp) &#123;</span><br><span class="line">	BigInteger I &#x3D; extractFromRequest(req);</span><br><span class="line">	encodeIntoResponse(resp,factors);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>B.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public class MyServlet implements Servlet &#123;</span><br><span class="line">private long count &#x3D;0;</span><br><span class="line">public long getCount() &#123;</span><br><span class="line">return count;</span><br><span class="line">&#125;</span><br><span class="line">public void service (ServletRequest req, ServletResponse resp) &#123;</span><br><span class="line">BigInteger I &#x3D; extractFromRequest(req);</span><br><span class="line">BigInteger[] factors &#x3D; factor(i);</span><br><span class="line">count ++;</span><br><span class="line">encodeIntoResponse(resp,factors);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>C.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public class MyClass &#123;</span><br><span class="line">private int value;</span><br><span class="line">public synchronized int get() &#123;</span><br><span class="line">return value;</span><br><span class="line">&#125;</span><br><span class="line">public synchronized void set (int value) &#123;</span><br><span class="line">this.value &#x3D; value;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>D.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public class Factorizer implements Servlet &#123;</span><br><span class="line">private volatile MyCache cache &#x3D; new MyCache(null,null);</span><br><span class="line"></span><br><span class="line">public void service(ServletRequest req, ServletResponse resp) &#123;</span><br><span class="line">BigInteger i &#x3D; extractFromRequest(req);</span><br><span class="line">BigInteger[] factors &#x3D; cache.getFactors(i);</span><br><span class="line">if (factors &#x3D;&#x3D; null) &#123;</span><br><span class="line">factors &#x3D; factor(i);</span><br><span class="line">cache &#x3D; new MyCache(i,factors);</span><br><span class="line">&#125;</span><br><span class="line">encodeIntoResponse(resp,factors);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>答案：</strong><br>A C D</p>
+<p><strong>解析：</strong><br>A：没有成员（没有共享资源），线程安全；<br>B：假设存在线程1和线程2，count初始值为0，当线程1执行count++中count+1（此时未写回最终计算值），这时线程2执行count++中读取count，发生数据错误，导致线程1线程2的结果都为1，而不是线程1的结果为1，线程2的结果为2，线程不安全；<br>C：成员私有，对成员的set get方法都加重量级锁，线程安全； D：volatile有两个作用：可见性（volatile变量的改变能使其他线程立即可见，但它不是线程安全的，参考B）和禁止重排序；这里是可见性的应用，类中方法对volatile修饰的变量只有赋值，线程安全； 欢迎指正。 </p>
 <h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><p><a href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIwMTg3NzYyOA==&hid=10&sn=34bfdf3ba4ff1ef1852e392195616f4e" target="_blank" rel="noopener">笔试内容集合</a> 持续更新中….</p>
 <h2 id="文末"><a href="#文末" class="headerlink" title="文末"></a>文末</h2><blockquote>
 <p>欢迎关注个人微信公众号：<strong>Coder编程</strong><br>获取最新原创技术文章和免费学习资料，更有大量精品思维导图、面试资料、PMP备考资料等你来领，方便你随时随地学习技术知识！</p>
 </blockquote>
 <blockquote>
-<p>文章收录至<br>Github: <a href="https://github.com/CoderMerlin/coder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://gitee.com/573059382/coder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~<br><img src="https://upload-images.jianshu.io/upload_images/7326374-283e473b53f21625?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="微信公众号"></p>
+<p>文章收录至<br>Github: <a href="https://github.com/CoderMerlin/coder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://gitee.com/573059382/coder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~<br><img src="https://upload-images.jianshu.io/upload_images/7326374-68883ebbbccb6b4f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="微信公众号"></p>
 </blockquote>
 
       </div>
@@ -550,10 +551,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-16T20:06:00+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-18T20:06:00+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2019年9月16日</p>
+    <p>更新于 2019年9月18日</p>
   </a>
 </div>
 
@@ -575,7 +576,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/09/16/interview/java/B-bishi02/&title=Java基础笔试练习（二） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/09/18/interview/java/B-bishi04/&title=Java基础笔试练习（四） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -587,7 +588,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2019/09/16/interview/java/B-bishi02/&title=Java基础笔试练习（二） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2019/09/18/interview/java/B-bishi04/&title=Java基础笔试练习（四） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -599,7 +600,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/09/16/interview/java/B-bishi02/&title=Java基础笔试练习（二） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/09/18/interview/java/B-bishi04/&title=Java基础笔试练习（四） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -627,9 +628,9 @@
                       <span class="art-item-left">
                           <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
                           <h4>
-                              <a href="/2019/09/17/interview/java/B-bishi03/" rel="prev" title="Java基础笔试练习（三）">
+                              <a href="/2019/09/19/interview/java/B-bishi05/" rel="prev" title="Java基础笔试练习（五）">
                                 
-                                    Java基础笔试练习（三）
+                                    Java基础笔试练习（五）
                                 
                               </a>
                           </h4>
@@ -647,9 +648,9 @@
                       <span class="art-item-right" aria-hidden="true">
                           <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                           <h4>
-                              <a href="/2019/09/11/interview/java/B-bishi01/" rel="prev" title="Java基础笔试练习（一）">
+                              <a href="/2019/09/17/interview/java/B-bishi03/" rel="prev" title="Java基础笔试练习（三）">
                                   
-                                      Java基础笔试练习（一）
+                                      Java基础笔试练习（三）
                                   
                               </a>
                           </h4>
@@ -686,7 +687,7 @@
 
   <script>
     window.subData = {
-      title: 'Java基础笔试练习（二）',
+      title: 'Java基础笔试练习（四）',
       tools: true
     }
   </script>
@@ -850,7 +851,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-HashMap的数据结构是怎样的？"><span class="toc-text">1. HashMap的数据结构是怎样的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-在-JAVA-编程中，Java-编译器会将-Java-程序转换为（-）？"><span class="toc-text">2. 在 JAVA 编程中，Java 编译器会将 Java 程序转换为（ ）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-下面有关JVM内存，说法错误的是？"><span class="toc-text">3.下面有关JVM内存，说法错误的是？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-在JAVA中，假设A有构造方法A-int-a-，则在类A的其他构造方法中调用该构造方法和语句格式应该为（）"><span class="toc-text">5.在JAVA中，假设A有构造方法A(int a)，则在类A的其他构造方法中调用该构造方法和语句格式应该为（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-下列选项中属于面向对象程序设计语言特征的是（）"><span class="toc-text">6.下列选项中属于面向对象程序设计语言特征的是（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-以下哪个正确？"><span class="toc-text">7.以下哪个正确？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-JAVA反射机制主要提供了以下哪些功能？"><span class="toc-text">8. JAVA反射机制主要提供了以下哪些功能？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-以下关于Histroy对象的属性或方法描述正确的是（）"><span class="toc-text">9.以下关于Histroy对象的属性或方法描述正确的是（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10"><span class="toc-text">10.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-关于容器下面说法正确的是？"><span class="toc-text">11. 关于容器下面说法正确的是？ ( )</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-以下说法错误的是-（）"><span class="toc-text">12.以下说法错误的是?（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-下列哪个修饰符可以使在一个类中定义的成员变量只能被同一包中的类访问？"><span class="toc-text">13.下列哪个修饰符可以使在一个类中定义的成员变量只能被同一包中的类访问？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-关于以下程序代码的说明正确的是"><span class="toc-text">14.关于以下程序代码的说明正确的是?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15-如何放掉一个指定占据的内存空间？（）"><span class="toc-text">15.如何放掉一个指定占据的内存空间？（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16-一般情况下，以下哪个选项不是关系数据模型与对象模型之间匹配关系？"><span class="toc-text">16.一般情况下，以下哪个选项不是关系数据模型与对象模型之间匹配关系？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#17-下列关于Java并发的说法中正确的是（）"><span class="toc-text">17.下列关于Java并发的说法中正确的是（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#18-以下代码执行后输出结果为（-）"><span class="toc-text">18.以下代码执行后输出结果为（ ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#19-有关hashMap跟hashTable的区别，说法正确的是？"><span class="toc-text">19.有关hashMap跟hashTable的区别，说法正确的是？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20-以下可以正确获取结果集的有"><span class="toc-text">20.以下可以正确获取结果集的有?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐"><span class="toc-text">推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文末"><span class="toc-text">文末</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-编译Java-Application-源程序文件将产生相应的字节码文件，这些字节码文件的扩展名为-。"><span class="toc-text">1.编译Java  Application 源程序文件将产生相应的字节码文件，这些字节码文件的扩展名为(      )。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-问以下哪个说法是正确的？（）"><span class="toc-text">2. 问以下哪个说法是正确的？（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-以下哪个接口的定义是正确的？（-）"><span class="toc-text">3.以下哪个接口的定义是正确的？（ ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-以下会产生信息丢失的类型转换是-）"><span class="toc-text">4.以下会产生信息丢失的类型转换是( ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-以下代码的输出的正确结果是"><span class="toc-text">5.以下代码的输出的正确结果是</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-java中，StringBuilder和StringBuffer的区别，下面说法错误的是？"><span class="toc-text">6.java中，StringBuilder和StringBuffer的区别，下面说法错误的是？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-下列关于修饰符混用的说法，错误的是"><span class="toc-text">7.下列关于修饰符混用的说法，错误的是( )</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-如下语句通过算术运算和逻辑运算之后i和-j的结果是（-）"><span class="toc-text">8.如下语句通过算术运算和逻辑运算之后i和 j的结果是（ ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-以下是java-concurrent包下的4个类，选出差别最大的一个"><span class="toc-text">9.以下是java concurrent包下的4个类，选出差别最大的一个</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-下面有关java实例变量-局部变量-类变量和final变量的说法，错误的是？"><span class="toc-text">10.下面有关java实例变量,局部变量,类变量和final变量的说法，错误的是？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-关于JAVA的垃圾回收机制，下面哪些结论是正确？"><span class="toc-text">11.关于JAVA的垃圾回收机制，下面哪些结论是正确？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-JSP分页代码中，哪个步骤次序是正确的？"><span class="toc-text">12.JSP分页代码中，哪个步骤次序是正确的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-关于访问权限说法正确的是-？"><span class="toc-text">13.关于访问权限说法正确的是 ？ ( )</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-以下代码执行的结果显示是多少（-）？"><span class="toc-text">14.以下代码执行的结果显示是多少（ ）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15-Java多线程有几种实现方法？"><span class="toc-text">15.Java多线程有几种实现方法？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16-在Jdk1-7中，下述说法中抽象类与接口的区别与联系正确的有哪些？"><span class="toc-text">16.在Jdk1.7中，下述说法中抽象类与接口的区别与联系正确的有哪些？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#17-根据下面这个程序的内容，判断哪些描述是正确的：（-）"><span class="toc-text">17.根据下面这个程序的内容，判断哪些描述是正确的：（ ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#18-Java特性中-abstract-class和interface有什么区别（）"><span class="toc-text">18.Java特性中,abstract class和interface有什么区别（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#19-关于下面代码片段叙述正确的是（）"><span class="toc-text">19.关于下面代码片段叙述正确的是（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20-下列那些方法是线程安全的-所调用的方法都存在"><span class="toc-text">20.下列那些方法是线程安全的(所调用的方法都存在)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐"><span class="toc-text">推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文末"><span class="toc-text">文末</span></a></li></ol>
     </div>
   </section>
 
