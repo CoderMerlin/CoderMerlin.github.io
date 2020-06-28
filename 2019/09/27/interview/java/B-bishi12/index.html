@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html>
+<!--浏览器搞笑标题-->
+<script type="text/javascript" src="/js/FunnyTitle.js"></script>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>Java基础笔试练习（十二） | Coder编程</title>
+  
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+  
+  <meta name='theme-color' content='#FFFFFF'>
+  <meta name='msapplication-TileColor' content='#1BC3FB'>
+  <meta name='msapplication-config' content='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicons/browserconfig.xml'>
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
+  
+  
+  <link rel='shortcut icon' type='image/x-icon' href='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicon.ico'>
+  <link rel='icon' type='image/x-icon' sizes='32x32' href='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicons/favicon-32x32.png'>
+  <link rel='apple-touch-icon' type='image/png' sizes='180x180' href='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicons/apple-touch-icon.png'>
+  <link rel='mask-icon' color='#1BC3FB' href='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicons/safari-pinned-tab.svg'>
+  <link rel='manifest' href='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicons/site.webmanifest'>
+  
+
+  
+  <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png">
+  
+
+  
+    
+<link rel="stylesheet" href="/style.css">
+
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+    <!-- ba -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f381e8e0525d208eac6079aaff398084";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover post half'>
+      
+        
+  <h1 class='title'>Coder编程</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;博文
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/projects/"
+            
+            
+            id="projects">
+            <i class='fas fa-code-branch fa-fw'></i>&nbsp;项目
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/friends/"
+            
+              rel="nofollow"
+            
+            
+            id="friends">
+            <i class='fas fa-link fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/about/"
+            
+              rel="nofollow"
+            
+            
+            id="about">
+            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header pure">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="pure"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          Coder编程
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-grin fa-fw'></i>&nbsp;博文
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="categories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="tags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-clock fa-fw'></i>&nbsp;近期文章
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;文章归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/projects/"
+                
+                
+                id="projects">
+								<i class='fas fa-code-branch fa-fw'></i>&nbsp;开源项目
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friends/"
+                
+                  rel="nofollow"
+                
+                
+                id="friends">
+								<i class='fas fa-link fa-fw'></i>&nbsp;我的友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="https://xaoxuu.com/wiki/material-x/"
+                
+                  rel="nofollow"
+                
+                
+                id="https:xaoxuu.comwikimaterial-x">
+								<i class='fas fa-book fa-fw'></i>&nbsp;主题文档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/about/"
+                
+                  rel="nofollow"
+                
+                
+                id="about">
+								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于小站
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+  
+
+  <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    
+
+
+  <section class='meta'>
+    
+    
+      <a title='Java基础笔试练习（十二）' href='/2019/09/27/interview/java/B-bishi12/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/Java-log.png'></a>
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/2019/09/27/interview/java/B-bishi12/">
+        Java基础笔试练习（十二）
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://yoursite.com" rel="nofollow">
+        
+          <img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png">
+        
+        <p>Coder编程</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-09-27</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/%E7%AC%94%E8%AF%95/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>Java&nbsp;/&nbsp;笔试</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item wordcount">
+      <a class='notlink'>
+        <i class="fas fa-keyboard" aria-hidden="true"></i>
+        <p>字数统计:</p>
+        <p>3.5k字</p>
+      </a>
+    </div>
+    <div class="new-meta-item readtime">
+      <a class='notlink'>
+        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+        <p>阅读时长≈</p>
+        <p>13分</p>
+      </a>
+    </div>
+  
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <blockquote>
+<p>每天进步一点，不做curd工程师与Api调用工程师<br>欢迎访问个人网站：<a href="https://www.coder-programming.cn/" target="_blank" rel="noopener">https://www.coder-programming.cn/</a></p>
+</blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/7326374-20ec48686d0a836e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Java基础笔试练习（十二）"></p>
+<h2 id="1-（C-、JAVA）扩展方法能访问被扩展对象的public成员"><a href="#1-（C-、JAVA）扩展方法能访问被扩展对象的public成员" class="headerlink" title="1.（C#、JAVA）扩展方法能访问被扩展对象的public成员"></a>1.（C#、JAVA）扩展方法能访问被扩展对象的public成员</h2><p>A.能<br>B.不能</p>
+<p><strong>答案：</strong><br>A</p>
+<p><strong>解析：</strong><br>翻译一下，子类方法是否能够访问父类中的public成员。</p>
+<h2 id="2-如果子类要调用父类的构造函数，则通过super（）调用来实现。"><a href="#2-如果子类要调用父类的构造函数，则通过super（）调用来实现。" class="headerlink" title="2.如果子类要调用父类的构造函数，则通过super（）调用来实现。"></a>2.如果子类要调用父类的构造函数，则通过super（）调用来实现。</h2><p>A.正确<br>B.错误</p>
+<p><strong>答案：</strong><br>A</p>
+<p><strong>解析：</strong><br>super关键字在子类内部使用，代表父类对象。 访问父类的属性 super.属性名 访问父类的方法 super.方法名() 子类构造方法需要调用父类的构造方法时，在子类的构造方法体里最前面的位置：super() </p>
+<h2 id="3-下列关于Java语言中String和char的说法，正确的是（）"><a href="#3-下列关于Java语言中String和char的说法，正确的是（）" class="headerlink" title="3.下列关于Java语言中String和char的说法，正确的是（）"></a>3.下列关于Java语言中String和char的说法，正确的是（）</h2><p>A.String是Java定义的一种基本数据类型。<br>B.String是以“\0”结尾的char类型的数组char[]。<br>C.使用equals()方法比较两个String是否内容一样（即字符串中的各个字符都一样）。<br>D.Char类型在Java语言里面存储的是ASCII码。</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>A 基本数据类型包括byte，short，int，long，float，double，char，boolean，所以A错。<br>B,C语言当中是这样，java不是， String内部是用char[]数组实现的，不过结尾不用\0。<br>C 对，字符串内容比较用equals方法。<br>D char存储的unicode码，不进可以存储ascII码，汉字也可以。</p>
+<h2 id="4-关于JAVA堆，下面说法错误的是（）？"><a href="#4-关于JAVA堆，下面说法错误的是（）？" class="headerlink" title="4.关于JAVA堆，下面说法错误的是（）？"></a>4.关于JAVA堆，下面说法错误的是（）？</h2><p>A.所有类的实例和数组都是在堆上分配内存的<br>B.堆内存由存活和死亡的对象，空闲碎片区组成<br>C.数组是分配在栈中的<br>D.对象所占的堆内存是由自动内存管理系统回收</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>C应该改为，数组的引用存在栈内存中，而数组对象保存在堆里面。 </p>
+<h2 id="5-java-接口的修饰符可以为（）"><a href="#5-java-接口的修饰符可以为（）" class="headerlink" title="5. java 接口的修饰符可以为（）"></a>5. java 接口的修饰符可以为（）</h2><p>A.private<br>B.protected<br>C.final<br>D.abstract</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>接口是通用的，用来描述方法是干什么用的，方法的默认修饰符为public abstract.不可以为final 是因为方法要被重写， 描述符如果为private或者protected，那么子类重写的方法的描述符也可以为private或者protected，这样就是有了访问显示，不符合接口所要达到的的任何人都可以使用了 </p>
+<h2 id="6-指出下来程序运行的结果是"><a href="#6-指出下来程序运行的结果是" class="headerlink" title="6.指出下来程序运行的结果是"></a>6.指出下来程序运行的结果是</h2><p><img src="https://upload-images.jianshu.io/upload_images/7326374-2d24a42d10bb6bd8?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="代码"></p>
+<p>A.good and abc<br>B.good and gbc<br>C.test ok and abc<br>D.test ok and gbc</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>实参和形参的问题。”ex.change(ex.str, ex.ch)”语句调用”change”方法时，将ex.str变量（实参）的值赋给了”change”方法中的str变量（形参），而将ex.ch（实参）的地址赋给了”change”方法中的ch（形参）。”change”方法运行时，第一条语句改变的是方法中形参的值，对实参没影响，第二条语句由于是直接改变的ch所指地址的值，所以把实参也进行了改变。 </p>
+<h2 id="7-A-是抽象父类或接口，-B-，-C-派生自-A-，或实现-A-，现在-Java-源代码中有如下声明：-问以下哪个说法是正确的？（-）"><a href="#7-A-是抽象父类或接口，-B-，-C-派生自-A-，或实现-A-，现在-Java-源代码中有如下声明：-问以下哪个说法是正确的？（-）" class="headerlink" title="7. A 是抽象父类或接口， B ， C 派生自 A ，或实现 A ，现在 Java 源代码中有如下声明： 问以下哪个说法是正确的？（ ）"></a>7. A 是抽象父类或接口， B ， C 派生自 A ，或实现 A ，现在 Java 源代码中有如下声明： 问以下哪个说法是正确的？（ ）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. A  a0&#x3D;new  A();</span><br><span class="line">2. A  a1 &#x3D;new  B();</span><br><span class="line">3. A  a2&#x3D;new  C();</span><br></pre></td></tr></table></figure>
+
+<p>A.第1行不能通过编译<br>B.第1、2行能通过编译，但第3行编译出错<br>C.第1、2、3行能通过编译，但第2、3行运行时出错<br>D.第1行、第2行和第3行的声明都是正确的</p>
+<p><strong>答案：</strong><br>A</p>
+<p><strong>解析：</strong><br>抽象类和接口不能实例化</p>
+<h2 id="8-try块后必须有catch块。（）"><a href="#8-try块后必须有catch块。（）" class="headerlink" title="8.try块后必须有catch块。（）"></a>8.try块后必须有catch块。（）</h2><p>A.正确<br>B.错误</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>catch可以省略，try的形式有三种：<br>try-catch<br>try-finally<br>try-catch-finally<br>但catch和finally语句不能同时省略！ </p>
+<h2 id="9-以下-不是-Object-类的方法"><a href="#9-以下-不是-Object-类的方法" class="headerlink" title="9. 以下 _____ 不是 Object 类的方法"></a>9. 以下 _____ 不是 Object 类的方法</h2><p>A.clone（）<br>B.finalize()<br>C.toString()<br>D.hasNext()</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>略</p>
+<h2 id="10-指出下列程序运行的结果："><a href="#10-指出下列程序运行的结果：" class="headerlink" title="10.指出下列程序运行的结果："></a>10.指出下列程序运行的结果：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class Example&#123;</span><br><span class="line">    String str&#x3D;new String(&quot;tarena&quot;);</span><br><span class="line">    char[]ch&#x3D;&#123;&#39;a&#39;,&#39;b&#39;,&#39;c&#39;&#125;;</span><br><span class="line">    public static void main(String args[])&#123;</span><br><span class="line">        Example ex&#x3D;new Example();</span><br><span class="line">        ex.change(ex.str,ex.ch);</span><br><span class="line">        System.out.print(ex.str+&quot; and &quot;);</span><br><span class="line">        System.out.print(ex.ch);</span><br><span class="line">    &#125;</span><br><span class="line">    public void change(String str,char ch[])&#123;</span><br><span class="line">   &#x2F;&#x2F;引用类型变量，传递的是地址，属于引用传递。</span><br><span class="line">        str&#x3D;&quot;test ok&quot;;</span><br><span class="line">        ch[0]&#x3D;&#39;g&#39;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>A.tarena and abc<br>B.tarena and gbc<br>C.test ok and abc<br>D.test ok and gbc</p>
+<p><strong>答案：</strong><br>B </p>
+<p><strong>解析：</strong><br>与第六题类似。</p>
+<h2 id="11-以下代码段执行后的输出结果为"><a href="#11-以下代码段执行后的输出结果为" class="headerlink" title="11.以下代码段执行后的输出结果为"></a>11.以下代码段执行后的输出结果为</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public class Test &#123;</span><br><span class="line">	public static void main(String args[]) &#123;</span><br><span class="line">		int x &#x3D; -5;</span><br><span class="line">		int y &#x3D; -12;</span><br><span class="line">		System.out.println(y % x);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>A.-1<br>B.2<br>C.1<br>D.-2</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>取模运算，余数的符号跟被除数符号相同 </p>
+<h2 id="12-下面有关webservice的描述，错误的是？"><a href="#12-下面有关webservice的描述，错误的是？" class="headerlink" title="12.下面有关webservice的描述，错误的是？"></a>12.下面有关webservice的描述，错误的是？</h2><p>A.Webservice是跨平台，跨语言的远程调用技术<br>B.Webservice通信机制实质就是json数据交换<br>C.Webservice采用了soap协议（简单对象协议）进行通信<br>D.WSDL是用于描述 Web Services 以及如何对它们进行访问</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>Webservice是跨平台，跨语言的远程调用技术;它的通信机制实质就是xml数据交换;它采用了soap协议（简单对象协议）进行通信</p>
+<h2 id="13-关于ASCII码和ANSI码，以下说法不正确的是（）？"><a href="#13-关于ASCII码和ANSI码，以下说法不正确的是（）？" class="headerlink" title="13.关于ASCII码和ANSI码，以下说法不正确的是（）？"></a>13.关于ASCII码和ANSI码，以下说法不正确的是（）？</h2><p>A.标准ASCII只使用7个bit<br>B.在简体中文的Windows系统中，ANSI就是GB2312<br>C.ASCII码是ANSI码的子集<br>D.ASCII码都是可打印字符</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>A、标准ASCII只使用7个bit，扩展的ASCII使用8个bit。<br>B、ANSI通常使用 0x00<del>0x7f 范围的1 个字节来表示 1 个英文字符。超出此范围的使用0x80</del>0xFFFF来编码，即扩展的ASCII编码。不同 ANSI 编码之间互不兼容。在简体中文Windows操作系统中，ANSI 编码代表 GBK 编码；在繁体中文Windows操作系统中，ANSI编码代表Big5；在日文Windows操作系统中，ANSI 编码代表 Shift_JIS 编码。<br>C、ANSI通常使用 0x00~0x7f 范围的1 个字节来表示 1 个英文字符，即ASCII码<br>D、ASCII码包含一些特殊空字符 </p>
+<h2 id="14-Test-main-函数执行后的输出是（）"><a href="#14-Test-main-函数执行后的输出是（）" class="headerlink" title="14. Test.main() 函数执行后的输出是（）"></a>14. Test.main() 函数执行后的输出是（）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">public class Test &#123;  </span><br><span class="line">    public static void main(String [] args)&#123;  </span><br><span class="line">        System.out.println(new B().getValue());  </span><br><span class="line">    &#125;  </span><br><span class="line">    static class A&#123;  </span><br><span class="line">        protected int value;  </span><br><span class="line">        public A(int v) &#123;  </span><br><span class="line">            setValue(v);  </span><br><span class="line">        &#125;  </span><br><span class="line">        public void setValue(int value)&#123;  </span><br><span class="line">            this.value &#x3D; value;  </span><br><span class="line">        &#125;  </span><br><span class="line">        public int getValue()&#123;  </span><br><span class="line">            try&#123;  </span><br><span class="line">                value++;  </span><br><span class="line">                return value;  </span><br><span class="line">            &#125; catch(Exception e)&#123;  </span><br><span class="line">                System.out.println(e.toString());  </span><br><span class="line">            &#125; finally &#123;  </span><br><span class="line">                this.setValue(value);  </span><br><span class="line">                System.out.println(value);  </span><br><span class="line">            &#125;  </span><br><span class="line">            return value;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    static class B extends A&#123;  </span><br><span class="line">        public B() &#123;  </span><br><span class="line">            super(5);  </span><br><span class="line">            setValue(getValue() - 3);  </span><br><span class="line">        &#125;  </span><br><span class="line">        public void setValue(int value)&#123;  </span><br><span class="line">            super.setValue(2 * value);  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>A.11 17 34<br>B.22 74 74<br>C.6 7 7<br>D.22 34 17</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>略</p>
+<h2 id="15-final、finally和finalize的区别中，下述说法正确的有？"><a href="#15-final、finally和finalize的区别中，下述说法正确的有？" class="headerlink" title="15.final、finally和finalize的区别中，下述说法正确的有？"></a>15.final、finally和finalize的区别中，下述说法正确的有？</h2><p>A.final用于声明属性，方法和类，分别表示属性不可变，方法不可覆盖，类不可继承。<br>B.finally是异常处理语句结构的一部分，表示总是执行。<br>C.finalize是Object类的一个方法，在垃圾收集器执行的时候会调用被回收对象的此方法，可以覆盖此方法提供垃圾收集时的其他资源的回收，例如关闭文件等。<br>D.引用变量被final修饰之后，不能再指向其他对象，它指向的对象的内容也是不可变的。</p>
+<p><strong>答案：</strong><br>A B</p>
+<p><strong>解析：</strong><br>A，D考的一个知识点，final修饰变量，变量的引用（也就是指向的地址）不可变，但是引用的内容可以变（地址中的内容可变）。<br>B，finally表示总是执行。但是其实finally也有不执行的时候，但是这个题不要扣字眼。</p>
+<ol>
+<li>在try中调用System.exit(0)，强制退出了程序，finally块不执行。</li>
+<li>在进入try块前，出现了异常，finally块不执行。<br>C，finalize方法，这个选项错就错在，这个方法一个对象只能执行一次，只能在第一次进入被回收的队列，而且对象所属于的类重写了finalize方法才会被执行。第二次进入回收队列的时候，不会再执行其finalize方法，而是直接被二次标记，在下一次GC的时候被GC。<br>放一张图吧<br><img src="https://upload-images.jianshu.io/upload_images/7326374-771ace235e3c2b15?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="15"></li>
+</ol>
+<h2 id="16-关于equals和hashCode描述正确的是"><a href="#16-关于equals和hashCode描述正确的是" class="headerlink" title="16.关于equals和hashCode描述正确的是()"></a>16.关于equals和hashCode描述正确的是()</h2><p>A.两个obj，如果equals()相等，hashCode()一定相等（符合代码规范的情况下）<br>B.两个obj，如果hashCode()相等，equals()不一定相等<br>C.两个不同的obj， hashCode()可能相等<br>D.其他都不对</p>
+<p><strong>答案：</strong><br>A B C</p>
+<p><strong>解析：</strong><br>地址比较是通过计算对象的哈希值来比较的，hashcode属于Object的本地方法，对象相等（地址相等），hashcode相等，对象不相等，hashcode()可能相等，哈希冲突 </p>
+<h2 id="17-下面有关java类加载器，说法正确的是？"><a href="#17-下面有关java类加载器，说法正确的是？" class="headerlink" title="17.下面有关java类加载器，说法正确的是？"></a>17.下面有关java类加载器，说法正确的是？</h2><p>A.引导类加载器（bootstrap class loader）：它用来加载 Java 的核心库，是用原生代码来实现的<br>B.扩展类加载器（extensions class loader）：它用来加载 Java 的扩展库。<br>C.系统类加载器（system class loader）：它根据 Java 应用的类路径（CLASSPATH）来加载 Java 类<br>D.tomcat为每个App创建一个Loader，里面保存着此WebApp的ClassLoader。需要加载WebApp下的类时，就取出ClassLoader来使用</p>
+<p><strong>答案：</strong><br>ABCD</p>
+<p><strong>解析：</strong><br> jvm classLoader architecture :</p>
+<p>a、Bootstrap ClassLoader/启动类加载器<br>主要负责jdk_home/lib目录下的核心 api 或 -Xbootclasspath 选项指定的jar包装入工作.</p>
+<p>B、Extension ClassLoader/扩展类加载器<br>主要负责jdk_home/lib/ext目录下的jar包或 -Djava.ext.dirs 指定目录下的jar包装入工作</p>
+<p>C、System ClassLoader/系统类加载器<br>主要负责java -classpath/-Djava.class.path所指的目录下的类与jar包装入工作.</p>
+<p>B、 User Custom ClassLoader/用户自定义类加载器(java.lang.ClassLoader的子类)<br>在程序运行期间, 通过java.lang.ClassLoader的子类动态加载class文件, 体现java动态实时类装入特性. </p>
+<h2 id="18-下面哪项技术可以用在WEB开发中实现会话跟踪实现？"><a href="#18-下面哪项技术可以用在WEB开发中实现会话跟踪实现？" class="headerlink" title="18.下面哪项技术可以用在WEB开发中实现会话跟踪实现？"></a>18.下面哪项技术可以用在WEB开发中实现会话跟踪实现？</h2><p>A.session<br>B.Cookie<br>C.地址重写<br>D.隐藏域</p>
+<p><strong>答案：</strong><br>ABCD</p>
+<p><strong>解析：</strong><br>会话跟踪是一种灵活、轻便的机制，它使Web上的状态编程变为可能。<br>HTTP是一种无状态协议，每当用户发出请求时，服务器就会做出响应，客户端与服务器之间的联系是离散的、非连续的。当用户在同一网站的多个页面之间转换时，根本无法确定是否是同一个客户，会话跟踪技术就可以解决这个问题。当一个客户在多个页面间切换时，服务器会保存该用户的信息。<br>有四种方法可以实现会话跟踪技术：URL重写、隐藏表单域、Cookie、Session。<br>1）.隐藏表单域：<input type="hidden">，非常适合步需要大量数据存储的会话应用。<br>2）.URL 重写:URL 可以在后面附加参数，和服务器的请求一起发送，这些参数为名字/值对。<br>3）.Cookie:一个 Cookie 是一个小的，已命名数据元素。服务器使用 SET-Cookie 头标将它作为 HTTP<br>响应的一部分传送到客户端，客户端被请求保存 Cookie 值，在对同一服务器的后续请求使用一个<br>Cookie 头标将之返回到服务器。与其它技术比较，Cookie 的一个优点是在浏览器会话结束后，甚至<br>在客户端计算机重启后它仍可以保留其值<br>4）.Session：使用 setAttribute(String str,Object obj)方法将对象捆绑到一个会话</p>
+<h2 id="19-下面有关forward和redirect的描述，正确的是-？"><a href="#19-下面有关forward和redirect的描述，正确的是-？" class="headerlink" title="19.下面有关forward和redirect的描述，正确的是() ？"></a>19.下面有关forward和redirect的描述，正确的是() ？</h2><p>A.forward是服务器将控制权转交给另外一个内部服务器对象，由新的对象来全权负责响应用户的请求<br>B.执行forward时，浏览器不知道服务器发送的内容是从何处来，浏览器地址栏中还是原来的地址<br>C.执行redirect时，服务器端告诉浏览器重新去请求地址<br>D.forward是内部重定向，redirect是外部重定向<br>E.redirect默认将产生301 Permanently moved的HTTP响应</p>
+<p><strong>答案：</strong><br>B C D</p>
+<p><strong>解析：</strong></p>
+<p>1.从地址栏显示来说<br>forward是服务器请求资源,服务器直接访问目标地址的URL,把那个URL的响应内容读取过来,然后把这些内容再发给浏览器.浏览器根本不知道服务器发送的内容从哪里来的,所以它的地址栏还是原来的地址.<br>redirect是服务端根据逻辑,发送一个状态码,告诉浏览器重新去请求那个地址.所以地址栏显示的是新的URL.</p>
+<p>2.从数据共享来说<br>forward:转发页面和转发到的页面可以共享request里面的数据.<br>redirect:不能共享数据.</p>
+<p>3.从运用地方来说<br>forward:一般用于用户登陆的时候,根据角色转发到相应的模块.<br>redirect:一般用于用户注销登陆时返回主页面和跳转到其它的网站等.</p>
+<p>4.从效率来说<br>forward:高.<br>redirect:低.</p>
+<h2 id="20-下面关于volatile的功能说法正确的是哪个"><a href="#20-下面关于volatile的功能说法正确的是哪个" class="headerlink" title="20.下面关于volatile的功能说法正确的是哪个"></a>20.下面关于volatile的功能说法正确的是哪个</h2><p>A.原子性<br>B.有序性<br>C.可见性<br>D.持久性</p>
+<p><strong>答案：</strong><br>B C</p>
+<p><strong>解析：</strong><br>synchronized保证三大性，原子性，有序性，可见性，volatile保证有序性，可见性，不能保证原子性 </p>
+<h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><p><a href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIwMTg3NzYyOA==&hid=10&sn=34bfdf3ba4ff1ef1852e392195616f4e" target="_blank" rel="noopener">笔试内容集合</a> 持续更新中….<br><a href="https://www.processon.com/i/5cd53c2fe4b01941c8cf1c21" target="_blank" rel="noopener">ProcessOn是一个在线作图工具的聚合平台~</a></p>
+<h2 id="文末"><a href="#文末" class="headerlink" title="文末"></a>文末</h2><blockquote>
+<p>欢迎关注个人微信公众号：<strong>Coder编程</strong><br>欢迎关注<strong>Coder编程</strong>公众号，主要分享数据结构与算法、Java相关知识体系、框架知识及原理、Spring全家桶、微服务项目实战、DevOps实践之路、每日一篇互联网大厂面试或笔试题以及PMP项目管理知识等。更多精彩内容正在路上~<br>新建了一个qq群：315211365，欢迎大家进群交流一起学习。谢谢了！也可以介绍给身边有需要的朋友。</p>
+</blockquote>
+<blockquote>
+<p>文章收录至<br>Github: <a href="https://github.com/CoderMerlin/coder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://gitee.com/573059382/coder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~<br><img src="https://upload-images.jianshu.io/upload_images/7326374-9d966dc5c0e1321a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="微信公众号"></p>
+</blockquote>
+
+      </div>
+      
+      
+        <br>
+        
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-27T20:06:00+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>更新于 2019年9月27日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AC%94%E8%AF%95/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>笔试</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/09/27/interview/java/B-bishi12/&title=Java基础笔试练习（十二） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2019/09/27/interview/java/B-bishi12/&title=Java基础笔试练习（十二） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/09/27/interview/java/B-bishi12/&title=Java基础笔试练习（十二） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+      
+      
+          <div class="prev-next">
+              
+                  <section class="prev">
+                      <span class="art-item-left">
+                          <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
+                          <h4>
+                              <a href="/2019/09/30/interview/java/B-bishi13/" rel="prev" title="Java基础笔试练习（十三）">
+                                
+                                    Java基础笔试练习（十三）
+                                
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/Java/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Java</a> <a class="tag" href="/tags/%E7%AC%94%E8%AF%95/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 笔试</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
+              
+                  <section class="next">
+                      <span class="art-item-right" aria-hidden="true">
+                          <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h4>
+                              <a href="/2019/09/26/interview/java/B-bishi11/" rel="prev" title="Java基础笔试练习（十一）">
+                                  
+                                      Java基础笔试练习（十一）
+                                  
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/Java/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Java</a> <a class="tag" href="/tags/%E7%AC%94%E8%AF%95/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 笔试</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
+          </div>
+      
+    </section>
+  </article>
+
+
+
+  <!-- 显示推荐文章和评论 -->
+
+
+
+  
+
+
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: 'Java基础笔试练习（十二）',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+    
+    
+      
+      
+        
+          
+          
+            
+              <section class='widget author'>
+  <div class='content pure'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png'/>
+      </div>
+    
+    
+      <div class='text'>
+        
+        
+        
+          <p><span id="jinrishici-sentence">Coder编程</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="/atom.xml"
+              class="social fab fa-weixin flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="mailto:573059382@qq.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://github.com/CoderMerlin"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://y.qq.com/portal/profile.html#stat=y_new.top.user_pic"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget plain'>
+  
+<header class='pure'>
+  <div><i class="fas fa-file fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;欢迎关注微信公众号</div>
+  
+</header>
+
+  <div class='content pure'>
+    <p><strong><em>QQ交流群：315211365</em></strong><br><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming-wechat.webp.jpg" alt="微信公众号"></p>
+
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget toc-wrapper'>
+    
+<header class='pure'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+  
+</header>
+
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-（C-、JAVA）扩展方法能访问被扩展对象的public成员"><span class="toc-text">1.（C#、JAVA）扩展方法能访问被扩展对象的public成员</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-如果子类要调用父类的构造函数，则通过super（）调用来实现。"><span class="toc-text">2.如果子类要调用父类的构造函数，则通过super（）调用来实现。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-下列关于Java语言中String和char的说法，正确的是（）"><span class="toc-text">3.下列关于Java语言中String和char的说法，正确的是（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-关于JAVA堆，下面说法错误的是（）？"><span class="toc-text">4.关于JAVA堆，下面说法错误的是（）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-java-接口的修饰符可以为（）"><span class="toc-text">5. java 接口的修饰符可以为（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-指出下来程序运行的结果是"><span class="toc-text">6.指出下来程序运行的结果是</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-A-是抽象父类或接口，-B-，-C-派生自-A-，或实现-A-，现在-Java-源代码中有如下声明：-问以下哪个说法是正确的？（-）"><span class="toc-text">7. A 是抽象父类或接口， B ， C 派生自 A ，或实现 A ，现在 Java 源代码中有如下声明： 问以下哪个说法是正确的？（ ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-try块后必须有catch块。（）"><span class="toc-text">8.try块后必须有catch块。（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-以下-不是-Object-类的方法"><span class="toc-text">9. 以下 _____ 不是 Object 类的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-指出下列程序运行的结果："><span class="toc-text">10.指出下列程序运行的结果：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-以下代码段执行后的输出结果为"><span class="toc-text">11.以下代码段执行后的输出结果为</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-下面有关webservice的描述，错误的是？"><span class="toc-text">12.下面有关webservice的描述，错误的是？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-关于ASCII码和ANSI码，以下说法不正确的是（）？"><span class="toc-text">13.关于ASCII码和ANSI码，以下说法不正确的是（）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-Test-main-函数执行后的输出是（）"><span class="toc-text">14. Test.main() 函数执行后的输出是（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15-final、finally和finalize的区别中，下述说法正确的有？"><span class="toc-text">15.final、finally和finalize的区别中，下述说法正确的有？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16-关于equals和hashCode描述正确的是"><span class="toc-text">16.关于equals和hashCode描述正确的是()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#17-下面有关java类加载器，说法正确的是？"><span class="toc-text">17.下面有关java类加载器，说法正确的是？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#18-下面哪项技术可以用在WEB开发中实现会话跟踪实现？"><span class="toc-text">18.下面哪项技术可以用在WEB开发中实现会话跟踪实现？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#19-下面有关forward和redirect的描述，正确的是-？"><span class="toc-text">19.下面有关forward和redirect的描述，正确的是() ？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20-下面关于volatile的功能说法正确的是哪个"><span class="toc-text">20.下面关于volatile的功能说法正确的是哪个</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐"><span class="toc-text">推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文末"><span class="toc-text">文末</span></a></li></ol>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget grid'>
+  
+<header class='pure'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content pure'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/blog/archives/" href="/blog/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="blogarchives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          文章归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/projects/" href="/projects/"
+          
+          
+          id="projects">
+          
+            <i class="fas fa-code-branch fa-fw" aria-hidden="true"></i>
+          
+          开源项目
+        </a></li>
+      
+        <li><a class="flat-box" title="/friends/" href="/friends/"
+          
+            rel="nofollow"
+          
+          
+          id="friends">
+          
+            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
+          
+          我的友链
+        </a></li>
+      
+        <li><a class="flat-box" title="https://xaoxuu.com/wiki/material-x/" href="https://xaoxuu.com/wiki/material-x/"
+          
+            rel="nofollow"
+          
+          
+          id="https:xaoxuu.comwikimaterial-x">
+          
+            <i class="fas fa-book fa-fw" aria-hidden="true"></i>
+          
+          主题文档
+        </a></li>
+      
+        <li><a class="flat-box" title="/about/" href="/about/"
+          
+            rel="nofollow"
+          
+          
+          id="about">
+          
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+          
+          关于小站
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget category'>
+    
+<header class='pure'>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/categories/"
+    title="categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/categories/HEXO/" href="/categories/HEXO/"><div class='name'>HEXO</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/Java/" href="/categories/Java/"><div class='name'>Java</div><div class='badge'>(16)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/PMP/" href="/categories/PMP/"><div class='name'>PMP</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E5%B7%A5%E5%85%B7/" href="/categories/%E5%B7%A5%E5%85%B7/"><div class='name'>工具</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E7%AC%94%E8%AF%95/" href="/categories/%E7%AC%94%E8%AF%95/"><div class='name'>笔试</div><div class='badge'>(14)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E7%BE%8E%E6%96%87/" href="/categories/%E7%BE%8E%E6%96%87/"><div class='name'>美文</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E9%9D%A2%E8%AF%95/" href="/categories/%E9%9D%A2%E8%AF%95/"><div class='name'>面试</div><div class='badge'>(2)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget tagcloud'>
+    
+<header class='pure'>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/tags/"
+    title="tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <a href="/tags/HEXO/" style="font-size: 19px; color: #777">HEXO</a> <a href="/tags/Java/" style="font-size: 24px; color: #555">Java</a> <a href="/tags/PMP/" style="font-size: 19px; color: #777">PMP</a> <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" style="font-size: 14px; color: #999">多线程</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1/" style="font-size: 14px; color: #999">百度统计</a> <a href="/tags/%E7%AC%94%E8%AF%95/" style="font-size: 21.5px; color: #666">笔试</a> <a href="/tags/%E7%BE%8E%E6%96%87/" style="font-size: 14px; color: #999">美文</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 16.5px; color: #888">面试</a>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="/atom.xml"
+              class="social fab fa-weixin flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="mailto:573059382@qq.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://github.com/CoderMerlin"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://y.qq.com/portal/profile.html#stat=y_new.top.user_pic"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+    <br>
+    Copyright <i class="far fa-copyright"></i> 2019-2020
+    <a href="https://www.itrhx.com/" target="_blank"> Coder编程 </a>丨
+    <img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.9/images/icp.png" style="width:18px;height:18px;margin-bottom:-2px" alt="ICP">
+    <a href="http://www.beian.miit.gov.cn/" target="_blank">湘ICP备19009564号</a>丨
+    <!-- 网站运行时间 -->
+    <span id="timeDate">正在载入...</span><span id="times"><span><i class="fa fa-spinner fa-spin"> </i></span></span>
+    <script>
+    var now = new Date(); 
+    function createtime() {
+      var grt= new Date("05/10/2020 17:38:00");//建站时间2020-05-10
+      now.setTime(now.getTime()+250); 
+      days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+      hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+      if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+      mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+      seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+      snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+      document.getElementById("timeDate").innerHTML = "本站已运行 "
+      document.getElementById("times").innerHTML = dnum +" 天 " + hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      /*document.getElementById("times").style.color="#0056FF";*/
+      }
+      setInterval("createtime()",250);
+    </script>丨
+    <!--<a href="/sitemap.xml" target="_blank">站点地图</a>丨-->
+    <a href="https://tongji.baidu.com/web/10000203640/overview/index?siteId=15072463" target="_blank">百度统计</a>丨
+    <script type="text/javascript">
+	var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+	document.write(unescape("%3Cspan id='cnzz_stat_icon_1275909280'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1275909280%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+	</script><br><br>
+    <div class="github-badge">
+      <a style="color: #fff" rel="license" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动">
+      <span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo</span></a>
+    </div>
+    <div class="github-badge">
+      <a style="color: #fff" rel="license" href="https://github.com/" target="_blank" title="静态网页托管于 GitHub Pages 和 Coding Pages">
+      <span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">GitHub & Coding</span></a>
+    </div>
+    <div class="github-badge">
+      <a style="color: #fff" rel="license" href="https://www.aliyun.com/" target="_blank" title="阿里云提供域名相关服务">
+      <span class="badge-subject">DNS</span><span class="badge-value bg-blueviolet">Aliyun</span></a>
+    </div>
+    <div class="github-badge">
+      <a style="color: #fff" rel="license" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr 提供 CDN 加速服务">
+      <span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a>
+    </div>
+    <div class="github-badge">
+        <a style="color: #fff" rel="license" href="https://xaoxuu.com/wiki/material-x/" target="_blank" title="站点使用 Material X 主题">
+      <span class="badge-subject">Theme</span><span class="badge-value bg-blue">Material X</span></a>
+    </div>
+    <div class="github-badge">
+      <a style="color: #fff" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可">
+      <span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a>
+    </div>
+    <div class="github-badge">
+      <a style="color: #fff" rel="license" href="https://996.icu/" target="_blank" title="支持 996.ICU">
+      <span class="badge-subject">Link</span><span class="badge-value bg-red">996.ICU</span></a>
+    </div>
+    <div class="github-badge">
+      <span class="badge-subject">UV</span><span class="badge-value bg-orange" id="busuanzi_value_site_uv"></span>
+    </div>
+    <div class="github-badge">
+      <span class="badge-subject">PV</span><span class="badge-value bg-brightgreen" id="busuanzi_value_site_pv"></span>
+    </div>
+    <div class="github-badge">
+      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">67.5k</span>
+    </div>
+</footer>
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ('.cover') {
+          $('.cover').backstretch(
+          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
