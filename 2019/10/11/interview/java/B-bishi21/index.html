@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Java基础笔试练习（十一） | Coder编程</title>
+  <title>Java基础笔试练习（二十一） | Coder编程</title>
   
   
 
@@ -316,15 +316,15 @@
   <section class='meta'>
     
     
-      <a title='Java基础笔试练习（十一）' href='/2019/09/26/interview/java/B-bishi11/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/Java-log.png'></a>
+      <a title='Java基础笔试练习（二十一）' href='/2019/10/11/interview/java/B-bishi21/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/Java-log.png'></a>
     
     <div class="meta" id="header-meta">
       
         
   
     <h1 class="title">
-      <a href="/2019/09/26/interview/java/B-bishi11/">
-        Java基础笔试练习（十一）
+      <a href="/2019/10/11/interview/java/B-bishi21/">
+        Java基础笔试练习（二十一）
       </a>
     </h1>
   
@@ -355,7 +355,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-09-26</p>
+    <p>2019-10-11</p>
   </a>
 </div>
 
@@ -399,14 +399,14 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>3.4k字</p>
+        <p>3k字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
       <a class='notlink'>
         <i class="fas fa-hourglass-half" aria-hidden="true"></i>
         <p>阅读时长≈</p>
-        <p>13分</p>
+        <p>11分</p>
       </a>
     </div>
   
@@ -431,92 +431,88 @@
         <blockquote>
 <p>每天进步一点，不做curd工程师与Api调用工程师<br>欢迎访问个人网站：<a href="https://www.coder-programming.cn/" target="_blank" rel="noopener">https://www.coder-programming.cn/</a></p>
 </blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/7326374-dd73f2cd96177d28.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Java基础笔试练习（十一）"></p>
-<h2 id="1-下面的方法，当输入为2的时候返回值是多少？"><a href="#1-下面的方法，当输入为2的时候返回值是多少？" class="headerlink" title="1.下面的方法，当输入为2的时候返回值是多少？"></a>1.下面的方法，当输入为2的时候返回值是多少？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public static int getValue(int i) &#123;</span><br><span class="line">	int result &#x3D; 0;</span><br><span class="line">	switch (i) &#123;</span><br><span class="line">		case 1:</span><br><span class="line">		result &#x3D; result + i;</span><br><span class="line">		case 2:</span><br><span class="line">		result &#x3D; result + i * 2;</span><br><span class="line">		case 3:</span><br><span class="line">		result &#x3D; result + i * 3;</span><br><span class="line">	&#125;</span><br><span class="line">   return result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>A.0<br>B.2<br>C.4<br>D.10</p>
-<p><strong>答案：</strong><br>D</p>
-<p><strong>解析：</strong><br>没有break，发生case穿透现象，程序会继续向下执行，直到遇到break或者结束switch语句的大括号为止。 </p>
-<h2 id="2-Java是从（）语言改进重新设计"><a href="#2-Java是从（）语言改进重新设计" class="headerlink" title="2.Java是从（）语言改进重新设计"></a>2.Java是从（）语言改进重新设计</h2><p>A.Ada<br>B.C++<br>C.Pascal<br>D.BASIC</p>
-<p><strong>答案：</strong><br>B</p>
-<p><strong>解析：</strong><br>ava是类C语言，从C++改进而来 去掉了指针和多继承，采用自动垃圾回收等 </p>
-<h2 id="3-一个以”-java”为后缀的源文件，哪些说法是正确的？"><a href="#3-一个以”-java”为后缀的源文件，哪些说法是正确的？" class="headerlink" title="3.一个以”. java”为后缀的源文件，哪些说法是正确的？"></a>3.一个以”. java”为后缀的源文件，哪些说法是正确的？</h2><p>A.只能包含一个类，类名必须与文件名相同<br>B.只能包含与文件名相同的类，以及其中的内部类<br>C.只能有一个与文件名相同的类，可以包含其他类<br>D.可以包含任意类</p>
-<p><strong>答案：</strong><br>C</p>
-<p><strong>解析：</strong><br>C。一个与文件名相同的public的类敏感词类可随意多个。</p>
-<h2 id="4-在JAVA中，下面关于String类和StringBuffer类的描述正确的是那一个？"><a href="#4-在JAVA中，下面关于String类和StringBuffer类的描述正确的是那一个？" class="headerlink" title="4.在JAVA中，下面关于String类和StringBuffer类的描述正确的是那一个？"></a>4.在JAVA中，下面关于String类和StringBuffer类的描述正确的是那一个？</h2><p>A.StringBuffer类的对象调用toString（）方法将返回String类型的结果<br>B.两个类都有append（）方法<br>C.可以直接将字符串“test”赋值给声明的String类和StringBuffer类的变量<br>D.两个类的实例的值都能够被改变</p>
-<p><strong>答案：</strong><br>A</p>
-<p><strong>解析：</strong><br>A. StringBuffer类调用toString（）方法后将转换为String类型   正确<br>B. String类型中没有append（）方法，要追加字符串”+“即可，也没有必要 append<br>C. 可以直接将字符串“test”复制给声明的Stirng类的变量，而StringBuffer类的不行<br>D. String 实例 是不可变的<br>String 对象/实例 是不可以被改变的。</p>
-<p>当new一个String对象时，JVM会在内存中创建一个String对象，当另外一个String对象值与它一样时，会将该对象直接指向对应的地址。 </p>
-<h2 id="5-下列关于构造方法不正确的是：（-）"><a href="#5-下列关于构造方法不正确的是：（-）" class="headerlink" title="5. 下列关于构造方法不正确的是：（ ）"></a>5. 下列关于构造方法不正确的是：（ ）</h2><p>A.类的构造方法和类同名<br>B.一个类可以有多个构造方法<br>C.在实例化对象时必须调用类的构造方法<br>D.构造方法可以和该类其他方法一样被该类对象调用</p>
-<p><strong>答案：</strong><br>D</p>
-<p><strong>解析：</strong><br>1.构造方法也是类的方法，可以在创建对象时为成员变量赋值<br>2.构造方法可以进行重载，但是参数列表必须不相同，不以返回值和访问级别进行区分<br>3.构造方法没有返回值<br>4.构造方法一定要与定义为public的类同名<br>5.构造方法不能被对象调用，只会创建对象，使用new关键字 </p>
-<h2 id="6-根据下面的程序代码，哪些选项的值返回true？"><a href="#6-根据下面的程序代码，哪些选项的值返回true？" class="headerlink" title="6.根据下面的程序代码，哪些选项的值返回true？"></a>6.根据下面的程序代码，哪些选项的值返回true？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">public class Square &#123;  </span><br><span class="line">    long width;  </span><br><span class="line">    public Square(long l) &#123;   </span><br><span class="line">        width &#x3D; l;  </span><br><span class="line">    &#125;  </span><br><span class="line">    public static void main(String arg[]) &#123;   </span><br><span class="line">        Square a, b, c;  </span><br><span class="line">        a &#x3D; new Square(42L);   </span><br><span class="line">        b &#x3D; new Square(42L);   </span><br><span class="line">        c &#x3D; b;   </span><br><span class="line">        long s &#x3D; 42L;  </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>A.a == b<br>B.s == a<br>C.b == c<br>D.a.equals(s)</p>
-<p><strong>答案：</strong><br>C</p>
-<p><strong>解析：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a &#x3D; new Square(42L);   </span><br><span class="line">b &#x3D; new Square(42L);</span><br></pre></td></tr></table></figure>
-<p>这里new了两个对象，所以a,b不是同一个引用a!=b ,s的类型跟a,b不同类型，所以s!=a,s!=b<br>c = b; 这里b，c是同一个对象的引用，所以b==c是true</p>
-<h2 id="7-根据以下代码段-执行new-Child-“John”-10-要使数据域data得到10，则子类空白处应该填写-。"><a href="#7-根据以下代码段-执行new-Child-“John”-10-要使数据域data得到10，则子类空白处应该填写-。" class="headerlink" title="7.根据以下代码段,执行new Child(“John”, 10); 要使数据域data得到10，则子类空白处应该填写(    )。"></a>7.根据以下代码段,执行new Child(“John”, 10); 要使数据域data得到10，则子类空白处应该填写(    )。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> class Parent &#123;</span><br><span class="line">    private int data;</span><br><span class="line">    public Parent(int d)&#123; data &#x3D; d; &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Child extends Parent&#123;</span><br><span class="line">    String name;</span><br><span class="line">    public Child(String s, int d)&#123;</span><br><span class="line">        ___________________</span><br><span class="line">        name &#x3D; s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>A.data = d;<br>B.super.data = d;<br>C.Parent(d);<br>D.super(d);</p>
-<p><strong>答案：</strong><br>D</p>
-<p><strong>解析：</strong><br>1.子父类存在同名成员时，子类中默认访问子类的成员，可通过super指定访问父类的成员，格式：super.xx  (注：xx是成员名)；<br>2.创建子类对象时，默认会调用父类的无参构造方法，可通过super指定调用父类其他构造方法，格式：s uper(yy) (注：yy是父类构造方法需要传递的参数) </p>
-<h2 id="8-Given-the-following-code-What-is-the-result"><a href="#8-Given-the-following-code-What-is-the-result" class="headerlink" title="8.Given the following code:() What is the result?"></a>8.Given the following code:() What is the result?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public class Test &#123;</span><br><span class="line">    private static int j &#x3D; 0;</span><br><span class="line">    private static Boolean methodB(int k) &#123;</span><br><span class="line">        j +&#x3D; k;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    public static void methodA(int i) &#123;</span><br><span class="line">        boolean b;</span><br><span class="line">        b &#x3D; i &lt; 10 | methodB(4);</span><br><span class="line">        b &#x3D; i &lt; 10 || methodB(8);</span><br><span class="line">    &#125;</span><br><span class="line">    public static void main(String args[]) &#123;</span><br><span class="line">        methodA(0);</span><br><span class="line">        System.out.println(j);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>A.The program prints”0”<br>B.The program prints”4”<br>C.The program prints”8”<br>D.The program prints”12”<br>E.The code does not complete.</p>
-<p><strong>答案：</strong><br>B</p>
-<p><strong>解析：</strong><br>选 B<br>在main函数中先调用methodA（0）<br>在methodA中，第二行<br>b = i &lt; 10 | methodB(4); //中间为与计算符，执行完methodB(4)后，j = 4<br>methodA中，第三行<br>b = i &lt; 10 || methodB(8);//中间为或计算符，因为i &lt; 10 已成立，不需要后续计算<br>所以最后结果输出为4</p>
-<h2 id="9-一个文件中的字符要写到另一个文件中，首先需要（-）？"><a href="#9-一个文件中的字符要写到另一个文件中，首先需要（-）？" class="headerlink" title="9.一个文件中的字符要写到另一个文件中，首先需要（ ）？"></a>9.一个文件中的字符要写到另一个文件中，首先需要（ ）？</h2><p>A.System.out.print (buffer[i]);<br>B.FileOutputStream fout = new FileOutputStream(this.filename);<br>C.FileInputStream fin = new FileInputStream(this.filename);<br>D.System.in.read(buffer)</p>
-<p><strong>答案：</strong><br>C</p>
-<p><strong>解析：</strong><br>程序的逻辑很简单。程序必须打开两个文件，以可读的方式打开一个已有文件和以可写的方式打开一个新文件，后将已有文件中的内容，暂时存放在内存中，再写入新的文件，后关闭所有文件，程序结束。<br>根据题意，首先需要读入一个文件中的字符，需要FileInputStream fin = new FileInputStream(this.filename);</p>
-<h2 id="10-阅读以下-foo-函数，请问它的时间复杂度是："><a href="#10-阅读以下-foo-函数，请问它的时间复杂度是：" class="headerlink" title="10. 阅读以下 foo 函数，请问它的时间复杂度是："></a>10. 阅读以下 foo 函数，请问它的时间复杂度是：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">int foo(intarray[], int n, int key)&#123;</span><br><span class="line">	int n1&#x3D;0,n2&#x3D;n-1,m;</span><br><span class="line">	while(n1&lt;&#x3D;n2)&#123;</span><br><span class="line">		m&#x3D;(n1+n2)&#x2F;2;</span><br><span class="line">		if(array[m]&#x3D;&#x3D;key)</span><br><span class="line">			return m;</span><br><span class="line">		if(array[m]&gt;key)</span><br><span class="line">			n2&#x3D;m-1;</span><br><span class="line">		else</span><br><span class="line">			n1&#x3D;m+1;</span><br><span class="line">	&#125;</span><br><span class="line">	return -1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>A.O(n2)<br>B.O(n3)<br>C.O(log(n))<br>D.O(n)</p>
-<p><strong>答案：</strong><br>C</p>
-<p><strong>解析：</strong><br>二分查找时间复杂度为O（logn） ，关注我的微信公众号，里面有关于时间复杂度和空间复杂度介绍的文章。</p>
-<h2 id="11-下列关于管道（Pipe）通信的叙述中，正确的是（）？"><a href="#11-下列关于管道（Pipe）通信的叙述中，正确的是（）？" class="headerlink" title="11.下列关于管道（Pipe）通信的叙述中，正确的是（）？"></a>11.下列关于管道（Pipe）通信的叙述中，正确的是（）？</h2><p>A.进程对管道进行读操作和写操作都可能被阻塞<br>B.一个管道只能有一个进程或一个写进程对其操作<br>C.一个管道可实现双向数据传输<br>D.管道的容量仅受磁盘容量大小限制</p>
-<p><strong>答案：</strong><br>A</p>
-<p><strong>解析：</strong><br>A.正确，因为管道为空，读操作会被阻塞；管道满了，写操作会被阻塞<br>B.可以有多个进程对其读；也可以有多个进程写，只不过不能同时写。并且题目没有说“同时”，B不对<br>C.匿名管道只能单向；命名管道可以双向；所以C过于绝对<br>D.管道是内存中的，所以D不对</p>
-<h2 id="12-要导入java-awt-event下面的所有类，叙述正确的是？"><a href="#12-要导入java-awt-event下面的所有类，叙述正确的是？" class="headerlink" title="12.要导入java/awt/event下面的所有类，叙述正确的是？()"></a>12.要导入java/awt/event下面的所有类，叙述正确的是？()</h2><p>A.import java.awt.<em>和import java.awt.event.*都可以<br>B.只能是import java.awt.</em><br>C.只能是import java.awt.event.*<br>D.import java.awt.<em>和import java.awt.event.</em>都不可以</p>
-<p><strong>答案：</strong><br>C</p>
-<p><strong>解析：</strong><br>导包只可以导到当前层，不可以再导入包里面的包中的类 </p>
-<h2 id="13-对于JVM内存配置参数："><a href="#13-对于JVM内存配置参数：" class="headerlink" title="13.对于JVM内存配置参数："></a>13.对于JVM内存配置参数：</h2><blockquote>
-<p>-Xmx10240m -Xms10240m -Xmn5120m -XXSurvivorRatio=3<br>,其最小内存值和Survivor区总大小分别是（） </p>
-</blockquote>
-<p>A.5120m，1024m<br>B.5120m，2048m<br>C.10240m，1024m<br>D.10240m，2048m</p>
-<p><strong>答案：</strong><br>D</p>
-<p><strong>解析：</strong><br>-Xmx：最大堆大小<br>-Xms：初始堆大小<br>-Xmn: 年轻代大小<br>-XXSurvivorRatio：年轻代中Eden区与Survivor区的大小比值<br>年轻代5120m， Eden：Survivor=3，Survivor区大小=1024m（Survivor区有两个，即将年轻代分为5份，每个Survivor区占一份），总大小为2048m。<br>-Xms初始堆大小即最小内存值为10240m </p>
-<h2 id="14-URL-u-new-URL-“http-www-123-com-quot-。如果www-123-com不存在，则返回-。"><a href="#14-URL-u-new-URL-“http-www-123-com-quot-。如果www-123-com不存在，则返回-。" class="headerlink" title="14.URL u =new URL(“http://www.123.com&quot;);。如果www.123.com不存在，则返回______。"></a>14.URL u =new URL(“<a href="http://www.123.com&quot;);。如果www.123.com不存在，则返回______。" target="_blank" rel="noopener">http://www.123.com&quot;);。如果www.123.com不存在，则返回______。</a></h2><p>A.<a href="http://www.123.com" target="_blank" rel="noopener">http://www.123.com</a><br>B.””<br>C.null<br>D.抛出异常</p>
-<p><strong>答案：</strong><br>A</p>
-<p><strong>解析：</strong><br>new URL()时必须捕获检查异常，但这个异常是由于字符串格式和URL不符导致的，与网址是否存在无关。URL的toString方法返回字符串，无论网址是否存在</p>
-<h2 id="15-存根（Stub）与以下哪种技术有关"><a href="#15-存根（Stub）与以下哪种技术有关" class="headerlink" title="15.存根（Stub）与以下哪种技术有关"></a>15.存根（Stub）与以下哪种技术有关</h2><p>A.交换<br>B.动态链接<br>C.动态加载<br>D.磁盘调度</p>
-<p><strong>答案：</strong><br>B</p>
-<p><strong>解析：</strong><br>理解为适配器模式，继承该类则不需要实现一个接口全部方法。</p>
-<h2 id="16-Java中的集合类包括ArrayList、LinkedList、HashMap等类，下列关于集合类描述正确的是（）"><a href="#16-Java中的集合类包括ArrayList、LinkedList、HashMap等类，下列关于集合类描述正确的是（）" class="headerlink" title="16.Java中的集合类包括ArrayList、LinkedList、HashMap等类，下列关于集合类描述正确的是（）"></a>16.Java中的集合类包括ArrayList、LinkedList、HashMap等类，下列关于集合类描述正确的是（）</h2><p>A.ArrayList和LinkedList均实现了List接口<br>B.ArrayList的访问速度比LinkedList快<br>C.添加和删除元素时，ArrayList的表现更佳<br>D.HashMap实现Map接口，它允许任何类型的键和值对象，并允许将null用作键或值</p>
-<p><strong>答案：</strong><br>A B D</p>
-<p><strong>解析：</strong><br>关于D,值对象可以允许null</p>
-<h2 id="17-下列说法正确的是（）？"><a href="#17-下列说法正确的是（）？" class="headerlink" title="17.下列说法正确的是（）？"></a>17.下列说法正确的是（）？</h2><p>A.我们直接调用Thread对象的run方法会报异常，所以我们应该使用start方法来开启一个线程<br>B.一个进程是一个独立的运行环境，可以被看做一个程序或者一个应用。而线程是在进程中执行的一个任务。Java运行环境是一个包含了不同的类和程序的单一进程。线程可以被称为轻量级进程。线程需要较少的资源来创建和驻留在进程中，并且可以共享进程中的资源<br>C.synchronized可以解决可见性问题，volatile可以解决原子性问题<br>D.ThreadLocal用于创建线程的本地变量，该变量是线程之间不共享的</p>
-<p><strong>答案：</strong><br>B D</p>
-<p><strong>解析：</strong><br>volatile与synchronized的区别：<br>volatile本质是在告诉jvm当前变量在寄存器中的值是不确定的,需要从主存中读取,synchronized则是锁定当前变量,只有当前线程可以访问该变量,其他线程被阻塞住.<br>volatile仅能使用在变量级别,synchronized则可以使用在变量,方法.<br>volatile仅能实现变量的修改可见性,但不具备原子特性,而synchronized则可以保证变量的修改可见性和原子性.<br>volatile不会造成线程的阻塞,而synchronized可能会造成线程的阻塞.<br>volatile标记的变量不会被编译器优化,而synchronized标记的变量可以被编译器优化.</p>
-<h2 id="18-对于构造方法，下列叙述正确的是（-）。"><a href="#18-对于构造方法，下列叙述正确的是（-）。" class="headerlink" title="18.对于构造方法，下列叙述正确的是（ ）。"></a>18.对于构造方法，下列叙述正确的是（ ）。</h2><p>A.构造方法的优先级一般比代码块低。<br>B.构造方法的返回类型只能是void型。<br>C.构造方法的主要作用是完成对类的对象的初始化工作。<br>D.一般在创建新对象时，系统会自动调用构造方法。</p>
-<p><strong>答案：</strong><br>A C D</p>
-<p><strong>解析：</strong><br>A：静态成员变量或静态代码块&gt;main方法&gt;非静态成员变量或非静态代码块&gt;构造方法<br>B：think in java中提到构造器本身并没有任何返回值。<br>C: 构造方法的主要作用是完成对类的对象的初始化工作。<br>D: 一般在创建(new)新对象时，系统会自动调用构造方法。</p>
-<h2 id="19-下列有关JAVA异常处理的叙述中正确的是（）"><a href="#19-下列有关JAVA异常处理的叙述中正确的是（）" class="headerlink" title="19.下列有关JAVA异常处理的叙述中正确的是（）"></a>19.下列有关JAVA异常处理的叙述中正确的是（）</h2><p>A.finally是为确保一段代码不管是否捕获异常都会被执行的一段代码<br>B.throws是用来声明一个成员方法可能抛出的各种非运行异常情况<br>C.final用于可以声明属性和方法，分别表示属性的不可变及方法的不可继承<br>D.throw是用来明确地抛出一个异常情况</p>
-<p><strong>答案：</strong><br>A B D</p>
-<p><strong>解析：</strong><br>C根本就跟异常处理没有关系，所以不选。</p>
-<h2 id="20-character流和byte流的区别不包括（）"><a href="#20-character流和byte流的区别不包括（）" class="headerlink" title="20.character流和byte流的区别不包括（）"></a>20.character流和byte流的区别不包括（）</h2><p>A.每次读入的字节数不同<br>B.前者带有缓冲，后者没有。<br>C.前者是字符读入，后者是字节读入。<br>D.二者没有区别，可以互换。</p>
-<p><strong>答案：</strong><br>A B D</p>
-<p><strong>解析：</strong><br>字符流和字节流每次读入的字节数是不确定的，可能相同也可能不相同<br>例FileInputStream 的read() 方法每次读入一个字节，read(byte b[]) 每次读入b.length个字节<br>FileReader   的read()方法每次读入一个字符，read(char cbuf[], int offset, int length)每次读入length个字符<br>另外，字符流和字节流读入一个ASCII字符，字节数是相同的<br>例UTF-8字符编码中一个汉字占三个字节，数字1占一个字节，用字符流读入的数字1长度为一个字节，用字节流读入的数字1长度也为一个字节</p>
-<h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><p><a href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIwMTg3NzYyOA==&hid=10&sn=34bfdf3ba4ff1ef1852e392195616f4e" target="_blank" rel="noopener">Java笔试内容集合</a> 持续更新中….</p>
-<p><a href="https://www.processon.com/i/5cd53c2fe4b01941c8cf1c21" target="_blank" rel="noopener">ProcessOn是一个在线作图工具的聚合平台~</a></p>
-<h2 id="文末"><a href="#文末" class="headerlink" title="文末"></a>文末</h2><blockquote>
-<p>欢迎关注个人微信公众号：<strong>Coder编程</strong><br>欢迎关注<strong>Coder编程</strong>公众号，主要分享数据结构与算法、Java相关知识体系、框架知识及原理、Spring全家桶、微服务项目实战、DevOps实践之路、每日一篇互联网大厂面试或笔试题以及PMP项目管理知识等。更多精彩内容正在路上~<br>新建了一个qq群：315211365，欢迎大家进群交流一起学习。谢谢了！也可以介绍给身边有需要的朋友。</p>
-</blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/7326374-528c7e9cc9627b77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Java基础笔试练习（二十一）"></p>
 <blockquote>
-<p>文章收录至<br>Github: <a href="https://github.com/CoderMerlin/coder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://gitee.com/573059382/coder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~<br><img src="https://upload-images.jianshu.io/upload_images/7326374-09cb22532754dd6f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="微信公众号"></p>
+<p>每天进步一点，不做curd工程师与Api调用工程师<br>欢迎访问个人博客网站：<a href="https://www.coder-programming.cn/" target="_blank" rel="noopener">https://www.coder-programming.cn/</a></p>
 </blockquote>
+<h2 id="1-即使对不含相同元素的同一输入序列进行两组不同的合法的入栈和出栈组合操作-所得的输出序列也一定相同"><a href="#1-即使对不含相同元素的同一输入序列进行两组不同的合法的入栈和出栈组合操作-所得的输出序列也一定相同" class="headerlink" title="1.即使对不含相同元素的同一输入序列进行两组不同的合法的入栈和出栈组合操作,所得的输出序列也一定相同()"></a>1.即使对不含相同元素的同一输入序列进行两组不同的合法的入栈和出栈组合操作,所得的输出序列也一定相同()</h2><p>A.对<br>B.错</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>如序列abcd<br>①：push a ,push b ,push c ,push d  ,pop,pop,pop,pop  得到的序列是dcba<br>②：push a, pop ,push b,pop,push c,pop ,push d,pop    得到的序列是abcd</p>
+<h2 id="2-设某棵三叉树中有40个结点，则该三叉树的最小高度为（）。"><a href="#2-设某棵三叉树中有40个结点，则该三叉树的最小高度为（）。" class="headerlink" title="2.设某棵三叉树中有40个结点，则该三叉树的最小高度为（）。"></a>2.设某棵三叉树中有40个结点，则该三叉树的最小高度为（）。</h2><p>A.3<br>B.4<br>C.5<br>D.6</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>对于高度的理解，我们不管他数据结构什么什么知识，就拿楼房来说，假如一个人提问：楼房的高度有好高？我们会下意识的从底层开始往上数，假如楼有6层，则我们会说，这个楼有6层楼那么高，则提问者就会大概知道楼有多高了。所以高度就是以从下往上对比，这是我们的习惯。而在树中，树的高度也是从下往上数，如图所示</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/7326374-b6b91d4604c478a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1"></p>
+<blockquote>
+<p>K节点在树的底层，是一个叶子节点，则一般定义为K的高度在最低为1，以此类推，O的高度也是为1，P的节点也是为1。M节点是叶子节点O的父节点，从下往上数，M节点高度为2。那么G节点的高度是多少呢？从G-L的高度为2，从G-M-O节点高度为3，到底G节点高度为多少呢，正确答案是3，请看定义：<br>高度的定义为：从结点x向下到某个叶结点最长简单路径中边的条数</p>
+</blockquote>
+<p><strong>注意</strong>：对于是否是边的条数这个不清楚，待我后来查证，这个主要是由于其初值是1还是0来确定的，一般都是以1开始</p>
+<p>希望高度最小，则是满三叉树的情况，1,3,9,27</p>
+<h2 id="3-红黑树中已经有n个数据，寻找某个key是否存在的时间复杂度为-。"><a href="#3-红黑树中已经有n个数据，寻找某个key是否存在的时间复杂度为-。" class="headerlink" title="3.红黑树中已经有n个数据，寻找某个key是否存在的时间复杂度为()。"></a>3.红黑树中已经有n个数据，寻找某个key是否存在的时间复杂度为()。</h2><p>A.o(logn)<br>B.o(n)<br>C.o(n二次方)<br>D.o(1)</p>
+<p><strong>答案：</strong><br>A</p>
+<p><strong>解析：</strong><br>红黑树是平衡二叉树，也就是左右子树是平衡的，高度大概相等。<br>这种情况等价于一块完全二叉树的高度，查找的时间复杂度是树的高度，为logn</p>
+<h2 id="4-若一棵二叉树具有8个度为2的结点，5个度为1的结点，则度为0的结点个数是？"><a href="#4-若一棵二叉树具有8个度为2的结点，5个度为1的结点，则度为0的结点个数是？" class="headerlink" title="4.若一棵二叉树具有8个度为2的结点，5个度为1的结点，则度为0的结点个数是？"></a>4.若一棵二叉树具有8个度为2的结点，5个度为1的结点，则度为0的结点个数是？</h2><p>A.6<br>B.9<br>C.11<br>D.不确定</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong></p>
+<p>题中度为2指的是有两个子节点， 度为1是1个子节点<br>假设度0的节点有x个<br>那个二叉树的边， 按照出节点来算个数为<br>8<em>2 + 5</em>1<br>按照入节点来算， 个数为<br>8+5+x-1（减去根节点）<br>边是一定的， 所以<br>8<em>2 + 5</em>1 =  8+5+x-1<br>x = 9</p>
+<h2 id="5-在任意一棵非空二叉排序树中，删除某结点后又将其插入，则所得二排序叉树与原二排序叉树相同。（）"><a href="#5-在任意一棵非空二叉排序树中，删除某结点后又将其插入，则所得二排序叉树与原二排序叉树相同。（）" class="headerlink" title="5.在任意一棵非空二叉排序树中，删除某结点后又将其插入，则所得二排序叉树与原二排序叉树相同。（）"></a>5.在任意一棵非空二叉排序树中，删除某结点后又将其插入，则所得二排序叉树与原二排序叉树相同。（）</h2><p>A.正确<br>B.错误</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>只有被删除结点是叶子结点时命题才正确。</p>
+<h2 id="6-数组A中，每个元素的长度为3个字节，行下标i从1到8，列下标j从1到10，从首地址SA开始连续存放在存储器内，该数组按行存放时，元素A-8-5-的起始地址为（-）。"><a href="#6-数组A中，每个元素的长度为3个字节，行下标i从1到8，列下标j从1到10，从首地址SA开始连续存放在存储器内，该数组按行存放时，元素A-8-5-的起始地址为（-）。" class="headerlink" title="6.数组A中，每个元素的长度为3个字节，行下标i从1到8，列下标j从1到10，从首地址SA开始连续存放在存储器内，该数组按行存放时，元素A[8][5]的起始地址为（ ）。"></a>6.数组A中，每个元素的长度为3个字节，行下标i从1到8，列下标j从1到10，从首地址SA开始连续存放在存储器内，该数组按行存放时，元素A[8][5]的起始地址为（ ）。</h2><p>A.SA+141<br>B.SA+144<br>C.SA+222<br>D.SA+225</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>陷阱：起始地址为上一地址的结束</p>
+<p>首先，本题的数组是从A[1][1]开始的，也就是说和所谓的数组从零开始没什么关系。<br>A[1][1]的起始地址为SA，那么A[1][2]为SA+3…..A[2][1]为SA+3<em>10…..A[i][j]为SA+(（i-1）</em>10+(j-1))<em>3。<br>那么A[8][5]的起始地址就是SA+（7</em>10+4）*3=SA+222.</p>
+<h2 id="7-对于双向循环链表-在p指针所指的结点之后插入s指针所指结点的操作应为"><a href="#7-对于双向循环链表-在p指针所指的结点之后插入s指针所指结点的操作应为" class="headerlink" title="7.对于双向循环链表,在p指针所指的结点之后插入s指针所指结点的操作应为()"></a>7.对于双向循环链表,在p指针所指的结点之后插入s指针所指结点的操作应为()</h2><p>A.p-&gt;right=s;s-&gt;left=p;p-&gt;right-&gt;left=s;s-&gt;right=p-&gt;right;<br>B.p-&gt;right=s;p-&gt;right-&gt;left=s;s-&gt;left=p;s-&gt;right=p-&gt;right;<br>C.s-&gt;left=p;s-&gt;right=p-&gt;right;p-&gt;right=s;p-&gt;right-&gt;left=s;<br>D.s-&gt;left=p;s-&gt;right=p-&gt;right;p-&gt;right-&gt;left=s;p-&gt;right=s;</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>双向链表的插入顺序：先搞定插入节点的前驱和后继，在搞定后结点的前驱，最后搞定前结点的后继。</p>
+<h2 id="8-不带头结点的单链表head为空的判定条件是"><a href="#8-不带头结点的单链表head为空的判定条件是" class="headerlink" title="8.不带头结点的单链表head为空的判定条件是()?"></a>8.不带头结点的单链表head为空的判定条件是()?</h2><p>A.head==NULL<br>B.head-&gt;next==NULL<br>C.head!=NULL<br>D.head-&gt;next==head</p>
+<p><strong>答案：</strong><br>A</p>
+<p><strong>解析：</strong><br>所为头结点，是为了使空链表和非空链表的处理统一而在链表的头部增加的一个节点，这样无论链表是否为空，头指针都指向头结点，头结点中不存数据而只是存放指向第一个节点的指针。没有头结点的链表，头指针就指向第一个节点。因此，单链表为空时，head==NULL。</p>
+<h2 id="9-树的基本遍历策略分为先根遍历和后根遍历；二叉树的基本遍历策略可分为先序遍历、中序遍历和后序遍历。结论-是正确的？"><a href="#9-树的基本遍历策略分为先根遍历和后根遍历；二叉树的基本遍历策略可分为先序遍历、中序遍历和后序遍历。结论-是正确的？" class="headerlink" title="9.树的基本遍历策略分为先根遍历和后根遍历；二叉树的基本遍历策略可分为先序遍历、中序遍历和后序遍历。结论()是正确的？"></a>9.树的基本遍历策略分为先根遍历和后根遍历；二叉树的基本遍历策略可分为先序遍历、中序遍历和后序遍历。结论()是正确的？</h2><p>A.树的先根遍历序列与其对应的二叉树的先序遍历序列相同<br>B.树的后根遍历序列与其对应的二叉树的先序遍历序列相同<br>C.树的先根遍历序列与其对应的二叉树的中序遍历序列相同<br>D.以上都不对</p>
+<p><strong>答案：</strong><br>A</p>
+<p><strong>解析：</strong><br>一般树的先根序遍历与对应的二叉树的先根序遍历序列一致，后根序遍历与对应二叉树的中根序遍历序列相同</p>
+<h2 id="10-已知二叉树中有45个叶节点，有25个度为1的节点，则二叉树的总结点数为-。"><a href="#10-已知二叉树中有45个叶节点，有25个度为1的节点，则二叉树的总结点数为-。" class="headerlink" title="10.已知二叉树中有45个叶节点，有25个度为1的节点，则二叉树的总结点数为____。"></a>10.已知二叉树中有45个叶节点，有25个度为1的节点，则二叉树的总结点数为____。</h2><p>A.112<br>B.113<br>C.114<br>D.115<br>E.116<br>F.117</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>二叉树的性质n0=n2+1的推导：所有节点=n0+n1+n2（即度为0+1+2的节点）=2*n2+n1+1（即分支总数+1）<br>所以n=n0+n1+n2=44+45+25=114</p>
+<h2 id="11-节点按中序遍历为syz的二叉树可能有（）种"><a href="#11-节点按中序遍历为syz的二叉树可能有（）种" class="headerlink" title="11.节点按中序遍历为syz的二叉树可能有（）种"></a>11.节点按中序遍历为syz的二叉树可能有（）种</h2><p>A.2<br>B.3<br>C.4<br>D.5</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>完全二叉树一种，全为左和全为右枝各一种，根左右和根右左各一种<br>分别以S Y Z为根  S为根有2种  Y为根有1种  Z为根有2种</p>
+<h2 id="12-分别以下列序列构造二叉排序树，与用其它三个序列所构造的结果不同的是"><a href="#12-分别以下列序列构造二叉排序树，与用其它三个序列所构造的结果不同的是" class="headerlink" title="12. 分别以下列序列构造二叉排序树，与用其它三个序列所构造的结果不同的是()"></a>12. 分别以下列序列构造二叉排序树，与用其它三个序列所构造的结果不同的是()</h2><p>A.（100，80，90，60，120，110，130）<br>B.（100，120，110，130，80，60，90）<br>C.（100，60，80，90，120，110，130）<br>D.（100，80，60，90，120，130，110）</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br><img src="https://upload-images.jianshu.io/upload_images/7326374-08dfbb14b6a6dd0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2.png"></p>
+<p>根据序列构造二叉排序树后 ABD都是满二叉树 C不是 所以选C</p>
+<h2 id="13-哈希查找中k个关键字具有同一哈希值，若用线性探测法将这k个关键字对应的记录存入哈希表中，至少要进行-次探测。"><a href="#13-哈希查找中k个关键字具有同一哈希值，若用线性探测法将这k个关键字对应的记录存入哈希表中，至少要进行-次探测。" class="headerlink" title="13.哈希查找中k个关键字具有同一哈希值，若用线性探测法将这k个关键字对应的记录存入哈希表中，至少要进行(    )次探测。"></a>13.哈希查找中k个关键字具有同一哈希值，若用线性探测法将这k个关键字对应的记录存入哈希表中，至少要进行(    )次探测。</h2><p>A.k<br>B.k+1<br>C.k(k+1)/2<br>D.1+k(k+1)/2</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>问的是“至少”，那么设表原来为空表。<br>第一个：直接找到坑，入坑，1次；<br>第二个：和第一个同hash，找到坑被第一个给占了，找下一个，入坑，2次；<br>第三个：第一个被占了，第二个也被占了，找第三个，入坑，3次；<br>。。。<br>第n个：n次；<br>一共：（1+n）<em>n / 2 次<br>【开放地址法（除了随机探测）都是（1+n）</em>n / 2 次】</p>
+<h2 id="14-在图采用邻接表存储时-求最小生成树的Prim算法的时间复杂度为"><a href="#14-在图采用邻接表存储时-求最小生成树的Prim算法的时间复杂度为" class="headerlink" title="14.在图采用邻接表存储时,求最小生成树的Prim算法的时间复杂度为()"></a>14.在图采用邻接表存储时,求最小生成树的Prim算法的时间复杂度为()</h2><p>A.O(n)<br>B.O(n+e)<br>C.O(n^2)<br>D.O(n^3)</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>Prim算法的时间复杂度<br>邻接表存储时,是 O(n+e)<br>图的时候 是O(n^2)</p>
+<h2 id="15-高度为1的平衡二叉树节点为1个，高度为5的最少多少个？"><a href="#15-高度为1的平衡二叉树节点为1个，高度为5的最少多少个？" class="headerlink" title="15.高度为1的平衡二叉树节点为1个，高度为5的最少多少个？"></a>15.高度为1的平衡二叉树节点为1个，高度为5的最少多少个？</h2><p>A.10<br>B.11<br>C.12<br>D.13</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>平衡二叉树是一 棵空树或它的左右两个子树的高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树。</p>
+<p>高度为5的话， 根的左子树高4， 右子树高3<br>经推倒可以得出，高度与最小节点数对应关系是：<br>1 -&gt; 1<br>2 -&gt; 2<br>3 -&gt; 4<br>4 -&gt; 7<br>5 -&gt; 12</p>
+<h2 id="16-一个有n个结点的连通图的生成树是原图的最小连通子图，且包含原图中所有n个结点，并且有保持图联通的最少的边。最大生成树就是权和最大生成树，现在给出一个无向带权图的邻接矩阵，权为0表示没有边。｛-0，4，5，0，3-，-4，0，4，2，3-，-5，4，0，2，0-，-0，2，2，0，1-，-3，3，0，1，0-｝，求这个图的最大生成树的权和。"><a href="#16-一个有n个结点的连通图的生成树是原图的最小连通子图，且包含原图中所有n个结点，并且有保持图联通的最少的边。最大生成树就是权和最大生成树，现在给出一个无向带权图的邻接矩阵，权为0表示没有边。｛-0，4，5，0，3-，-4，0，4，2，3-，-5，4，0，2，0-，-0，2，2，0，1-，-3，3，0，1，0-｝，求这个图的最大生成树的权和。" class="headerlink" title="16.一个有n个结点的连通图的生成树是原图的最小连通子图，且包含原图中所有n个结点，并且有保持图联通的最少的边。最大生成树就是权和最大生成树，现在给出一个无向带权图的邻接矩阵，权为0表示没有边。｛{0，4，5，0，3}，{4，0，4，2，3}，{5，4，0，2，0}，{0，2，2，0，1}，{3，3，0，1，0}｝，求这个图的最大生成树的权和。"></a>16.一个有n个结点的连通图的生成树是原图的最小连通子图，且包含原图中所有n个结点，并且有保持图联通的最少的边。最大生成树就是权和最大生成树，现在给出一个无向带权图的邻接矩阵，权为0表示没有边。｛{0，4，5，0，3}，{4，0，4，2，3}，{5，4，0，2，0}，{0，2，2，0，1}，{3，3，0，1，0}｝，求这个图的最大生成树的权和。</h2><p>A.11<br>B.12<br>C.13<br>D.14<br>E.15</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br><img src="https://upload-images.jianshu.io/upload_images/7326374-50c62db4f5fbf2f4.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3"></p>
+<h2 id="17-向一个栈顶指针为hs的链栈中插入一个s结点时，应执行-。"><a href="#17-向一个栈顶指针为hs的链栈中插入一个s结点时，应执行-。" class="headerlink" title="17.向一个栈顶指针为hs的链栈中插入一个s结点时，应执行__。"></a>17.向一个栈顶指针为hs的链栈中插入一个s结点时，应执行<strong>__</strong>。</h2><p>A.hs-&gt;next=s;<br>B.s-&gt;next=hs;   hs=s;<br>C.s-&gt;next=hs-&gt;next;hs-&gt;next=s;<br>D.s-&gt;next=hs; hs=hs-&gt;next;</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>往栈中插入数据，栈是向下生长的，由高地址到低地址，所以s节点就是在低地址处，hs指向原栈顶，插入s后，s是新的栈顶，s的地址比原栈顶hs地址低，所以是s-&gt;next=hs,最后hs=s更新栈顶指针指向</p>
+<h2 id="18-根据使用频率为-5-个字符设计的哈夫曼编码不可能是（-）。"><a href="#18-根据使用频率为-5-个字符设计的哈夫曼编码不可能是（-）。" class="headerlink" title="18.根据使用频率为 5 个字符设计的哈夫曼编码不可能是（ ）。"></a>18.根据使用频率为 5 个字符设计的哈夫曼编码不可能是（ ）。</h2><p>A.000，001，010，011，1<br>B.0000，0001，001，01，1<br>C.000，001，01，10，11<br>D.00，100，101，110，111</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>哈夫曼树的节点要么是叶子节点，要么是度为2的节点，不可能出现度为1的节点</p>
+<h2 id="19-一棵左子树为空的二叉树在前序线索化后-其中空的链域的个数是"><a href="#19-一棵左子树为空的二叉树在前序线索化后-其中空的链域的个数是" class="headerlink" title="19.一棵左子树为空的二叉树在前序线索化后,其中空的链域的个数是()"></a>19.一棵左子树为空的二叉树在前序线索化后,其中空的链域的个数是()</h2><p>A.不确定<br>B.0<br>C.1<br>D.2</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>一棵左子树为空的二叉树,形态为右单支树,这样前序序列为根、右根…<br>因为根结点在前序序列第一个,没有前序的前驱,这样根结点的左指针链域就是空的<br>最下边的叶子（也就是最右边结点）是前序序列最后一个,没有前序的后继,因此该结点的右指针链域也是空的<br>因此,空的链域合计2个</p>
+<h2 id="20-数组指针和指针数组有什么区别-？"><a href="#20-数组指针和指针数组有什么区别-？" class="headerlink" title="20.数组指针和指针数组有什么区别 ？"></a>20.数组指针和指针数组有什么区别 ？</h2><p>A.数组指针只是一个指针变量，它占有内存中一个指针的存储空间<br>B.指针数组只是一个指针变量，它占有内存中一个指针的存储空间<br>C.指针数组是多个指针变量，以数组形式存在内存当中，占有多个指针的存储空间<br>D.数组指针是多个指针变量，以数组形式存在内存当中，占有多个指针的存储空间</p>
+<p><strong>答案：</strong><br>AC</p>
+<p><strong>解析：</strong><br>数组指针只是一个指针变量，指向一个一维数组，它占有内存中一个指针的存储空间，指针数组是多个指针变量，以数组形式存在内存当中，占有多个指针的存储空间。</p>
+<h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><ul>
+<li><p><a href="https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247484198&idx=1&sn=9c9d8c2dffe005e0cf76f13af815209a&chksm=96e67235a191fb235caac777b002e2b0b519a4d540341352518a3c6939c03f164adb1cd3d659&token=1394220820&lang=zh_CN#rd" target="_blank" rel="noopener">400道——大厂Java选择题</a> 持续更新中….</p>
+</li>
+<li><p><a href="https://www.processon.com/i/5cd53c2fe4b01941c8cf1c21" target="_blank" rel="noopener">ProcessOn是一个在线作图工具的聚合平台~</a></p>
+</li>
+</ul>
+<h2 id="文末"><a href="#文末" class="headerlink" title="文末"></a>文末</h2><p>文章收录至<br>Github: <a href="https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FCoderMerlin%2Fcoder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://links.jianshu.com/go?to=https%3A%2F%2Fgitee.com%2F573059382%2Fcoder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/7326374-0c9d0fbd2c954edb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="微信公众号"></p>
 
       </div>
       
@@ -529,10 +525,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-26T20:06:00+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-11T20:06:00+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2019年9月26日</p>
+    <p>更新于 2019年10月11日</p>
   </a>
 </div>
 
@@ -554,7 +550,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/09/26/interview/java/B-bishi11/&title=Java基础笔试练习（十一） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/10/11/interview/java/B-bishi21/&title=Java基础笔试练习（二十一） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -566,7 +562,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2019/09/26/interview/java/B-bishi11/&title=Java基础笔试练习（十一） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2019/10/11/interview/java/B-bishi21/&title=Java基础笔试练习（二十一） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -578,7 +574,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/09/26/interview/java/B-bishi11/&title=Java基础笔试练习（十一） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/10/11/interview/java/B-bishi21/&title=Java基础笔试练习（二十一） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -606,16 +602,16 @@
                       <span class="art-item-left">
                           <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
                           <h4>
-                              <a href="/2019/09/27/interview/java/B-bishi12/" rel="prev" title="Java基础笔试练习（十二）">
+                              <a href="/2019/11/14/interview/java/A-thread01/" rel="prev" title="Java面试集锦：25道线程类相关面试题与答案（一）">
                                 
-                                    Java基础笔试练习（十二）
+                                    Java面试集锦：25道线程类相关面试题与答案（一）
                                 
                               </a>
                           </h4>
                           
                               
                               <h6 class="tags">
-                                  <a class="tag" href="/tags/Java/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Java</a> <a class="tag" href="/tags/%E7%AC%94%E8%AF%95/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 笔试</a>
+                                  <a class="tag" href="/tags/Java/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Java</a> <a class="tag" href="/tags/%E9%9D%A2%E8%AF%95/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 面试</a> <a class="tag" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 多线程</a>
                               </h6>
                           
                       </span>
@@ -626,9 +622,9 @@
                       <span class="art-item-right" aria-hidden="true">
                           <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                           <h4>
-                              <a href="/2019/09/25/interview/java/B-bishi10/" rel="prev" title="Java基础笔试练习（十）">
+                              <a href="/2019/10/10/interview/java/B-bishi20/" rel="prev" title="Java基础笔试练习（二十）">
                                   
-                                      Java基础笔试练习（十）
+                                      Java基础笔试练习（二十）
                                   
                               </a>
                           </h4>
@@ -665,7 +661,7 @@
 
   <script>
     window.subData = {
-      title: 'Java基础笔试练习（十一）',
+      title: 'Java基础笔试练习（二十一）',
       tools: true
     }
   </script>
@@ -829,7 +825,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-下面的方法，当输入为2的时候返回值是多少？"><span class="toc-text">1.下面的方法，当输入为2的时候返回值是多少？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Java是从（）语言改进重新设计"><span class="toc-text">2.Java是从（）语言改进重新设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-一个以”-java”为后缀的源文件，哪些说法是正确的？"><span class="toc-text">3.一个以”. java”为后缀的源文件，哪些说法是正确的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-在JAVA中，下面关于String类和StringBuffer类的描述正确的是那一个？"><span class="toc-text">4.在JAVA中，下面关于String类和StringBuffer类的描述正确的是那一个？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-下列关于构造方法不正确的是：（-）"><span class="toc-text">5. 下列关于构造方法不正确的是：（ ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-根据下面的程序代码，哪些选项的值返回true？"><span class="toc-text">6.根据下面的程序代码，哪些选项的值返回true？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-根据以下代码段-执行new-Child-“John”-10-要使数据域data得到10，则子类空白处应该填写-。"><span class="toc-text">7.根据以下代码段,执行new Child(“John”, 10); 要使数据域data得到10，则子类空白处应该填写(    )。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-Given-the-following-code-What-is-the-result"><span class="toc-text">8.Given the following code:() What is the result?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-一个文件中的字符要写到另一个文件中，首先需要（-）？"><span class="toc-text">9.一个文件中的字符要写到另一个文件中，首先需要（ ）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-阅读以下-foo-函数，请问它的时间复杂度是："><span class="toc-text">10. 阅读以下 foo 函数，请问它的时间复杂度是：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-下列关于管道（Pipe）通信的叙述中，正确的是（）？"><span class="toc-text">11.下列关于管道（Pipe）通信的叙述中，正确的是（）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-要导入java-awt-event下面的所有类，叙述正确的是？"><span class="toc-text">12.要导入java&#x2F;awt&#x2F;event下面的所有类，叙述正确的是？()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-对于JVM内存配置参数："><span class="toc-text">13.对于JVM内存配置参数：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-URL-u-new-URL-“http-www-123-com-quot-。如果www-123-com不存在，则返回-。"><span class="toc-text">14.URL u &#x3D;new URL(“http:&#x2F;&#x2F;www.123.com&quot;);。如果www.123.com不存在，则返回______。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15-存根（Stub）与以下哪种技术有关"><span class="toc-text">15.存根（Stub）与以下哪种技术有关</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16-Java中的集合类包括ArrayList、LinkedList、HashMap等类，下列关于集合类描述正确的是（）"><span class="toc-text">16.Java中的集合类包括ArrayList、LinkedList、HashMap等类，下列关于集合类描述正确的是（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#17-下列说法正确的是（）？"><span class="toc-text">17.下列说法正确的是（）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#18-对于构造方法，下列叙述正确的是（-）。"><span class="toc-text">18.对于构造方法，下列叙述正确的是（ ）。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#19-下列有关JAVA异常处理的叙述中正确的是（）"><span class="toc-text">19.下列有关JAVA异常处理的叙述中正确的是（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20-character流和byte流的区别不包括（）"><span class="toc-text">20.character流和byte流的区别不包括（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐"><span class="toc-text">推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文末"><span class="toc-text">文末</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-即使对不含相同元素的同一输入序列进行两组不同的合法的入栈和出栈组合操作-所得的输出序列也一定相同"><span class="toc-text">1.即使对不含相同元素的同一输入序列进行两组不同的合法的入栈和出栈组合操作,所得的输出序列也一定相同()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-设某棵三叉树中有40个结点，则该三叉树的最小高度为（）。"><span class="toc-text">2.设某棵三叉树中有40个结点，则该三叉树的最小高度为（）。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-红黑树中已经有n个数据，寻找某个key是否存在的时间复杂度为-。"><span class="toc-text">3.红黑树中已经有n个数据，寻找某个key是否存在的时间复杂度为()。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-若一棵二叉树具有8个度为2的结点，5个度为1的结点，则度为0的结点个数是？"><span class="toc-text">4.若一棵二叉树具有8个度为2的结点，5个度为1的结点，则度为0的结点个数是？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-在任意一棵非空二叉排序树中，删除某结点后又将其插入，则所得二排序叉树与原二排序叉树相同。（）"><span class="toc-text">5.在任意一棵非空二叉排序树中，删除某结点后又将其插入，则所得二排序叉树与原二排序叉树相同。（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-数组A中，每个元素的长度为3个字节，行下标i从1到8，列下标j从1到10，从首地址SA开始连续存放在存储器内，该数组按行存放时，元素A-8-5-的起始地址为（-）。"><span class="toc-text">6.数组A中，每个元素的长度为3个字节，行下标i从1到8，列下标j从1到10，从首地址SA开始连续存放在存储器内，该数组按行存放时，元素A[8][5]的起始地址为（ ）。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-对于双向循环链表-在p指针所指的结点之后插入s指针所指结点的操作应为"><span class="toc-text">7.对于双向循环链表,在p指针所指的结点之后插入s指针所指结点的操作应为()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-不带头结点的单链表head为空的判定条件是"><span class="toc-text">8.不带头结点的单链表head为空的判定条件是()?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-树的基本遍历策略分为先根遍历和后根遍历；二叉树的基本遍历策略可分为先序遍历、中序遍历和后序遍历。结论-是正确的？"><span class="toc-text">9.树的基本遍历策略分为先根遍历和后根遍历；二叉树的基本遍历策略可分为先序遍历、中序遍历和后序遍历。结论()是正确的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-已知二叉树中有45个叶节点，有25个度为1的节点，则二叉树的总结点数为-。"><span class="toc-text">10.已知二叉树中有45个叶节点，有25个度为1的节点，则二叉树的总结点数为____。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-节点按中序遍历为syz的二叉树可能有（）种"><span class="toc-text">11.节点按中序遍历为syz的二叉树可能有（）种</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-分别以下列序列构造二叉排序树，与用其它三个序列所构造的结果不同的是"><span class="toc-text">12. 分别以下列序列构造二叉排序树，与用其它三个序列所构造的结果不同的是()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-哈希查找中k个关键字具有同一哈希值，若用线性探测法将这k个关键字对应的记录存入哈希表中，至少要进行-次探测。"><span class="toc-text">13.哈希查找中k个关键字具有同一哈希值，若用线性探测法将这k个关键字对应的记录存入哈希表中，至少要进行(    )次探测。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-在图采用邻接表存储时-求最小生成树的Prim算法的时间复杂度为"><span class="toc-text">14.在图采用邻接表存储时,求最小生成树的Prim算法的时间复杂度为()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15-高度为1的平衡二叉树节点为1个，高度为5的最少多少个？"><span class="toc-text">15.高度为1的平衡二叉树节点为1个，高度为5的最少多少个？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16-一个有n个结点的连通图的生成树是原图的最小连通子图，且包含原图中所有n个结点，并且有保持图联通的最少的边。最大生成树就是权和最大生成树，现在给出一个无向带权图的邻接矩阵，权为0表示没有边。｛-0，4，5，0，3-，-4，0，4，2，3-，-5，4，0，2，0-，-0，2，2，0，1-，-3，3，0，1，0-｝，求这个图的最大生成树的权和。"><span class="toc-text">16.一个有n个结点的连通图的生成树是原图的最小连通子图，且包含原图中所有n个结点，并且有保持图联通的最少的边。最大生成树就是权和最大生成树，现在给出一个无向带权图的邻接矩阵，权为0表示没有边。｛{0，4，5，0，3}，{4，0，4，2，3}，{5，4，0，2，0}，{0，2，2，0，1}，{3，3，0，1，0}｝，求这个图的最大生成树的权和。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#17-向一个栈顶指针为hs的链栈中插入一个s结点时，应执行-。"><span class="toc-text">17.向一个栈顶指针为hs的链栈中插入一个s结点时，应执行__。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#18-根据使用频率为-5-个字符设计的哈夫曼编码不可能是（-）。"><span class="toc-text">18.根据使用频率为 5 个字符设计的哈夫曼编码不可能是（ ）。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#19-一棵左子树为空的二叉树在前序线索化后-其中空的链域的个数是"><span class="toc-text">19.一棵左子树为空的二叉树在前序线索化后,其中空的链域的个数是()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20-数组指针和指针数组有什么区别-？"><span class="toc-text">20.数组指针和指针数组有什么区别 ？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐"><span class="toc-text">推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文末"><span class="toc-text">文末</span></a></li></ol>
     </div>
   </section>
 
