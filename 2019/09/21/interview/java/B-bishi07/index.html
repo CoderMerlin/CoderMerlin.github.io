@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>博客搭建-增加百度统计功能 | Coder编程</title>
+  <title>Java基础笔试练习（七） | Coder编程</title>
   
   
 
@@ -316,15 +316,15 @@
   <section class='meta'>
     
     
-      <a title='博客搭建-增加百度统计功能' href='/2020/05/12/BLOG01-HEXO-BDTJ/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/hexo.png'></a>
+      <a title='Java基础笔试练习（七）' href='/2019/09/21/interview/java/B-bishi07/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/Java-log.png'></a>
     
     <div class="meta" id="header-meta">
       
         
   
     <h1 class="title">
-      <a href="/2020/05/12/BLOG01-HEXO-BDTJ/">
-        博客搭建-增加百度统计功能
+      <a href="/2019/09/21/interview/java/B-bishi07/">
+        Java基础笔试练习（七）
       </a>
     </h1>
   
@@ -355,7 +355,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2020-05-12</p>
+    <p>2019-09-21</p>
   </a>
 </div>
 
@@ -365,9 +365,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/HEXO/' rel="nofollow">
+    <a href='/categories/%E7%AC%94%E8%AF%95/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>HEXO</p>
+      <p>Java&nbsp;/&nbsp;笔试</p>
     </a>
   </div>
 
@@ -399,14 +399,14 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>622字</p>
+        <p>3.2k字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
       <a class='notlink'>
         <i class="fas fa-hourglass-half" aria-hidden="true"></i>
         <p>阅读时长≈</p>
-        <p>2分</p>
+        <p>12分</p>
       </a>
     </div>
   
@@ -429,31 +429,85 @@
     <section class="article typo">
       <div class="article-entry" itemprop="articleBody">
         <blockquote>
-<p>每天进步一点，不做curd工程师与Api调用工程师</p>
+<p>每天进步一点，不做curd工程师与Api调用工程师<br>欢迎访问个人网站：<a href="https://www.coder-programming.cn/" target="_blank" rel="noopener">https://www.coder-programming.cn/</a></p>
 </blockquote>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近晚上有时间就忙着倒腾自己的博客网站：<a href="https://www.coder-programming.cn/" target="_blank" rel="noopener">https://www.coder-programming.cn/</a></p>
-<p>网站还在建设当中，我会慢慢分享自己的搭建博客的过程和遇到的问题，在这里与大家一起分享！</p>
-<p>百度统计是百度推出的一款免费的专业网站流量分析工具，能够告诉用户访客是如何找到并浏览用户的网站，在网站上做了些什么，非常有趣，接下来我们把百度统计添加到自己博客当中</p>
-<p>访问<a href="https://tongji.baidu.com/" target="_blank" rel="noopener">百度统计首页</a>，注册一个账号后登陆，添加你的博客网站</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/01.png" alt="01"></p>
-<p>点击<strong>增加网站</strong>,填写个人网站的信息。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/02.png" alt="02"></p>
-<p>接着点击代码获取，复制该代码<br><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/03.png" alt="03"></p>
-<p>然后到目录<code>\themes\hexo-theme-material-x\layout\_partial\head.ejs</code>，里面粘贴你刚刚复制的代码。<br>代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (config.baidu_analytics_key) &#123; %&gt;</span><br><span class="line">    &lt;!-- ba --&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">    var _hmt &#x3D; _hmt || [];</span><br><span class="line">    (function() &#123;</span><br><span class="line">      var hm &#x3D; document.createElement(&quot;script&quot;);</span><br><span class="line">      hm.src &#x3D; &quot;https:&#x2F;&#x2F;hm.baidu.com&#x2F;hm.js?&lt;%&#x3D; config.baidu_analytics_key %&gt;&quot;;</span><br><span class="line">      var s &#x3D; document.getElementsByTagName(&quot;script&quot;)[0];</span><br><span class="line">      s.parentNode.insertBefore(hm, s);</span><br><span class="line">    &#125;)();</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
-<p>修改博客根目录下的 _config.yml 文件(注意：不是主题下的_config.yml)，将你的key填写进去：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/05.png" alt="05"></p>
-<p>所有操作完成后可以在百度统计管理页面检查代码是否安装成功，如果代码安装正确，一般20分钟后，可以查看网站分析数据</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/06.png" alt="06"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/BLOG02BDTJ/07.png" alt="07"></p>
-<p>另外推荐：<a href="https://web.umeng.com/main.php?c=user&a=index" target="_blank" rel="noopener">友盟</a>，2010年4月在北京成立，安全、可靠、公正、第三方的网站流量统计分析系统</p>
-<p>参考：<br><a href="https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/" target="_blank" rel="noopener">https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/</a></p>
-<h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><p><a href="https://www.processon.com/i/5cd53c2fe4b01941c8cf1c21" target="_blank" rel="noopener">ProcessOn是一个在线作图工具的聚合平台~</a></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/7326374-13e6b634527e9104.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Java基础笔试练习（七）"></p>
+<h2 id="1-下列程序执行后结果为"><a href="#1-下列程序执行后结果为" class="headerlink" title="1.下列程序执行后结果为( )?"></a>1.下列程序执行后结果为( )?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class A &#123;</span><br><span class="line">    public int func1(int a, int b) &#123;</span><br><span class="line">        return a - b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class B extends A &#123;</span><br><span class="line">    public int func1(int a, int b) &#123;</span><br><span class="line">        return a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">public class ChildClass &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">    A a &#x3D; new B();</span><br><span class="line">    B b &#x3D; new B();</span><br><span class="line">    System.out.println(&quot;Result&#x3D;&quot; + a.func1(100, 50));</span><br><span class="line">    System.out.println(&quot;Result&#x3D;&quot; + b.func1(100, 50));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>A.Result=150Result=150<br>B.Result=100Result=100<br>C.Result=100Result=150<br>D.Result=150Result=100</p>
+<p><strong>答案：</strong><br>A<br><strong>解析：</strong><br>其实很简单，涉及转型的题目，分为向上或者向下转型。<br>关键的来了，不论向上或者向下转型，都是一句话，“编译看左边，运行看右边”。也就是编译时候，会看左边引用类型是否能正确编译通过，运行的时候是调用右边的对象的方法。就本题来说，编译时候会发现左边满足条件所以编译通过，运行时候又会调用右边也就是 class B 的方法，所以答案都是150。</p>
+<h2 id="2-下列哪个类的声明是正确的？"><a href="#2-下列哪个类的声明是正确的？" class="headerlink" title="2.下列哪个类的声明是正确的？"></a>2.下列哪个类的声明是正确的？</h2><p>A.protected private number;<br>B.public abstract class Car{}<br>C.abstract private move(){}<br>D.abstract final class HI{}</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>抽象类的目的就是为了让子类实现他本身的方法<br>final修饰的东西不能被更改或继承<br>abstract存在的意义是为了让子类实现方法而存在，final的意义是不让子类进行修改。两者存在互斥关系</p>
+<h2 id="3-关于抽象类叙述正确的是？"><a href="#3-关于抽象类叙述正确的是？" class="headerlink" title="3.关于抽象类叙述正确的是？ ( )"></a>3.关于抽象类叙述正确的是？ ( )</h2><p>A.抽象类不能实现接口<br>B.抽象类必须有“abstract class”修饰<br>C.抽象类必须包含抽象方法<br>D.抽象类也有类的特性，可以被实例化</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>A.抽象类是可以实现接口的，而且抽象类也可以继承自抽象类<br>B.对<br>C.抽象类指有abstract修饰的class，其可以包含抽象方法，也可以不包含<br>D.抽象类和接口都是不能被实例化的，只有具体的类才可以被实例化 </p>
+<h2 id="4-若有定义语句：-int-a-10-double-b-3-14-则表达式-‘A’-a-b-值的类型是（）"><a href="#4-若有定义语句：-int-a-10-double-b-3-14-则表达式-‘A’-a-b-值的类型是（）" class="headerlink" title="4.若有定义语句： int a=10 ; double b=3.14 ; 则表达式 ‘A’+a+b 值的类型是（）"></a>4.若有定义语句： int a=10 ; double b=3.14 ; 则表达式 ‘A’+a+b 值的类型是（）</h2><p>A.char<br>B.int<br>C.double<br>D.float</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>char &lt; short &lt; int &lt; float &lt; double  不同类型运算结果类型向右边靠齐。</p>
+<h2 id="5-When-is-the-text-“Hi-there”displayed"><a href="#5-When-is-the-text-“Hi-there”displayed" class="headerlink" title="5.When is the text “Hi there”displayed?"></a>5.When is the text “Hi there”displayed?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public class StaticTest</span><br><span class="line">&#123;</span><br><span class="line">    static</span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(“Hi there”);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    public void print()</span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(“Hello”);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    public static void main(String args[])</span><br><span class="line">    &#123;</span><br><span class="line">        StaticTest st1 &#x3D; new StaticTest();</span><br><span class="line">        st1.print();</span><br><span class="line">        StaticTest st2 &#x3D; new StaticTest();</span><br><span class="line">        st2.print();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>A.Never.<br>B.Each time a new object of type StaticTest is created.<br>C.Once when the class is loaded into the Java virtual machine.<br>D.Only when the main() method is executed.</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>类中静态语句块仅在类加载时被执行一次 </p>
+<h2 id="6-在开发中使用泛型取代非泛型的数据类型（比如用ArrayList取代ArrayList），程序的运行时性能会变得更好。"><a href="#6-在开发中使用泛型取代非泛型的数据类型（比如用ArrayList取代ArrayList），程序的运行时性能会变得更好。" class="headerlink" title="6.在开发中使用泛型取代非泛型的数据类型（比如用ArrayList取代ArrayList），程序的运行时性能会变得更好。"></a>6.在开发中使用泛型取代非泛型的数据类型（比如用ArrayList<String>取代ArrayList），程序的运行时性能会变得更好。</h2><p>A.对<br>B.错</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>泛型仅仅是java的一颗语法糖，它不会影响java虚拟机生成的汇编代码，在编译阶段，虚拟机就会把泛型的类型擦除，还原成没有泛型的代码，顶多编译速度稍微慢一些，执行速度是完全没有什么区别的。 </p>
+<h2 id="7-以下说法中正确的有？"><a href="#7-以下说法中正确的有？" class="headerlink" title="7.以下说法中正确的有？"></a>7.以下说法中正确的有？</h2><p>A.StringBuilder是 线程不安全的<br>B.Java类可以同时用 abstract和final声明<br>C.HashMap中，使用 get(key)==null可以 判断这个Hasmap是否包含这个key<br>D.volatile关键字不保证对变量操作的原子性</p>
+<p><strong>答案：</strong><br>A D</p>
+<p><strong>解析：</strong><br>String最慢的原因：<br>String为字符串常量，而StringBuilder和StringBuffer均为字符串变量，即String对象一旦创建之后该对象是不可更改的，但后两者的对象是变量，是可以更改的。<br>String：适用于少量的字符串操作的情况<br>StringBuilder：适用于单线程下在字符缓冲区进行大量操作的情况<br>StringBuffer：适用多线程下在字符缓冲区进行大量操作的情况<br>在线程安全上，StringBuilder是线程不安全的，而StringBuffer是线程安全的 </p>
+<h2 id="8-下面关于Java-package的描述，哪个是正确的-（）"><a href="#8-下面关于Java-package的描述，哪个是正确的-（）" class="headerlink" title="8.下面关于Java package的描述，哪个是正确的:（）"></a>8.下面关于Java package的描述，哪个是正确的:（）</h2><p>A.包不提供将所有类名分区为更易管理的块的机制.<br>B.包提供可见性控制机制.<br>C.包的一个重要属性是包内定义的所有类都可以通过该包外的代码访问<br>D.声明为包的一部分的类的.class文件可以存储在多个目录中. </p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong></p>
+<p>包的作用:<br>1、把功能相似或相关的类或接口组织在同一个包中，方便类的查找和使用。<br>2、如同文件夹一样，包也采用了树形目录的存储方式。同一个包中的类名字是不同的，不同的包中的类的名字是可以相同的，当同时调用两个不同包中相同类名的类时，应该加上包名加以区别。因此，包可以避免名字冲突。<br>3、包也限定了访问权限，拥有包访问权限的类才能访问某个包中的类。<br>Java使用包（package）这种机制是为了防止命名冲突，访问控制，提供搜索和定位类（class）、接口、枚举（enumerations）和注释（annotation）等。 </p>
+<h2 id="9-下面代码执行后的结果为（-）？"><a href="#9-下面代码执行后的结果为（-）？" class="headerlink" title="9.下面代码执行后的结果为（ ）？"></a>9.下面代码执行后的结果为（ ）？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">nt main()</span><br><span class="line">&#123;</span><br><span class="line">int sum&#x3D;0;</span><br><span class="line">int i&#x3D;0,j&#x3D;0;</span><br><span class="line">for(j&#x3D;0;j&lt;6;j++)</span><br><span class="line">&#123;</span><br><span class="line">if(j%2)continue;</span><br><span class="line">sum++;</span><br><span class="line">&#125;</span><br><span class="line">printf(&quot;sum&#x3D;%d&quot;,sum);</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>A.sum=1<br>B.sum=2<br>C.sum=3<br>D.其他几项都不对</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>吐槽点：1.Java题出现C语言的题目。2.定义变量i 等等（既然出现在360大厂的笔试题中，那么我们抛开吐槽点，我们来看下这道题的考点。）<br>考点：<br>1.continue:continue语句的作用是跳过本次循环体中余下尚未执行的语句，立即进行下一次的循环条件判定，可以理解为仅结束本次循环。<br>2.if(j%2)（包含：if以及取模运算）：也就是求j除以2的余数（取模），if(j%3)判断j对3取余以后是否为0，如果不是0，执行if下面的语句,<br>如果是0，执行另外的语句(例如else下面的语句)<br>做题：<br>1.j=0,0%2=0 sum=1<br>2.j=1,1%2=1 sum=1<br>3.j=2,2%2=0 sum=2<br>4.j=3,3%2=1 sum=2<br>5.j=4,4%2=0 sum=3<br>6.j=5,5%2=1 sum=3</p>
+<h2 id="10-关于static说法不正确的是（-）-？"><a href="#10-关于static说法不正确的是（-）-？" class="headerlink" title="10. 关于static说法不正确的是（ ） ？"></a>10. 关于static说法不正确的是（ ） ？</h2><p>A.可以直接用类名来访问类中静态方法(public权限)<br>B.静态块仅在类加载时执行一次<br>C.static方法中不能有用this调用的方法<br>D.不可以用对象名来访问类中的静态方法(public权限)</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>this表示当前类的对象，由static修饰的方法是由类直接调用，不需要创建对象，所以在static里不能用this.</p>
+<h2 id="11-访问权限控制从最大权限到最小权限依次为：public、-包访问权限、protected和private-（）？"><a href="#11-访问权限控制从最大权限到最小权限依次为：public、-包访问权限、protected和private-（）？" class="headerlink" title="11.访问权限控制从最大权限到最小权限依次为：public、 包访问权限、protected和private （）？"></a>11.访问权限控制从最大权限到最小权限依次为：public、 包访问权限、protected和private （）？</h2><p>A.正确<br>B.错误</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>应该是：public&gt;protected&gt;默认(包访问权限)&gt;private，因为protected除了可以被同一包访问，还可以被包外的子类所访问</p>
+<h2 id="12-函数（）把文件位置重定位到文件中的指定位置"><a href="#12-函数（）把文件位置重定位到文件中的指定位置" class="headerlink" title="12.函数（）把文件位置重定位到文件中的指定位置"></a>12.函数（）把文件位置重定位到文件中的指定位置</h2><p>A.fseek<br>B.fread<br>C.fopen<br>D.fgets</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>略</p>
+<h2 id="13-关于spring说法错误的是（）？"><a href="#13-关于spring说法错误的是（）？" class="headerlink" title="13.关于spring说法错误的是（）？"></a>13.关于spring说法错误的是（）？</h2><p>A.spring是一个轻量级JAVA EE的框架集合<br>B.spring是“依赖注入”模式的实现<br>C.使用spring可以实现声明事务<br>D.spring提供了AOP方式的日志系统</p>
+<p><strong>答案：</strong><br>D</p>
+<p><strong>解析：</strong><br>spring没有提供AOP方式的日志系统<br>AOP为Aspect Oriented Programming的缩写，意为：面向切面编程，通过预编译方式和运行期动态代理实现程序功能的统一维护的一种技术。AOP是OOP的延续，是软件开发中的一个热点，也是Spring框架中的一个重要内容，是函数式编程的一种衍生范型。<br>Spring通过对AOP的支持，借助log4j等Apache开源组件实现了日志系统。 </p>
+<h2 id="14-以下JAVA程序代码的输出是"><a href="#14-以下JAVA程序代码的输出是" class="headerlink" title="14. 以下JAVA程序代码的输出是?"></a>14. 以下JAVA程序代码的输出是?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String args[]) &#123;</span><br><span class="line">System.out.println(14^3);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>A.2744<br>B.13<br>C.17<br>D.11</p>
+<p><strong>答案：</strong><br>B</p>
+<p><strong>解析：</strong><br>位运算中的异或运算，将14和3分别表示成二进制，即1110和0011做异或。得出结果为1101，转成十进制即为13 </p>
+<h2 id="15-下列哪一项的实现不可以添加为-TextField-对象的监听器（）？"><a href="#15-下列哪一项的实现不可以添加为-TextField-对象的监听器（）？" class="headerlink" title="15.下列哪一项的实现不可以添加为 TextField 对象的监听器（）？"></a>15.下列哪一项的实现不可以添加为 TextField 对象的监听器（）？</h2><p>A.MouseMotionListener<br>B.FocusListener<br>C.WindowsListener<br>D.ActionListener</p>
+<p><strong>答案：</strong><br>C</p>
+<p><strong>解析：</strong><br>SWinng的内容。<br>在单行文本输入区(Textfield)构件上可能发生的事件包括FocusEvent焦点事件，所对应的事件监听器是FocusListener；ActionEvent动作事件，所对应的事件监听器是ActionListener；MouseEvent鼠标事件，所对应的事件监听器是MouseMotionListener；</p>
+<h2 id="16-jre-判断程序是否执行结束的标准是（）-？"><a href="#16-jre-判断程序是否执行结束的标准是（）-？" class="headerlink" title="16. jre 判断程序是否执行结束的标准是（） ？"></a>16. jre 判断程序是否执行结束的标准是（） ？</h2><p>A.所有的前台线程执行完毕<br>B.所有的后台线程执行完毕<br>C.所有的线程执行完毕<br>D.和以上都无关</p>
+<p><strong>答案：</strong><br>A</p>
+<p><strong>解析：</strong><br>后台线程：指为其他线程提供服务的线程，也称为守护线程。JVM的垃圾回收线程就是一个后台线程。<br>前台线程：是指接受后台线程服务的线程，其实前台后台线程是联系在一起，就像傀儡和幕后操纵者一样的关系。傀儡是前台线程、幕后操纵者是后台线程。由前台线程创建的线程默认也是前台线程。可以通过isDaemon()和setDaemon()方法来判断和设置一个线程是否为后台线程。 </p>
+<h2 id="17-根据下面的代码，String-s-null-会抛出NullPointerException异常的有（）。"><a href="#17-根据下面的代码，String-s-null-会抛出NullPointerException异常的有（）。" class="headerlink" title="17.根据下面的代码，String s = null;会抛出NullPointerException异常的有（）。"></a>17.根据下面的代码，String s = null;会抛出NullPointerException异常的有（）。</h2><p>A.if( (s!=null) &amp; (s.length()&gt;0) )<br>B.if( (s!=null) &amp;&amp; (s.length()&gt;0) )<br>C.if( (s==null) | (s.length()==0) )<br>D.if( (s==null) || (s.length()==0) )</p>
+<p><strong>答案：</strong><br>A C</p>
+<p><strong>解析：</strong></p>
+<p>逻辑运算符：&amp;&amp;和|| 是按照“短路”方式求值的。如果第一个操作数已经能够确定表达式的值，第二个操作数就不必计算了<br>位移运算符：&amp;和| 运算符应用于布尔值，得到的结果也是布尔值，不按“短路”方式计算。即在得到计算结果之前，一定要计算两个操作数的值。</p>
+<h2 id="18-A-B-C-D-中哪些是-setvar的重载？"><a href="#18-A-B-C-D-中哪些是-setvar的重载？" class="headerlink" title="18.A,B,C,D 中哪些是 setvar的重载？"></a>18.A,B,C,D 中哪些是 setvar的重载？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public class methodover</span><br><span class="line">&#123;</span><br><span class="line">    public void setVar(int a, int b, float c) &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>A.private void setVar(int a， float c， int b){}<br>B.protected void setVar(int a， int b， float c){}<br>C.public int setVar(int a， float c， int b){return a;}<br>D.public int setVar(int a， float c){return a;}</p>
+<p><strong>答案：</strong><br>A C D</p>
+<p><strong>解析：</strong><br>重载是在同一个类中，有多个方法名相同，参数列表不同(参数个数不同，参数类型不同),与方法的返回值无关，与权限修饰符无关，B中的参数列表和题目的方法完全一样了。 </p>
+<h2 id="19-下面有关java的引用类型，说法正确的有？"><a href="#19-下面有关java的引用类型，说法正确的有？" class="headerlink" title="19.下面有关java的引用类型，说法正确的有？"></a>19.下面有关java的引用类型，说法正确的有？</h2><p>A.对于一个对象来说，只要有强引用的存在，它就会一直存在于内存中<br>B.如果一个对象仅持有虚引用，那么它就和没有任何引用一样，在任何时候都可能被垃圾回收器回收。<br>C.如果一个对象只具有软引用，则内存空间足够，垃圾回收器就不会回收它；如果内存空间不足了，就会回收这些对象的内存<br>D.一旦发现了只具有弱引用的对象，不管当前内存空间足够与否，都会回收它的空间</p>
+<p><strong>答案：</strong><br>A B C D</p>
+<p><strong>解析：</strong><br>1、强引用：一个对象赋给一个引用就是强引用，比如new一个对象，一个对象被赋值一个对象。<br>2、软引用：用SoftReference类实现，一般不会轻易回收，只有内存不够才会回收。<br>3、弱引用：用WeekReference类实现，一旦垃圾回收已启动，就会回收。<br>4、虚引用：不能单独存在，必须和引用队列联合使用。主要作用是跟踪对象被回收的状态。</p>
+<h2 id="20-以下类型为Final类型的为（）？"><a href="#20-以下类型为Final类型的为（）？" class="headerlink" title="20.以下类型为Final类型的为（）？"></a>20.以下类型为Final类型的为（）？</h2><p>A.HashMap<br>B.StringBuffer<br>C.String<br>D.Hashtable</p>
+<p><strong>答案：</strong><br>B F</p>
+<p><strong>解析：</strong><br>StringBuilder , StringBuffer ,String都是 final </p>
+<h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><p><a href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIwMTg3NzYyOA==&hid=8&sn=9bcd23fe579a559f3f4a3f89e3b8952d" target="_blank" rel="noopener">Java笔试内容集合</a> 欢迎关注，持续更新中….</p>
 <h2 id="文末"><a href="#文末" class="headerlink" title="文末"></a>文末</h2><blockquote>
-<p>欢迎关注个人微信公众号：<strong>Coder编程</strong><br>欢迎关注<strong>Coder编程</strong>公众号，主要分享数据结构与算法、Java相关知识体系、框架知识及原理、Spring全家桶、微服务项目实战、DevOps实践之路、每日一篇互联网大厂面试或笔试题以及PMP项目管理知识等。更多精彩内容正在路上~<br>新建了一个qq群：315211365，欢迎大家进群交流一起学习。谢谢了！也可以介绍给身边有需要的朋友。</p>
+<p>欢迎关注个人微信公众号：<strong>Coder编程</strong><br>获取最新原创技术文章和免费学习资料，更有大量精品思维导图、面试资料、PMP备考资料等你来领，方便你随时随地学习技术知识！</p>
 </blockquote>
 <blockquote>
-<p>文章收录至<br>Github: <a href="https://github.com/CoderMerlin/coder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://gitee.com/573059382/coder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~<br><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming-wechat.webp.jpg" alt="微信公众号"></p>
+<p>文章收录至<br>Github: <a href="https://github.com/CoderMerlin/coder-programming" target="_blank" rel="noopener">https://github.com/CoderMerlin/coder-programming</a><br>Gitee: <a href="https://gitee.com/573059382/coder-programming" target="_blank" rel="noopener">https://gitee.com/573059382/coder-programming</a><br>欢迎<strong>关注</strong>并star~<br><img src="https://upload-images.jianshu.io/upload_images/7326374-0814ddebc590883b?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="微信公众号"></p>
 </blockquote>
 
       </div>
@@ -467,10 +521,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-05-12T17:15:28+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-21T20:06:00+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2020年5月12日</p>
+    <p>更新于 2019年9月21日</p>
   </a>
 </div>
 
@@ -479,7 +533,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/HEXO/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>HEXO</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>百度统计</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>Java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AC%94%E8%AF%95/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>笔试</p></a></div>
 
 
         
@@ -492,7 +546,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/05/12/BLOG01-HEXO-BDTJ/&title=博客搭建-增加百度统计功能 | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/09/21/interview/java/B-bishi07/&title=Java基础笔试练习（七） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -504,7 +558,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2020/05/12/BLOG01-HEXO-BDTJ/&title=博客搭建-增加百度统计功能 | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2019/09/21/interview/java/B-bishi07/&title=Java基础笔试练习（七） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -516,7 +570,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/05/12/BLOG01-HEXO-BDTJ/&title=博客搭建-增加百度统计功能 | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
+          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/09/21/interview/java/B-bishi07/&title=Java基础笔试练习（七） | Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png&summary="
           
           >
           
@@ -544,16 +598,16 @@
                       <span class="art-item-left">
                           <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
                           <h4>
-                              <a href="/2020/05/12/BLOG02-HEXO-BQFLGD/" rel="prev" title="博客搭建-设置标签/分类/归档相关页面">
+                              <a href="/2019/11/14/interview/java/A-thread01/" rel="prev" title="Java面试集锦：25道线程类相关面试题与答案（一）">
                                 
-                                    博客搭建-设置标签/分类/归档相关页面
+                                    Java面试集锦：25道线程类相关面试题与答案（一）
                                 
                               </a>
                           </h4>
                           
                               
                               <h6 class="tags">
-                                  <a class="tag" href="/tags/HEXO/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> HEXO</a>
+                                  <a class="tag" href="/tags/Java/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Java</a> <a class="tag" href="/tags/%E9%9D%A2%E8%AF%95/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 面试</a> <a class="tag" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 多线程</a>
                               </h6>
                           
                       </span>
@@ -564,16 +618,16 @@
                       <span class="art-item-right" aria-hidden="true">
                           <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                           <h4>
-                              <a href="/2020/03/19/java/" rel="prev" title="Java学习路线整理">
+                              <a href="/2019/09/20/interview/java/B-bishi06/" rel="prev" title="Java基础笔试练习（六）">
                                   
-                                      Java学习路线整理
+                                      Java基础笔试练习（六）
                                   
                               </a>
                           </h4>
                           
                               
                               <h6 class="tags">
-                                  <a class="tag" href="/tags/Java/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Java</a> <a class="tag" href="/tags/%E9%9D%A2%E8%AF%95/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 面试</a>
+                                  <a class="tag" href="/tags/Java/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Java</a> <a class="tag" href="/tags/%E7%AC%94%E8%AF%95/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 笔试</a>
                               </h6>
                           
                       </span>
@@ -603,7 +657,7 @@
 
   <script>
     window.subData = {
-      title: '博客搭建-增加百度统计功能',
+      title: 'Java基础笔试练习（七）',
       tools: true
     }
   </script>
@@ -767,7 +821,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐"><span class="toc-text">推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文末"><span class="toc-text">文末</span></a>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-下列程序执行后结果为"><span class="toc-text">1.下列程序执行后结果为( )?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-下列哪个类的声明是正确的？"><span class="toc-text">2.下列哪个类的声明是正确的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-关于抽象类叙述正确的是？"><span class="toc-text">3.关于抽象类叙述正确的是？ ( )</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-若有定义语句：-int-a-10-double-b-3-14-则表达式-‘A’-a-b-值的类型是（）"><span class="toc-text">4.若有定义语句： int a&#x3D;10 ; double b&#x3D;3.14 ; 则表达式 ‘A’+a+b 值的类型是（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-When-is-the-text-“Hi-there”displayed"><span class="toc-text">5.When is the text “Hi there”displayed?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-在开发中使用泛型取代非泛型的数据类型（比如用ArrayList取代ArrayList），程序的运行时性能会变得更好。"><span class="toc-text">6.在开发中使用泛型取代非泛型的数据类型（比如用ArrayList取代ArrayList），程序的运行时性能会变得更好。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-以下说法中正确的有？"><span class="toc-text">7.以下说法中正确的有？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-下面关于Java-package的描述，哪个是正确的-（）"><span class="toc-text">8.下面关于Java package的描述，哪个是正确的:（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-下面代码执行后的结果为（-）？"><span class="toc-text">9.下面代码执行后的结果为（ ）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-关于static说法不正确的是（-）-？"><span class="toc-text">10. 关于static说法不正确的是（ ） ？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-访问权限控制从最大权限到最小权限依次为：public、-包访问权限、protected和private-（）？"><span class="toc-text">11.访问权限控制从最大权限到最小权限依次为：public、 包访问权限、protected和private （）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-函数（）把文件位置重定位到文件中的指定位置"><span class="toc-text">12.函数（）把文件位置重定位到文件中的指定位置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-关于spring说法错误的是（）？"><span class="toc-text">13.关于spring说法错误的是（）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-以下JAVA程序代码的输出是"><span class="toc-text">14. 以下JAVA程序代码的输出是?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15-下列哪一项的实现不可以添加为-TextField-对象的监听器（）？"><span class="toc-text">15.下列哪一项的实现不可以添加为 TextField 对象的监听器（）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16-jre-判断程序是否执行结束的标准是（）-？"><span class="toc-text">16. jre 判断程序是否执行结束的标准是（） ？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#17-根据下面的代码，String-s-null-会抛出NullPointerException异常的有（）。"><span class="toc-text">17.根据下面的代码，String s &#x3D; null;会抛出NullPointerException异常的有（）。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#18-A-B-C-D-中哪些是-setvar的重载？"><span class="toc-text">18.A,B,C,D 中哪些是 setvar的重载？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#19-下面有关java的引用类型，说法正确的有？"><span class="toc-text">19.下面有关java的引用类型，说法正确的有？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20-以下类型为Final类型的为（）？"><span class="toc-text">20.以下类型为Final类型的为（）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐"><span class="toc-text">推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文末"><span class="toc-text">文末</span></a></li></ol>
     </div>
   </section>
 
