@@ -150,10 +150,10 @@
               <i class='fas fa-user-circle fa-fw'></i><p>面试题</p>
             </a>
           
-            <a href="/faqs/"
+            <a href="/about/"
               
               
-              id="faqs">
+              id="about">
               <i class='fas fa-question-circle fa-fw'></i><p>关于本站</p>
             </a>
           
@@ -442,16 +442,16 @@
  
 <script> 
   // 处理封面 此时 jquery 还没加载 
-  if ("docs" == "none") { // 移除封面 
+  if ("blog" == "none") { // 移除封面 
     document.getElementsByClassName('cover')[0].style.display = "none"; 
     document.getElementsByClassName('l_body')[0].classList.add("nocover"); 
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show"); 
   } else { 
-    if ("docs" == "blog") { // 半屏 
+    if ("blog" == "blog") { // 半屏 
       document.getElementsByClassName('cover')[0].classList.remove("full"); 
       document.getElementsByClassName('cover')[0].classList.add("half"); 
       document.getElementsByClassName('scroll-down')[0].style.display = "none"; 
-    } else if ("docs" == "docs") { // 全屏 
+    } else if ("blog" == "docs") { // 全屏 
       document.getElementsByClassName('cover')[0].classList.remove("half"); 
       document.getElementsByClassName('cover')[0].classList.add("full"); 
       document.getElementsByClassName('scroll-down')[0].style.display = ""; 
@@ -1805,8 +1805,8 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Mon Aug 17 2020 20:51:15 GMT+0800 (GMT+08:00)</div>
-            <div id="last-update-show">2020-08-17 日</div>
+            <div id="last-update" style="display: none;">Tue Aug 18 2020 21:40:16 GMT+0800 (GMT+08:00)</div>
+            <div id="last-update-show">2020-08-18 日</div>
           
         </div>
         
@@ -1856,7 +1856,7 @@
           try { 
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate)); 
           } catch (error) { 
-            document.getElementById('last-update-show').innerHTML = '2020-08-17 日'; 
+            document.getElementById('last-update-show').innerHTML = '2020-08-18 日'; 
           } 
         </script> 
         
@@ -1947,20 +1947,6 @@
             
           
         </div>
-      
-    
-      
-        <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
-</div>
-      
-    
-      
-        本站使用
-        <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/3.0.0-rc.2" target="_blank" class="codename">Volantis</a>
-        作为主题，总访问量为
-          <span id="busuanzi_value_site_pv"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
-          次
-        
       
     
       
