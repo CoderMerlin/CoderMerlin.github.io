@@ -9,7 +9,8 @@ body {
   padding: 1rem 10%;
   padding-bottom: 0;
   box-sizing: border-box;
-  font-size: .9em; }
+  font-size: 1em; 
+  font-weight: 500;}
   body .fa {
     margin-right: .3em; }
   body .info-unit {
