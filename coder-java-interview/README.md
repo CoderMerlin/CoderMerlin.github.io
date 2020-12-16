@@ -75,7 +75,7 @@
 
 <div align=center> 
     <img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/interview/java20201209221556.png" width = "150" height = "150" alt="微信支付" />
-    <img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/interview/java20201209221614.png" width = "150" height = "150" alt="微信支付"  />
+    <img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/interview/java20201209221614.png" width = "150" height = "150" alt="支付宝支付"  />
 
 
 > 欢迎关注公众号：Coder编程 推送最新的**干货**技术文章，进入公众号回复“1”加入**Java交流群**！
