@@ -5,6 +5,8 @@
   <!-- SEO相关 -->
   
     
+      <meta name="robots" content="noindex,follow">
+    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -16,17 +18,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Java学习路线整理 - Coder编程</title>
-  
-    <meta name="keywords" content="Java,面试">
+  <title>归档：2020/12 - Coder编程</title>
   
 
-  
-    <meta name="description" content="面试
-《剑指Offer》（豆瓣评分 8.3，0.7K+人评价） …
-程序员代码面试指南：IT名企算法与数据结构题目最优解（第2版） （豆瓣评分 8.7，0.2K+人评价） …
-编程之美（豆瓣评分 8.4，3K+人评价） …
-…">
   
 
   <!-- feed -->
@@ -116,7 +110,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover post' style="display: none;">
+    <cover class='cover ' style="display: none;">
       <div class='cover-body'>
   <div class='a'>
     
@@ -691,7 +685,7 @@
   
 
 
-  <div class="l_body nocover">
+  <div class="l_body">
     <div class='body-wrapper' id="pjax-container">
       
         <!--此文件用来存放一些不方便取值的变量--> 
@@ -700,8 +694,8 @@
  
  
 <div id="pjax-data" style="display: none"> 
-  <div id="pjax-ispage">true</div> 
-  <div id="pjax-pageTitle">Java学习路线整理</div> 
+  <div id="pjax-ispage">false</div> 
+  <div id="pjax-pageTitle"></div> 
   <div id="pjax-enable-cover">true</div> 
   <div id="pjax-comment-path">none</div> 
   <div id="pjax-comment-placeholder">none</div> 
@@ -710,16 +704,16 @@
  
 <script> 
   // 处理封面 此时 jquery 还没加载 
-  if ("none" == "none") { // 移除封面 
+  if ("blog" == "none") { // 移除封面 
     document.getElementsByClassName('cover')[0].style.display = "none"; 
     document.getElementsByClassName('l_body')[0].classList.add("nocover"); 
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show"); 
   } else { 
-    if ("none" == "blog") { // 半屏 
+    if ("blog" == "blog") { // 半屏 
       document.getElementsByClassName('cover')[0].classList.remove("full"); 
       document.getElementsByClassName('cover')[0].classList.add("half"); 
       document.getElementsByClassName('scroll-down')[0].style.display = "none"; 
-    } else if ("none" == "docs") { // 全屏 
+    } else if ("blog" == "docs") { // 全屏 
       document.getElementsByClassName('cover')[0].classList.remove("half"); 
       document.getElementsByClassName('cover')[0].classList.add("full"); 
       document.getElementsByClassName('scroll-down')[0].style.display = ""; 
@@ -734,27 +728,38 @@
       
 
 <div class='l_main'>
-  
-
-  
-    <article id="post" class="post white-box reveal shadow article-type-post" itemscope itemprop="blogPost">
+	
+		
+  <section class="post-list ">
+    
       
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <article class="post white-box shadow reveal ">
+  
 
 
   <section class='meta'>
     
       
       
-        <a title='Java学习路线整理' href='/2020/03/19/java/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/Java-log.png'></a>
+        <a title='微信公众号——文章内容汇总' href='/2020/12/27/wx/wx-dir/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/interview/java20201227172622.png'></a>
       
       <div class="meta" id="header-meta">
         
           
-  <h1 class="title">
-    <a href="/2020/03/19/java/">
-      Java学习路线整理
+  <h2 class="title">
+    <a href="/2020/12/27/wx/wx-dir/">
+      微信公众号——文章内容汇总
     </a>
-  </h1>
+  </h2>
 
 
         
@@ -777,9 +782,9 @@
               
   
   <div class='new-meta-item category'>
-    <a href='/categories/%E9%9D%A2%E8%AF%95/' rel="nofollow">
+    <a href='/categories/%E5%85%AC%E4%BC%97%E5%8F%B7/' rel="nofollow">
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <p>Java/面试</p>
+      <p>公众号</p>
     </a>
   </div>
 
@@ -790,9 +795,45 @@
               <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年3月19日</p>
+    <p>发布于：2020年12月27日</p>
   </a>
 </div>
+
+            
+          
+            
+              
+
+            
+          
+            
+              
+  <div class="new-meta-item browse valine">
+    <a class='notlink'>
+      <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="/2020/12/27/wx/wx-dir/" class="leancloud_visitors" data-flag-title="微信公众号——文章内容汇总">
+      <p>
+        <span class="leancloud-visitors-count"></span>
+      </p>
+      </span>
+    </a>
+  </div>
+
+
+            
+          
+            
+              
+<div class="new-meta-item comments-count">
+  
+  <a href="/2020/12/27/wx/wx-dir/#comments">
+    <i class="fas fa-comment-dots fa-fw"></i>
+    <span class="valine-comment-count" data-xid="/2020/12/27/wx/wx-dir/">0</span>
+    <span class="leancloud-comments-count">&nbsp;</span>
+  </a>
+</div>
+
 
             
           
@@ -810,417 +851,323 @@
   </section>
 
 
-      <section class="article typo">
-        <div class="article-entry" itemprop="articleBody">
-          
-          
-          </li>
-</ol>
-<!-- TOC -->
-
-<ul>
-<li><a href="#java">Java</a><ul>
-<li><a href="#基础">基础</a></li>
-<li><a href="#并发">并发</a></li>
-<li><a href="#jvm">JVM</a></li>
-<li><a href="#java8-新特性">Java8 新特性</a></li>
-<li><a href="#代码优化">代码优化</a></li>
-</ul>
-</li>
-<li><a href="#网络">网络</a></li>
-<li><a href="#操作系统">操作系统</a></li>
-<li><a href="#数据结构">数据结构</a></li>
-<li><a href="#算法">算法</a><ul>
-<li><a href="#入门">入门</a></li>
-<li><a href="#经典">经典</a></li>
-<li><a href="#面试">面试</a></li>
-</ul>
-</li>
-<li><a href="#数据库">数据库</a></li>
-<li><a href="#系统设计">系统设计</a><ul>
-<li><a href="#设计模式">设计模式</a></li>
-<li><a href="#常用框架">常用框架</a><ul>
-<li><a href="#springspringboot">Spring/SpringBoot</a></li>
-<li><a href="#netty">Netty</a></li>
-</ul>
-</li>
-<li><a href="#分布式">分布式</a></li>
-<li><a href="#网站架构">网站架构</a></li>
-<li><a href="#软件底层">软件底层</a></li>
-<li><a href="#其他">其他</a></li>
-</ul>
-</li>
-<li><a href="#其他-1">其他</a></li>
-</ul>
-<!-- /TOC -->
-
-<h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><ul>
-<li><strong><a href="https://book.douban.com/subject/2000732/" target="_blank" rel="noopener">《Head First Java》</a></strong> ：  可以说是我的 Java 启蒙书籍了，特别适合新手读当然也适合我们用来温故 Java 知识点。</li>
-<li><strong><a href="https://book.douban.com/subject/25762168/" target="_blank" rel="noopener">《Java 核心技术卷 1+卷 2》</a></strong>: 很棒的两本书，建议有点 Java 基础之后再读，介绍的还是比较深入的，非常推荐。这两本书我一般也会用来巩固知识点或者当做工具书参考，是两本适合放在自己身边的好书。</li>
-<li><strong><a href="https://book.douban.com/subject/2130190/" target="_blank" rel="noopener">《Java 编程思想 (第 4 版)》</a></strong>（推荐，豆瓣评分 9.1，3.2K+人评价）：大部分人称之为Java领域的圣经，但我不推荐初学者阅读，有点劝退的味道。稍微有点基础后阅读更好。</li>
-<li><strong><a href="https://book.douban.com/subject/26259017/" target="_blank" rel="noopener">《JAVA 网络编程 第 4 版》</a></strong>：  可以系统的学习一下网络的一些概念以及网络编程在 Java 中的使用。</li>
-<li><strong><a href="https://book.douban.com/subject/26740520/" target="_blank" rel="noopener">《Java性能权威指南》</a></strong>：O’Reilly 家族书，性能调优的入门书，我个人觉得性能调优是每个 Java 从业者必备知识，这本书的缺点就是太老了，但是这本书可以作为一个实战书，尤其是 JVM 调优！不适合初学者。前置书籍：《深入理解 Java 虚拟机》</li>
-</ul>
-<h3 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h3><ul>
-<li><strong><a href="https://book.douban.com/subject/30351286/" target="_blank" rel="noopener">《Java 并发编程之美》</a></strong> ：<strong>我觉得这本书还是非常适合我们用来学习 Java 多线程的。这本书的讲解非常通俗易懂，作者从并发编程基础到实战都是信手拈来。</strong> 另外，这本书的作者加多自身也会经常在网上发布各种技术文章。我觉得这本书也是加多大佬这么多年在多线程领域的沉淀所得的结果吧！他书中的内容基本都是结合代码讲解，非常有说服力！</li>
-<li><strong><a href="https://book.douban.com/subject/26663605/" target="_blank" rel="noopener">《实战 Java 高并发程序设计》</a></strong>： 这个是我第二本要推荐的书籍，比较适合作为多线程入门/进阶书籍来看。这本书内容同样是理论结合实战，对于每个知识点的讲解也比较通俗易懂，整体结构也比较清。</li>
-<li><strong><a href="https://github.com/RedSpider1/concurrent" target="_blank" rel="noopener">《深入浅出 Java 多线程》</a></strong>：这本书是几位大厂（如阿里）的大佬开源的，Github 地址：<a href="https://github.com/RedSpider1/concurrent" target="_blank" rel="noopener">https://github.com/RedSpider1/concurrent</a>几位作者为了写好《深入浅出 Java 多线程》这本书阅读了大量的 Java 多线程方面的书籍和博客，然后再加上他们的经验总结、Demo 实例、源码解析，最终才形成了这本书。这本书的质量也是非常过硬！给作者们点个赞！这本书有统一的排版规则和语言风格、清晰的表达方式和逻辑。并且每篇文章初稿写完后，作者们就会互相审校，合并到主分支时所有成员会再次审校，最后再通篇修订了三遍。</li>
-<li><strong>《Java 并发编程的艺术》</strong> ：这本书不是很适合作为 Java 多线程入门书籍，需要具备一定的 JVM 基础，有些东西讲的还是挺深入的。另外，就我自己阅读这本书的感觉来说，我觉得这本书的章节规划有点杂乱，但是，具体到某个知识点又很棒！这可能也和这本书由三名作者共同编写完成有关系吧！</li>
-<li>……</li>
-</ul>
-<h3 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h3><ul>
-<li><strong><a href="https://book.douban.com/subject/24722612/" target="_blank" rel="noopener">《深入理解 Java 虚拟机（第 3 版）》</a>）</strong>：必读！必读！必读！神书，建议多刷几篇。里面不光有丰富地JVM理论知识，还有JVM实战案例！必读！</li>
-<li><strong><a href="https://book.douban.com/subject/26354292/" target="_blank" rel="noopener">《实战 JAVA 虚拟机》</a></strong>：作为入门的了解 Java 虚拟机的知识还是不错的。</li>
-</ul>
-<h3 id="Java8-新特性"><a href="#Java8-新特性" class="headerlink" title="Java8 新特性"></a>Java8 新特性</h3><ul>
-<li><strong><a href="https://book.douban.com/subject/26772632/" target="_blank" rel="noopener">《Java 8 实战》</a></strong>：面向 Java 8 的技能升级，包括 Lambdas、流和函数式编程特性。实战系列的一贯风格让自己快速上手应用起来。Java 8 支持的 Lambda 是精简表达在语法上提供的支持。Java 8 提供了 Stream，学习和使用可以建立流式编程的认知。</li>
-<li><strong><a href="https://book.douban.com/subject/26556574/" target="_blank" rel="noopener">《Java 8 编程参考官方教程》</a></strong>：建议当做工具书来用！哪里不会翻哪里！</li>
-</ul>
-<h3 id="代码优化"><a href="#代码优化" class="headerlink" title="代码优化"></a>代码优化</h3><ul>
-<li><strong><a href="https://book.douban.com/subject/4262627/" target="_blank" rel="noopener">《重构_改善既有代码的设计》</a></strong>：豆瓣 9.1 分，重构书籍的开山鼻祖。</li>
-<li><strong><a href="https://book.douban.com/subject/3360807/" target="_blank" rel="noopener">《Effective java 》</a></strong>：本书介绍了在 Java 编程中很多极具实用价值的经验规则，这些经验规则涵盖了大多数开发人员每天所面临的问题的解决方案。这篇文章能够非常实际地帮助你写出更加清晰、健壮和高效的代码。本书中的每条规则都以简短、独立的小文章形式出现，并通过例子代码加以进一步说明。</li>
-<li><strong><a href="https://book.douban.com/subject/5442024/" target="_blank" rel="noopener">《代码整洁之道》</a></strong>：虽然是用 Java 语言作为例子，全篇都是在阐述 Java 面向对象的思想，但是其中大部分内容其它语言也能应用到。</li>
-<li><strong>阿里巴巴 Java 开发手册</strong> ：<a href="https://github.com/alibaba/p3c" target="_blank" rel="noopener">https://github.com/alibaba/p3c</a></li>
-<li><strong>Google Java 编程风格指南：</strong> <a href="http://www.hawstein.com/posts/google-java-style.html" target="_blank" rel="noopener">http://www.hawstein.com/posts/google-java-style.html</a></li>
-</ul>
-<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><ul>
-<li><strong><a href="https://book.douban.com/subject/25863515/" target="_blank" rel="noopener">《图解 HTTP》</a></strong>： 讲漫画一样的讲 HTTP，很有意思，不会觉得枯燥，大概也涵盖也 HTTP 常见的知识点。因为篇幅问题，内容可能不太全面。不过，如果不是专门做网络方向研究的小伙伴想研究 HTTP 相关知识的话，读这本书的话应该来说就差不多了。</li>
-<li><strong><a href="https://book.douban.com/subject/10746113/" target="_blank" rel="noopener">《HTTP 权威指南》</a></strong>:如果要全面了解 HTTP 非此书不可！</li>
-</ul>
-<h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><ul>
-<li><strong><a href="https://book.douban.com/subject/4889838/" target="_blank" rel="noopener">《鸟哥的 Linux 私房菜》</a></strong>：本书是最具知名度的 Linux 入门书《鸟哥的 Linux 私房菜基础学习篇》的最新版，全面而详细地介绍了 Linux 操作系统。</li>
-</ul>
-<h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><ul>
-<li><strong><a href="https://book.douban.com/subject/6424904/" target="_blank" rel="noopener">《大话数据结构》</a></strong>：入门类型的书籍，读起来比较浅显易懂，适合没有数据结构基础或者说数据结构没学好的小伙伴用来入门数据结构。</li>
-</ul>
-<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><ul>
-<li><strong><a href="https://book.douban.com/subject/30357170/" target="_blank" rel="noopener">《我的第一本算法书》</a> （豆瓣评分 7.1，0.2K+人评价）</strong> 一本不那么“专业”的算法书籍。和下面两本推荐的算法书籍都是比较通俗易懂，“不那么深入”的算法书籍。我个人非常推荐，配图和讲解都非常不错！</li>
-<li><strong><a href="https://book.douban.com/subject/26979890/" target="_blank" rel="noopener">《算法图解》</a>（豆瓣评分 8.4，1.5K+人评价）</strong> ：入门类型的书籍，读起来比较浅显易懂，非常适合没有算法基础或者说算法没学好的小伙伴用来入门。示例丰富，图文并茂，以让人容易理解的方式阐释了算法.读起来比较快，内容不枯燥！</li>
-<li><strong><a href="https://book.douban.com/subject/25894685/" target="_blank" rel="noopener">《啊哈!算法》</a> （豆瓣评分 7.7，0.5K+人评价）</strong> ：和《算法图解》类似的算法趣味入门书籍。</li>
-</ul>
-<h3 id="经典"><a href="#经典" class="headerlink" title="经典"></a>经典</h3><blockquote>
-<p>下面这些书籍都是经典中的经典，但是阅读起来难度也比较大，不做太多阐述，神书就完事了！推荐先看 《算法》，然后再选下面的书籍进行进一步阅读。不需要都看，找一本好好看或者找某本书的某一个章节知识点好好看。</p>
-</blockquote>
-<ul>
-<li><strong><a href="https://book.douban.com/subject/10432347/" target="_blank" rel="noopener">《算法 第四版》</a>（豆瓣评分 9.3，0.4K+人评价）：</strong> 我在大二的时候被我们的一个老师强烈安利过！自己也在当时购买了一本放在宿舍，到离开大学的时候自己大概看了一半多一点。因为内容实在太多了！另外，这本书还提供了详细的Java代码，非常适合学习 Java 的朋友来看，可以说是 Java 程序员的必备书籍之一了。再来介绍一下这本书籍吧！这本书籍算的上是算法领域经典的参考书，全面介绍了关于算法和数据结构的必备知识，并特别针对排序、搜索、图处理和字符串处理进行了论述。</li>
-<li><strong><a href="https://book.douban.com/subject/3227098/" target="_blank" rel="noopener">编程珠玑</a>（豆瓣评分 9.1，2K+人评价）</strong> ：经典名著，被无数读者强烈推荐的书籍，几乎是顶级程序员必看的书籍之一了。这本书的作者也非常厉害，Java之父 James Gosling 就是他的学生。很多人都说这本书不是教你具体的算法，而是教你一种编程的思考方式。这种思考方式不仅仅在编程领域适用，在其他同样适用。</li>
-<li><strong><a href="https://book.douban.com/subject/4048566/" target="_blank" rel="noopener">《算法设计手册》</a>（豆瓣评分9.1 ， 45人评价）</strong> :被 <a href="https://teachyourselfcs.com/" target="_blank" rel="noopener">Teach Yourself Computer Science</a> 强烈推荐的一本算法书籍。</li>
-<li><strong><a href="https://book.douban.com/subject/20432061/" target="_blank" rel="noopener">《算法导论》</a> （豆瓣评分 9.2，0.4K+人评价）</strong></li>
-<li><strong><a href="https://book.douban.com/subject/1130500/" target="_blank" rel="noopener">《计算机程序设计艺术（第1卷）》</a>（豆瓣评分 9.4，0.4K+人评价）</strong> </li>
-</ul>
-<h3 id="面试-1"><a href="#面试-1" class="headerlink" title="面试"></a>面试</h3><ol>
-<li><strong><a href="https://book.douban.com/subject/6966465/" target="_blank" rel="noopener">《剑指Offer》</a>（豆瓣评分 8.3，0.7K+人评价）</strong>这本面试宝典上面涵盖了很多经典的算法面试题，如果你要准备大厂面试的话一定不要错过这本书。《剑指Offer》 对应的算法编程题部分的开源项目解析：<a href="https://github.com/gatieme/CodingInterviews" target="_blank" rel="noopener">CodingInterviews</a></li>
-<li><strong><a href="https://book.douban.com/subject/30422021/" target="_blank" rel="noopener">程序员代码面试指南：IT名企算法与数据结构题目最优解（第2版）</a> （豆瓣评分 8.7，0.2K+人评价）</strong> ：题目相比于《剑指 offer》 来说要难很多，题目涵盖面相比于《剑指 offer》也更加全面。全书一共有将近300道真实出现过的经典代码面试题。</li>
-<li><strong><a href="https://book.douban.com/subject/3004255/" target="_blank" rel="noopener">编程之美</a>（豆瓣评分 8.4，3K+人评价）</strong>：这本书收集了约60道算法和程序设计题目，这些题目大部分在近年的笔试、面试中出现过，或者是被微软员工热烈讨论过。作者试图从书中各种有趣的问题出发，引导读者发现问题，分析问题，解决问题，寻找更优的解法。</li>
-</ol>
-<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><p><strong>MySQL:</strong></p>
-<ul>
-<li><strong><a href="https://book.douban.com/subject/23008813/" target="_blank" rel="noopener">《高性能 MySQL》</a></strong>：这本书不用多说了把！MySQL 领域的经典之作，拥有广泛的影响力。不但适合数据库管理员（dba）阅读，也适合开发人员参考学习。不管是数据库新手还是专家，相信都能从本书有所收获。如果你的时间不够的话，第5章关于索引的内容和第6章关于查询的内容是必读的！</li>
-<li><a href="https://book.douban.com/subject/24708143/" target="_blank" rel="noopener">《MySQL 技术内幕-InnoDB 存储引擎》</a>（推荐，豆瓣评分 8.7）：了解 InnoDB 存储引擎底层原理必备的一本书，比较深入。</li>
-</ul>
-<p><strong>Redis:</strong></p>
-<ul>
-<li><strong><a href="https://book.douban.com/subject/26612779/" target="_blank" rel="noopener">《Redis 实战》</a></strong>：如果你想了解 Redis 的一些概念性知识的话，这本书真的非常不错。</li>
-<li><strong><a href="https://book.douban.com/subject/25900156/" target="_blank" rel="noopener">《Redis 设计与实现》</a></strong>：也还行吧！</li>
-</ul>
-<h2 id="系统设计"><a href="#系统设计" class="headerlink" title="系统设计"></a>系统设计</h2><h3 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h3><ul>
-<li><strong><a href="https://book.douban.com/subject/1052241/" target="_blank" rel="noopener">《设计模式 : 可复用面向对象软件的基础》</a></strong> ：设计模式的经典！</li>
-<li><strong><a href="https://book.douban.com/subject/2243615/" target="_blank" rel="noopener">《Head First 设计模式（中文版）》</a></strong> ：相当赞的一本设计模式入门书籍。用实际的编程案例讲解算法设计中会遇到的各种问题和需求变更（对的，连需求变更都考虑到了！），并以此逐步推导出良好的设计模式解决办法。</li>
-<li><strong><a href="https://book.douban.com/subject/2334288/" target="_blank" rel="noopener">《大话设计模式》</a></strong> ：本书通篇都是以情景对话的形式，用多个小故事或编程示例来组织讲解GOF(即《设计模式 : 可复用面向对象软件的基础》这本书))，但是不像《设计模式 : 可复用面向对象软件的基础》难懂。但是设计模式只看书是不够的，还是需要在实际项目中运用，在实战中体会。</li>
-</ul>
-<h3 id="常用框架"><a href="#常用框架" class="headerlink" title="常用框架"></a>常用框架</h3><h4 id="Spring-SpringBoot"><a href="#Spring-SpringBoot" class="headerlink" title="Spring/SpringBoot"></a>Spring/SpringBoot</h4><ul>
-<li><strong><a href="https://book.douban.com/subject/26767354/" target="_blank" rel="noopener">《Spring 实战（第 4 版）》</a></strong> ：不建议当做入门书籍读，入门的话可以找点国人的书或者视频看。这本定位就相当于是关于 Spring 的新华字典，只有一些基本概念的介绍和示例，涵盖了 Spring 的各个方面，但都不够深入。就像作者在最后一页写的那样：“学习 Spring，这才刚刚开始”。</li>
-<li><strong>《<a href="https://book.douban.com/subject/30452948/" target="_blank" rel="noopener">Spring源码深度解析 第2版</a>》</strong>  ：读Spring源码必备的一本书籍。市面上关于Spring源码分析的书籍太少了。</li>
-<li><strong><a href="https://book.douban.com/subject/30452637/" target="_blank" rel="noopener">《Spring 5高级编程（第5版）》</a></strong> ：推荐阅读，对于Spring5的新特性介绍的很好！不过内容比较多，可以作为工具书参考。</li>
-<li><strong><a href="https://read.douban.com/ebook/58113975/?dcs=subject-rec&dcm=douban&dct=26767354" target="_blank" rel="noopener">《精通Spring4.x企业应用开发实战》</a></strong> :通过实战讲解，比较适合作为Spring入门书籍来看。</li>
-<li><strong><a href="https://book.douban.com/subject/26652876/" target="_blank" rel="noopener">《Spring入门经典》</a></strong> ：适合入门，也有很多示例！</li>
-<li><strong><a href="https://book.douban.com/subject/34894533/" target="_blank" rel="noopener">《Spring Boot实战派》</a></strong> ：这本书使用的Spring Boot 2.0+的版本，还算比较新。整本书采用“知识点+实例”的形式编写。本书通过“58个基于知识的实例+2个综合性的项目”，深入地讲解Spring Boot的技术原理、知识点和具体应用；把晦涩难懂的理论用实例展现出来，使得读者对知识的理解变得非常容易，同时也立即学会如何使用它。说实话，我还是比较推荐这本书的。</li>
-<li><strong><a href="https://book.douban.com/subject/33390560/" target="_blank" rel="noopener">《Spring Boot编程思想（核心篇）》</a></strong> ：SpringBoot深入书，不适合初学者。书尤其的厚，这本书的缺点是书的很多知识点的讲解过于啰嗦和拖沓，优点是书中对SpringBoot内部原理讲解很清楚。</li>
-</ul>
-<h4 id="Netty"><a href="#Netty" class="headerlink" title="Netty"></a>Netty</h4><ul>
-<li><strong><a href="https://book.douban.com/subject/30381214/" target="_blank" rel="noopener">《Netty进阶之路：跟着案例学Netty》</a></strong> : 这本书的优点是有不少实际的案例的讲解，通过案例来学习是很不错的！</li>
-<li><strong><a href="https://waylau.gitbooks.io/netty-4-user-guide/content/" target="_blank" rel="noopener">《Netty 4.x 用户指南》</a></strong> ：《Netty 4.x 用户指南》中文翻译（包含了官方文档以及其他文章）。</li>
-<li><strong><a href="https://juejin.im/book/5b4bc28bf265da0f60130116?referrer=59fbb2daf265da4319559f3a" target="_blank" rel="noopener">《Netty 入门与实战：仿写微信 IM 即时通讯系统》</a></strong>   ：基于 Netty 框架实现 IM 核心系统，带你深入学习 Netty 网络编程核心知识</li>
-<li><strong><a href="https://book.douban.com/subject/27038538/" target="_blank" rel="noopener">《Netty 实战》</a></strong> ：可以作为工具书参考！</li>
-</ul>
-<h3 id="分布式"><a href="#分布式" class="headerlink" title="分布式"></a>分布式</h3><ul>
-<li><strong><a href="https://book.douban.com/subject/26292004/" target="_blank" rel="noopener">《从 Paxos 到 Zookeeper》</a></strong>：简要介绍几种典型的分布式一致性协议，以及解决分布式一致性问题的思路，其中重点讲解了 Paxos 和 ZAB 协议。同时，本书深入介绍了分布式一致性问题的工业解决方案——ZooKeeper，并着重向读者展示这一分布式协调框架的使用方法、内部实现及运维技巧，旨在帮助读者全面了解 ZooKeeper，并更好地使用和运维 ZooKeeper。</li>
-<li><strong><a href="https://book.douban.com/subject/27591386/" target="_blank" rel="noopener">《RabbitMQ 实战指南》</a></strong>：《RabbitMQ 实战指南》从消息中间件的概念和 RabbitMQ 的历史切入，主要阐述 RabbitMQ 的安装、使用、配置、管理、运维、原理、扩展等方面的细节。如果你想浅尝 RabbitMQ 的使用，这本书是你最好的选择；如果你想深入 RabbitMQ 的原理，这本书也是你最好的选择；总之，如果你想玩转 RabbitMQ，这本书一定是最值得看的书之一</li>
-<li><strong><a href="https://book.douban.com/subject/27025912/" target="_blank" rel="noopener">《Spring Cloud 微服务实战》</a></strong>：从时下流行的微服务架构概念出发，详细介绍了 Spring Cloud 针对微服务架构中几大核心要素的解决方案和基础组件。对于各个组件的介绍，《Spring Cloud 微服务实战》主要以示例与源码结合的方式来帮助读者更好地理解这些组件的使用方法以及运行原理。同时，在介绍的过程中，还包含了作者在实践中所遇到的一些问题和解决思路，可供读者在实践中作为参考。</li>
-</ul>
-<h3 id="网站架构"><a href="#网站架构" class="headerlink" title="网站架构"></a>网站架构</h3><ul>
-<li><strong><a href="https://book.douban.com/subject/25723064/" target="_blank" rel="noopener">《大型网站技术架构：核心原理与案例分析+李智慧》</a></strong>:这本书我读过，基本不需要你有什么基础啊~读起来特别轻松，但是却可以学到很多东西，非常推荐了。另外我写过这本书的思维导图，关注我的微信公众号：“Java 面试通关手册”回复“大型网站技术架构”即可领取思维导图。</li>
-<li><strong><a href="https://book.douban.com/subject/26999243/" target="_blank" rel="noopener">《亿级流量网站架构核心技术》</a></strong>：一书总结并梳理了亿级流量网站高可用和高并发原则，通过实例详细介绍了如何落地这些原则。本书分为四部分：概述、高可用原则、高并发原则、案例实战。从负载均衡、限流、降级、隔离、超时与重试、回滚机制、压测与预案、缓存、池化、异步化、扩容、队列等多方面详细介绍了亿级流量网站的架构核心技术，让读者看后能快速运用到实践项目中。</li>
-</ul>
-<h3 id="软件底层"><a href="#软件底层" class="headerlink" title="软件底层"></a>软件底层</h3><ul>
-<li><strong><a href="https://book.douban.com/subject/10426640/" target="_blank" rel="noopener">《深入剖析 Tomcat》</a></strong>：本书深入剖析 Tomcat 4 和 Tomcat 5 中的每个组件，并揭示其内部工作原理。通过学习本书，你将可以自行开发 Tomcat 组件，或者扩展已有的组件。 读完这本书，基本可以摆脱背诵面试题的尴尬。</li>
-<li><strong><a href="https://book.douban.com/subject/26745255/" target="_blank" rel="noopener">《深入理解 Nginx（第 2 版）》</a></strong>：作者讲的非常细致，注释都写的都很工整，对于 Nginx 的开发人员非常有帮助。优点是细致，缺点是过于细致，到处都是代码片段，缺少一些抽象。</li>
-</ul>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
-<li><strong><a href="https://book.douban.com/subject/25953851/" target="_blank" rel="noopener">《深入分析 Java Web 技术内幕》</a></strong>：  感觉还行，涉及的东西也蛮多。</li>
-</ul>
-<h2 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h2><ul>
-<li><p><strong><a href="https://read.douban.com/ebook/387525/?dcs=subject-rec&dcm=douban&dct=2243615" target="_blank" rel="noopener">《黑客与画家》</a></strong>：这本书是硅谷创业之父，Y Combinator 创始人 Paul Graham 的文集。之所以叫这个名字，是因为作者认为黑客（并非负面的那个意思）与画家有着极大的相似性，他们都是在创造，而不是完成某个任务。</p>
-</li>
-<li><p><strong><a href="https://book.douban.com/subject/26265544/" target="_blank" rel="noopener">《图解密码技术》</a></strong>：本书以<strong>图配文</strong>的形式，第一部分讲述了密码技术的历史沿革、对称密码、分组密码模式（包括ECB、CBC、CFB、OFB、CTR）、公钥、混合密码系统。第二部分重点介绍了认证方面的内容，涉及单向散列函数、消息认证码、数字签名、证书等。第三部分讲述了密钥、随机数、PGP、SSL/TLS 以及密码技术在现实生活中的应用。关键字：JWT 前置知识、区块链密码技术前置知识。属于密码知识入门书籍。</p>
-</li>
-<li><p>《人月神话》 、《程序开发心理学》 、《程序员修炼之道，从小工道专家》、 《高效程序员的45个习惯，敏捷开发修炼之道》 、《高效能程序员的修炼》 、《软技能，代码之外的生存之道》  、《程序员的职业素养》 、《程序员的思维修炼》</p>
-</li>
-</ul>
-          
-            <div class='article_footer'>
-              
-                
-  
-    
-    
-
-
-
-  
-
-  
-    
-    
-
-
-
-  
-
-  
-    
-    
-
-<section class="widget copyright  desktop mobile">
-  <div class='content'>
-    
-      <blockquote>
-        
-          
-            <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
-
-          
-        
-          
-            <p>本文永久链接是：<a href=http://yoursite.com/2020/03/19/java/>http://yoursite.com/2020/03/19/java/</a></p>
-          
-        
-      </blockquote>
-    
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
-<section class="widget qrcode  desktop mobile">
-  
-
-  <div class='content article-entry'>
-    
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
       
-        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/interview/java20201209221556.png'
-        
-          height='64px'
-        ></div>
-      
-    
-      
-        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/interview/java20201209221614.png'
-        
-          height='64px'
-        ></div>
-      
-    
-  </div>
-</section>
-
-  
-
-
-              
-            </div>
-          
-        </div>
-        
-          
-
-
-  <section class='meta' id="footer-meta">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-03-19T00:34:14+08:00">
-  <a class='notlink'>
-    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年3月19日</p>
-  </a>
-</div>
-
-        
-      
-        
-          
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%9D%A2%E8%AF%95/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>面试</p></a></div>
-
-
-        
-      
-        
-          
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
-    
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
-          
-          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/03/19/java/&title=Java学习路线整理 - Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/Java-log.png&summary=面试
-《剑指Offer》（豆瓣评分 8.3，0.7K+人评价） …
-程序员代码面试指南：IT名企算法与数据结构题目最优解（第2版） （豆瓣评分 8.7，0.2K+人评价） …
-编程之美（豆瓣评分 8.4，3K+人评价） …
-…"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
-          
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2020/03/19/java/&title=Java学习路线整理 - Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/Java-log.png&summary=面试
-《剑指Offer》（豆瓣评分 8.3，0.7K+人评价） …
-程序员代码面试指南：IT名企算法与数据结构题目最优解（第2版） （豆瓣评分 8.7，0.2K+人评价） …
-编程之美（豆瓣评分 8.4，3K+人评价） …
-…"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
-          
-          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/03/19/java/&title=Java学习路线整理 - Coder编程&pics=https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/Java-log.png&summary=面试
-《剑指Offer》（豆瓣评分 8.3，0.7K+人评价） …
-程序员代码面试指南：IT名企算法与数据结构题目最优解（第2版） （豆瓣评分 8.7，0.2K+人评价） …
-编程之美（豆瓣评分 8.4，3K+人评价） …
-…"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png">
-          
-        </a>
-      
-    
-  </div>
-</div>
-
-
-
-        
+        <p><a href="2020/12/27/wx/wx-dir/" target="_parent"><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/interview/java20201227174520.png"></img></a></p>
       
     </div>
+    
+      
+        <a class= "readmore" href="/2020/12/27/wx/wx-dir/">
+          阅读全文 <i class="fas fa-chevron-right"></i>
+        </a>
+      
+    
   </section>
+</article>
 
-
-        
-        
-          <div class="prev-next">
-            
-              <a class='prev' href='/2020/05/12/BLOG01-HEXO-BDTJ/'>
-                <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>博客搭建-增加百度统计功能</p>
-                <p class='content'>
-每天进步一点，不做curd工程师与Api调用工程师
-
-前言最近晚上有时间就忙着倒腾自己的博客网站：https://www.coder-programming.cn/
-网站还在建设当中，我会慢慢...</p>
-              </a>
-            
-            
-              <a class='next' href='/2020/01/14/good/'>
-                <p class='title'>分享一些摘抄的优美句子~<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-                <p class='content'>1.有一个夜晚我烧毁了所有的记忆，从此我的梦就透明了。有一个早晨我扔掉了所有的昨天，从此我的脚步就轻盈了。——泰戈尔﻿﻿
-2.我是你路上最后一个过客，最后一个春天，最后一场雪，最后一次求生的战争...</p>
-              </a>
-            
           </div>
         
-      </section>
-    </article>
-  
-
+      
+    
+  </section>
   
     
-
-  <article class="post white-box reveal comments shadow">
-    <section class="article typo">
-      <p ct><i class='fas fa-comments'></i> 评论</p>
-      
-      <section id="comments">
-        <div id="valine_container" class="valine_thread">
-  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
-</div>
-
-      </section>
-    </section>
-  </article>
-
+    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+    
+    
 
   
 
 
-
-
-<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
-
-
+	
 </div>
 <aside class='l_side'>
   
   
+    
+    
+
+<section class="widget blogger shadow desktop mobile">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box circle' href='/about/'>
+          <img no-lazy src='https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming.png'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+          <h2>๑۩ﺴ&nbsp;&nbsp;Coder编程&nbsp;&nbsp;ﺴ۩๑</h2>
+        
+        
+        
+          <p><span id="jinrishici-sentence">Coder编程</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="/atom.xml"
+              class="social fab fa-weixin flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="mailto:573059382@qq.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://github.com/CoderMerlin/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+  
 
   
     
     
 
+<section class="widget text shadow desktop">
+  
+  <header>
+    
+      <a href='https://github.com/CoderMerlin' target="_blank" rel="noopener"><i class="fab fa-github fa-fw" aria-hidden="true"></i><span class='name'>关注一下公众号呗~</span></a>
+    
+  </header>
 
 
-  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
+  <div class='content'>
+    
+      <pre><code>QQ交流群！：315211365</code></pre>
+    
+      <p><a href="https://coder-programming.cn/" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/coder-programming-wechat.webp.jpg" height="208px" ></a></p>
+
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+  
+
+  <section class="widget category shadow desktop">
     
   <header>
     
-      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
     
   </header>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java"><span class="toc-text">Java</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基础"><span class="toc-text">基础</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#并发"><span class="toc-text">并发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JVM"><span class="toc-text">JVM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java8-新特性"><span class="toc-text">Java8 新特性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码优化"><span class="toc-text">代码优化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网络"><span class="toc-text">网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#操作系统"><span class="toc-text">操作系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据结构"><span class="toc-text">数据结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#算法"><span class="toc-text">算法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#入门"><span class="toc-text">入门</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#经典"><span class="toc-text">经典</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面试-1"><span class="toc-text">面试</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据库"><span class="toc-text">数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#系统设计"><span class="toc-text">系统设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#设计模式"><span class="toc-text">设计模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用框架"><span class="toc-text">常用框架</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Spring-SpringBoot"><span class="toc-text">Spring&#x2F;SpringBoot</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Netty"><span class="toc-text">Netty</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分布式"><span class="toc-text">分布式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网站架构"><span class="toc-text">网站架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#软件底层"><span class="toc-text">软件底层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他"><span class="toc-text">其他</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他-1"><span class="toc-text">其他</span></a></li></ol>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%85%AC%E4%BC%97%E5%8F%B7/" href="/categories/%E5%85%AC%E4%BC%97%E5%8F%B7/"
+            id="categoriesE585ACE4BC97E58FB7"
+            ><div class='name'>公众号</div><div class='badge'>(1)</div></a></li>
+        
+      </ul>
     </div>
   </section>
 
+
+  
+
+  
+    
+    
+  
+
+  <section class="widget tagcloud shadow desktop mobile">
+    
+  <header>
+    
+      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/%E5%85%AC%E4%BC%97%E5%8F%B7/" style="font-size: 14px; color: #999">公众号</a>
+    </div>
+  </section>
+
+
+  
+
+  
+
+  
+    
+    
+
+<section class="widget shadow desktop">
+  
+  <header>
+    
+      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="webinfo">
+      
+        <div class="webinfo-item">
+          <div>文章数目：</div>
+          <div>1 篇</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>已运行时间：</div>
+          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
+        </div>
+        <script>
+          var BirthDay = new Date(new Date('2020/05/01'));
+          var today = new Date();
+          var timeold = (today.getTime() - BirthDay.getTime());
+          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
+          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
+        </script>
+      
+
+
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站访客数：</div>
+          <div><span id="busuanzi_value_site_uv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 人</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站总访问量：</div>
+          <div><span id="busuanzi_value_site_pv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 次</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>最后活动时间：</div>
+          
+            <div id="last-update" style="display: none;">Sun Dec 27 2020 20:29:27 GMT+0800 (GMT+08:00)</div>
+            <div id="last-update-show">2020-12-27 日</div>
+          
+        </div>
+        
+        <script> 
+          function timeago(dateTimeStamp) { 
+              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示 
+              var hour = minute * 60; 
+              var day = hour * 24; 
+              var week = day * 7; 
+              var month = day * 30; 
+              var now = new Date().getTime(); //获取当前时间毫秒 
+              var diffValue = now - dateTimeStamp; //时间差 
+              if (diffValue < 0) { 
+                  return; 
+              } 
+              var minC = diffValue / minute; //计算时间差的分，时，天，周，月 
+              var hourC = diffValue / hour; 
+              var dayC = diffValue / day; 
+              var weekC = diffValue / week; 
+              var monthC = diffValue / month; 
+              if (monthC >= 1 && monthC <= 3) { 
+                  result = " " + parseInt(monthC) + " 月前" 
+              } else if (weekC >= 1 && weekC <= 3) { 
+                  result = " " + parseInt(weekC) + " 周前" 
+              } else if (dayC >= 1 && dayC <= 6) { 
+                  result = " " + parseInt(dayC) + " 天前" 
+              } else if (hourC >= 1 && hourC <= 23) { 
+                  result = " " + parseInt(hourC) + " 小时前" 
+              } else if (minC >= 1 && minC <= 59) { 
+                  result = " " + parseInt(minC) + " 分钟前" 
+              } else if (diffValue >= 0 && diffValue <= minute) { 
+                  result = "刚刚" 
+              } else { 
+                  var datetime = new Date(); 
+                  datetime.setTime(dateTimeStamp); 
+                  var Nyear = datetime.getFullYear(); 
+                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1; 
+                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate(); 
+                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours(); 
+                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes(); 
+                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds(); 
+                  result = Nyear + "-" + Nmonth + "-" + Ndate 
+              } 
+              return result; 
+          } 
+          var lastUpDate = document.getElementById('last-update').innerHTML; 
+          try { 
+            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate)); 
+          } catch (error) { 
+            document.getElementById('last-update-show').innerHTML = '2020-12-27 日'; 
+          } 
+        </script> 
+        
+      
+    </div>
+  </div>
+</section>
 
   
 
 
 </aside>
 
+
+
+
+
+	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+	
+
+	
 
 
     </div>
