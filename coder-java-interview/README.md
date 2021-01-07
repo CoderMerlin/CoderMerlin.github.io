@@ -5,38 +5,6 @@
 
 > 欢迎大家多多点击，多多支持！往后我会陆续完善博客文章！供大家一起学习一起进步！
 
-## :mega: 目录
-
-- [x] 计算机网络
-- [ ] 数据结构
-- [ ] 算法
-  - [ ] 算法刷题
-- [ ] Java基础知识
-- [x] Java线程、并发知识
-- [x] Java集合
-- [ ] 框架系列
-  - [x] Spring
-  - [x] SpringMVC
-  - [x] SpringBoot
-  - [x] SpringCloud
-  - [ ] Mybatis
-- [ ] 数据库系列
-- [ ] 中间件
-- [ ] 面试记录
-
-
-
-
-## :mega: Coder-Programming(Coder编程)介绍 
-
-### 千呼万唤始出来！我的个人博客终于出炉了！
-
-- 博客地址：https://www.coder-programming.cn/
-- 欢迎大家多多点击，多多支持！往后我会陆续完善博客文章！供大家一起学习一起进步！
-
-> 文章为导航页面，记录一些编程开发中的一些相关知识，希望能与大家一起进步!
-
-
 ## :mega: 博客或论坛 ##
 
 
@@ -66,6 +34,13 @@
         <img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="Java/框架/面试/微服务" title="Java/框架/面试/微服务"></a></div>
 
 
+
+## :mega: Coder-Programming(Coder编程)介绍 
+
+### 千呼万唤始出来！我的个人博客终于出炉了！
+
+- 博客地址：https://www.coder-programming.cn/
+- 欢迎大家多多点击，多多支持！往后我会陆续完善博客文章！供大家一起学习一起进步！
 
 
 ## :mega: 最后：
