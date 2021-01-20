@@ -14,11 +14,13 @@
 - A . 线程资源必须通过线程池提供，不允许在应用中自行显式创建线程。
 - B . 同步处理时，能锁部分代码区块的情况下不要锁整个方法；高并发时，同步调用应该考虑到性能损耗。
 - C . 创建线程或线程池时，推荐给线程指定一个有意义的名称，方便出错时回溯。
-- D . 推荐使用 `Executors.newFixedThreadPool(int x)` 生成指定大小的线程池。( 线程池不允许使用 `Executors` 去创建，而是通过 `ThreadPoolExecutor` 的方式 )
+- D . 推荐使用 `Executors.newFixedThreadPool(int x)` 生成指定大小的线程池。
+
+备注：( 线程池不允许使用 `Executors` 去创建，而是通过 `ThreadPoolExecutor` 的方式 )
 
 <details> <summary>答案（点击展开）</summary>  - ABC  </details>
 
-#### 3. 下列哪些说法符合《阿里巴巴 Java 开发手册》?`
+#### 3. 下列哪些说法符合《阿里巴巴 Java 开发手册》?
 
 - A . 对于“明确停止使用的代码和配置”，如方法、变量、类、配置文件、动态配置属性等要坚决从程序中清理出去，避免造成过多垃圾。
 - B . 永久弃用的代码段注释掉即可，即不用加任何注释。
@@ -66,7 +68,7 @@
 #### 8. 集合在遍历过程中， 有时需要对符合一定条件的元素进行删除， 下列哪些说法是正确的？
 
 - A . 在 `foreach` 循环里进行元素的 `remove` 操作。
-- B . 使用 `Iterator` 方式，如果有并发，需要对` Iterator` 对象加锁。
+- B . 使用 `Iterator` 方式，如果有并发，需要对`Iterator` 对象加锁。
 - C .`Iterator` 进行元素的删除操作，绝对是线程安全的。
 - D .`Java` 无法实现在遍历时，进行删除元素操作。
 
@@ -104,9 +106,7 @@
 
 - A . 查询语句 `WHERE a+1 = 5` 可以利用 `a` 索引。
 - B . 查询语句 `WHERE date_format(gmt_create, '%Y-%m-%d') = '2016-11-11'` 无法利用 `gmt_create`索引。
-- C . 当 `c` 列类型为` char` 时，查询语句 `WHERE c = 5` 无法利用` c `关于索引的设计和使用，下列哪些说法是正确的？
-
-索引。
+- C . 当 `c` 列类型为`char` 时，查询语句 `WHERE c = 5` 无法利用`c `索引。
 - D . 索引字段使用时不能进行函数运算。
 
 <details> <summary>答案（点击展开）</summary>  - BCD  </details>
@@ -329,7 +329,7 @@
 
 - A .`SimpleDateFormat` 是线程不安全的类。
 - B .`SimpleDateFormat` 是线程安全的类。
-- C . 一般不要定义 `SimpleDateFormat` 的` static` 变量，如果定义为` static` ，必须保证线程安全。
+- C . 一般不要定义 `SimpleDateFormat` 的`static` 变量，如果定义为`static` ，必须保证线程安全。
 - D . 推荐使用 `Apache` 封装好的 `DateUtils` 和 `DateFormatUtils` 工具类，来处理时- 间日期转换问题。
 
 <details> <summary>答案（点击展开）</summary>  - ACD  </details>
@@ -486,7 +486,7 @@
 - A . 使用索引的效率一定高于全表扫描的效率。
 - B . 关于 `explain` 的结果， `type=index` 的索引效率好于 `type=ref` 。
 - C . `sql` 查询条件 `where a like  ‘% 阿里 %’` ，不会走索引。
-- D . `sql` 查询条件` where a like  ‘ 阿里 %’` ,`a`列创建了索引，一般会使用索引进行检索。
+- D . `sql` 查询条件`where a like  ‘ 阿里 %’` ,`a`列创建了索引，一般会使用索引进行检索。
 
 <details> <summary>答案（点击展开）</summary>  - C  </details>
 
@@ -496,3 +496,127 @@
 - B . 如果变量值在一个范围内变化,而且还带有名称之外的延伸属性，必须使用Enum类，如: `public enum MonthEnum{JANUARY(1),FEBRUARY(2),MARCH(3),APRIL(4),....,DECEMEBER(12);}`
 - C . 枚举命名名建议带上Enum,枚举成员名称需要全大写，单词用`'_'`分割。
 - D . 定义星期一至星期日这种范围固定的信息，不推荐使用枚举类型。
+
+<details> <summary>答案（点击展开）</summary>  - BC  </details>
+
+
+#### 55. 关于数据库中 NULL 的描述，下列哪些说法符合《阿里巴巴JAVA开发手册》?
+
+- A . `NULL=NULL`的返回结果为 `true` 。
+- B . `NULL`与任何值的比较结果都为 `NULL`。
+- C . `NULL<>1`的返回结果为 `true`。
+- D . 当某一列的值全是 `NULL`时， `sum(col)`的返回结果为 `NULL`。
+
+<details> <summary>答案（点击展开）</summary>  - BD  </details>
+
+#### 56. 关于 TRY-CATCH 的使用方式，下列哪些说法是正确的？
+
+- A . 推荐用 `try-catch` 来做流程控制、条件控制。
+- B . 捕获异常与抛异常，必须是完全匹配，或者捕获异常是抛异常的父类。
+- C . 对大段代码进行 `try-catch`，利用 `Throwable` 来捕捉，万无一失。
+- D . 对大段代码进行 `try-catch`，这是不负责任的表现， 分清稳定代码和非稳定代码， 对非稳定的代码做对应的异常处理。 
+
+<details> <summary>答案（点击展开）</summary>  - BD  </details>
+
+
+#### 57. 关于类和方法,下列哪些符合《阿里巴巴 JAVA 开发手册》？
+
+- A. 任何类、方法、严控访问范围。因为过宽泛的访问范围 ,不利于模块解耦。
+- B. 对外暴露的接口签名 ,原则上不允许修改 ,宁可新增 ,避免对依赖端产生影响。
+- C. 如果新增一个功能完全相同的新接口 ,过时接口必须加 @deprecated 注释。
+- D. 所有过时的类与方法不得使用。
+
+<details> <summary>答案（点击展开）</summary>  - ABCD  </details>
+
+
+#### 58. SORT 表示元素在存入集合时进行了排序 ,数据遍历的结果是按某个排序规则输出的;而 ORDER 表示每次遍历的序列都是一样的,元素前后关系每次遍历都是确定的 ,那么下列哪些集合既是 SORT ,又是 ORDER 的？
+
+- A. HashSet
+- B. LinkedList
+- C. HashMap
+- D. TreeMap
+
+<details> <summary>答案（点击展开）</summary>  - D  </details>
+
+#### 59. 针对 TCP 协议，下列哪些说法是正确的？
+
+- A. `tcp` 链接主动关闭的一方，在完成四次挥手协议后，即会立即关闭并释放`socket` 。
+- B. 处于 `time_wait` 状态的 `socket` ，其实是已经关闭状态，当需要新建连接时，可以被马上复用。
+- C. 当大量 `socket` 处于 `time_wait` 状态时，会导致可用 `socket` 资源稀缺，从而导致服务器并发能力下降。
+- D. 通过修改 `/etc/sysctil.com` 配置文件，减小 `time_wait` 的超时时间，可以降低 `time_wait` 状态的 `socket` 数量，从而提升服务器并发能力。
+
+<details> <summary>答案（点击展开）</summary>  - CD  </details>
+
+#### 60. 利用索引进行排序 ,下列哪些说法是正确的？
+
+- A.查询语句 `WHERE a = 10 ORDER BY b`, 可以利用素引 `(a ，b)`来进行索引排序。
+- B.查询语句 `WHERE a > 10 ORDER BY b`, 不可以利用素引 `(a ，b)`进行索引排序。
+- C.查询语句 `WHERE a IN (10, 11) ODER BY b`. 可以利用索引 `(a ，b)`来进行索引排序。
+- D.查询语句 `WHER a>10 AND b=20 ORDER BY a`, 可以利用索引 `(b ，a)`来进行素引排序。
+
+<details> <summary>答案（点击展开）</summary>  - AB  </details>
+
+#### 61. 关于二方库 G ROUP ID 和 A RTIFACT ID 格式，下列哪些说法符合《阿里巴巴 JAVA 开发手册》
+
+- A. GroupID 格式为：com.{ 公司/子公司 }.业务线{子业务线}。
+- B. GroupID 格式为：com.{ 公司/子公司 }.业务线.子业务线.子模块。
+- C. ArtifactID 格式为：产品线名_模块名或者产品线.模块名。
+- D. ArtifactID 格式为：产品线名-模块名。
+
+<details> <summary>答案（点击展开）</summary>  - AD  </details>
+
+#### 62. 关于二方库的 SNAPSHOT 与 RELEASE 的区别，下列哪些说法是正确的？
+
+- A. `snapshot` 在本地编译时，都会到中央库下载最新的二方库
+- B. `release` 在本地编译时，如果已经存在相同的版本号，即使中央仓库有最新相同版本的二方库也不会拉取
+- C. 应用使用了 `A` 的 `release` 版本的二方库，`A`依赖了`B`的`snapshot` 二方库，应用本地编译时，并不会拉取`B`最新的`snapshot` 的`jar`
+- D. 应用发布尽量使用 `release` 版本的二方库，此举是为了保证发布的冥等性
+
+<details> <summary>答案（点击展开）</summary>  - ABD  </details>
+
+
+#### 63. 关于工具类二方库已经提供的，尽量不要在本应用中编程实现，下列哪些说法符合《阿里巴巴 JAVA 开发手册》？
+
+- A . `json` 操作使用 `fastjson` 。
+- B . `md5` 操作使用 `commons-codec`。
+- C . `ArrayUtils` 、`NumberUtils` 、`DateFormatUtils` 、`DateUtils` 等优先使用 `org.apache.commons.lang` 包。
+- D . `CollectionUtils` 优先使用 `org.apache.commons.collections4` 包。
+
+<details> <summary>答案（点击展开）</summary>  - ABD  </details>
+
+#### 64. 关于二方库使用枚举类型，下列哪些说法符合《阿里巴巴 JAVA 开发手册》？
+
+- A. 二方库里可以定义枚举类型。
+- B. 二方库里接口的入参可以使用枚举类型。
+- C. 二方库里接口的返回值不能使用枚举类型，但可以包含枚举类型。
+- D. 二方库里接口的返回值是枚举类型或包含枚举类型时，当二方库的枚举值升级（增加枚举值）时，可能会导致接口调用时出现枚举对象序列化异常
+
+<details> <summary>答案（点击展开）</summary>  - AB  </details>
+
+#### 65. 关于二方库的依赖处理，下列哪些说法符合《阿里巴巴 JAVA 开发手册》？
+
+- A . 依赖于一个二方库群时，必须定义一个统一版本变量，避免各子二方库版本号不一致。
+- B . 可以允许子项目的 `pom`依赖中出现相同的 `GroupId`，相同的 `ArtifactId` ，但是不同的 `Version` 。
+- C . 所有`pom`文件中的依赖声明放在语句块中，所有版本仲裁放在语句块中。
+- D . 线上应用不要依赖 `SNAPSHOT` 版本（安全包除外）。
+
+<details> <summary>答案（点击展开）</summary>  - ACD  </details>
+
+#### 66. 关于领域模型命名，下列哪些说法符合《阿里巴巴 JAVA 开发手册》？
+
+- A. 数据对象命名：`xxxDO`,`xxx` 即为数据表名，例如：`ResellerAccountDO`。
+- B. 数据传输对象：`xxxDTO`,`xxx` 为业务领域相关的名称，例如`ProductDTO`。
+- C. 展示层对象：xxxVO,xxx 一般为网页名称，例如`RecommendProductVO`。
+- D. `POJO`是 `DO/DTO/BO/VO`的统称，命名成`xxxPOJO`。
+
+<details> <summary>答案（点击展开）</summary>  - ABC  </details>
+
+
+#### 67. 关于数据库模糊检索的描述，下列哪些说法符合《阿里巴巴 JAVA 开发手册》？
+
+- A . 绝对禁止左模糊。
+- B . 绝对禁止全模糊。
+- C . 绝对禁止右模糊。
+- D . 全模糊或左模糊查询需求，优先使用搜索引擎。
+
+<details> <summary>答案（点击展开）</summary>  - ABD  </details>
