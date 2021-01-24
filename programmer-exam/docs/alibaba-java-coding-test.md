@@ -1,3 +1,27 @@
+**注：笔者通过周末的时间学习《阿里巴巴Java开发规范》，然后整理考试题目。顺利通过了考试！希望大家也能顺利通过考试**
+
+
+
+![阿里巴巴编码Java规范认证](https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/interview/java20210124163227.png)
+
+
+
+## 考前注意事项
+
+![考前注意事项](https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/interview/java20210124163531.png)
+
+## 心得分享
+
+- 一共50道题（大概10道单选题，40道多选）题目！
+
+- 考试期间不要用手或其他遮挡面部，否则会弹出提示！
+- 80分以上属于考试通过能够领到证书，证书上也不会标明分数，过了就行！
+- 将规范文档认真看完，并将下列收集到的题目刷完。99%能够通过！
+
+
+
+文档与考试题目下载，关注公众号：**Coder编程**，后台回复：**阿里巴巴Java规范考试**  获取相关文档！
+
 
 
 #### 1. 如何处理单元测试产生的数据，下列哪些说法是正确的？
@@ -556,12 +580,12 @@
 
 <details> <summary>答案（点击展开）</summary>  - AB  </details>
 
-#### 61. 关于二方库 G ROUP ID 和 A RTIFACT ID 格式，下列哪些说法符合《阿里巴巴 JAVA 开发手册》
+#### 61. 关于二方库 GROUPID 和 ARTIFACTID 格式，下列哪些说法符合《阿里巴巴 JAVA 开发手册》
 
-- A. GroupID 格式为：com.{ 公司/子公司 }.业务线{子业务线}。
-- B. GroupID 格式为：com.{ 公司/子公司 }.业务线.子业务线.子模块。
-- C. ArtifactID 格式为：产品线名_模块名或者产品线.模块名。
-- D. ArtifactID 格式为：产品线名-模块名。
+- A.` GroupID `格式为：``com.{ 公司/子公司 }.业务线{子业务线}``。
+- B. `GroupID` 格式为：`com.{ 公司/子公司 }.业务线.子业务线.子模块`。
+- C. `ArtifactID` 格式为：产品线名`_`模块名或者产品线.模块名。
+- D. `ArtifactID` 格式为：产品线名`-`模块名。
 
 <details> <summary>答案（点击展开）</summary>  - AD  </details>
 
@@ -597,7 +621,7 @@
 
 - A . 依赖于一个二方库群时，必须定义一个统一版本变量，避免各子二方库版本号不一致。
 - B . 可以允许子项目的 `pom`依赖中出现相同的 `GroupId`，相同的 `ArtifactId` ，但是不同的 `Version` 。
-- C . 所有`pom`文件中的依赖声明放在语句块中，所有版本仲裁放在语句块中。
+- C . 所有`pom`文件中的依赖声明放在`<dependencies>`语句块中，所有版本仲裁放在`<dependencyManagement>`语句块中。
 - D . 线上应用不要依赖 `SNAPSHOT` 版本（安全包除外）。
 
 <details> <summary>答案（点击展开）</summary>  - ACD  </details>
@@ -620,3 +644,104 @@
 - D . 全模糊或左模糊查询需求，优先使用搜索引擎。
 
 <details> <summary>答案（点击展开）</summary>  - ABD  </details>
+
+#### 68.关于Java代码的设计和开发注意事项，下列哪些说法符合《阿里巴巴Java开发手册》?
+
+- A .所有的覆写方法，必须是强制加 `@Override`。
+
+- B .`setter`方法中，参数名称与类成员变量名称一致，`this`.成员名=参数名。
+
+- C .在`getter`方法中，尽量不要增加逻辑判断，因为添加了逻辑判断后，会增加排查问题难度。
+
+- D .避免用`BeanUtil`进行属性的`copy`。
+
+<details> <summary>答案（点击展开）</summary>  - ABC  </details>
+
+#### 69.  关于代码书写格式，下列哪些说法符合《阿里巴巴Java开发手册》？
+
+- A .换行时相对上一行缩进2个空格。
+- B .运算符与下文一起换行，方法调用的点符号与下文一起换行。   .append()
+- C .在多个参数超长，逗号后进行换行。
+- D .在括号前不要换行。
+
+<details> <summary>答案（点击展开）</summary>  - BCD  </details>
+
+#### 70. 关于hashcode和equals，下列哪些说法是正确的？
+
+- A .`hashcode`是`Class`的方法，`equals`是`Object`的方法。
+- B .`hashcode`决定（如：`HashMap`）存储位置；`equals`决定是否需要覆盖（同一`hash`下）集合素。
+- C .类重写`hashcode`，必须重写`equals`。
+- D .两者是否需要重写，没有必然联系。
+`
+<details> <summary>答案（点击展开）</summary>  - BC  </details>
+
+#### 71. 关于常量定义，下列哪些说法符合《阿里巴巴Java开发手册》？
+
+- A .跨应用共享常量：放置在二方库中，通常是`client.jar`中的`const`目录下。
+- B .应用内共享常量：通常放置在一方库的子模块中的`const`目录下。
+- C .子工程内部共享常量：即在当前子工程的`const`目录下。
+- D .类内常量：直接在类内部`private static final`定义。
+
+<details> <summary>答案（点击展开）</summary>  - ABCD  </details>
+
+#### 72. 关于系统安全，下列哪些说法符合《阿里巴巴Java开发手册》?
+
+- A .表单、`AJAX`提交不需要进行`CSRF`安全过滤。
+- B .表单、`AJAX`提交必须执行`CSRF`安全过滤。
+- C .`URL`外部重定向传入的目标地址必须执行白名单过滤。
+- D .用户输入的`SQL`参数严格使用参数绑定或者`METADATA`字段值限定，防止`SQL`注入，禁止字符串拼接`SQL`访问数据库。
+
+<details> <summary>答案（点击展开）</summary>  - BCD  </details>
+
+
+#### 73. 关于应用与数据库之间的操作，下列哪些说法符合《阿里巴巴Java开发手册》？
+
+- A .对外提供一个大而全的接口进行`POJO`的`update`更新，这样比较省事，省代码。
+- B .使用事务回滚的地方需要考虑各方面的回滚方案，包括缓存回滚、搜索引擎回滚、消息补偿、统计修正等。
+- C .应用服务器与数据库之间是短连接。
+- D .应用服务器与数据库之间是长连接。
+
+<details> <summary>答案（点击展开）</summary>  - BC  </details>
+
+#### 74. 对于索引(a, b, c)，下列哪些说法是正确的？
+
+- A .查询语句 `where a between 5 and 10` 可以使用该索引。
+- B .查询语句 `where a = 5 and b between 5 and 10` 可以使用该索引。
+- C .查询语句 `where a in (5, 6, 7, 8, 9) and b = 5` 可以使用该索引。
+- D .查询语句 `where b = 5 and c = 10` 可以使用该索引。
+
+<details> <summary>答案（点击展开）</summary>  - ABC  </details>
+
+#### 75. 单元测试代码写在Java工程的哪个地方最为合？
+
+- A .写在业务代码体里边，方便调试。
+- B .写在业务代码同一个包下，方便归类查找。
+- C .写在`src/test/java`目录下。
+- D .写在`src/java`目录下。
+
+<details> <summary>答案（点击展开）</summary>  - C  </details>
+
+#### 76. 编写单元测试代码遵守BCDE原则，以保证被测试模块的交付质量，那么下列说法正确的是？
+
+- A .`Border`，边界值测试，包括循环边界、特殊取值、特殊时间点、数据顺序等。
+- B .`Correct`，正确的输入，并得到预期的结果。
+- C .`Design`，与设计文档相结合，来编写单元测试。
+- D .`Equal`， 单元测试环境必须与线上生产环境一致。(Error)
+
+<details> <summary>答案（点击展开）</summary>  - ABC  </details>
+
+## :mega: 最后：
+
+- 整理不易，如果文章对你有帮助，就请作者喝杯咖啡吧~     
+- 你的支持是作者最大的动力！！
+
+<div align=center> 
+    <img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/interview/java20201209221556.png" width = "150" height = "150" alt="微信支付" />
+    <img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/interview/java20201209221614.png" width = "150" height = "150" alt="微信支付"  />
+    <img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/interview/java20201209225035.png" width = "150" height = "150" alt="公众号"/></div>
+
+
+
+> 欢迎关注公众号：Coder编程 推送最新的**干货**技术文章，进入公众号回复“1”加入**Java交流群**！
+>
+> 注明：大部分文章从网络搜集，如有侵权，请联系作者进行删除！
