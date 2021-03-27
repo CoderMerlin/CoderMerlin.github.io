@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Java学习资源——内容汇总！</title>
+      <link href="/2021/03/27/resources/java-resource/"/>
+      <url>/2021/03/27/resources/java-resource/</url>
+      
+        <content type="html"><![CDATA[<a href="https://coder-programming.cn/2020/12/27/wx/wx-dir/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/CoderMerlin/blog-image/images/interview/java20210327162554.png"></img></a><a id="more"></a><blockquote><p>每天进步一点，不做curd工程师与Api调用工程师！<br>欢迎大家访问我的博客：<a href="https://coder-programming.cn/" target="_blank" rel="noopener">Coder编程个人博客</a></p></blockquote><ul><li><h2 id="1-关注公众号"><a href="#1-关注公众号" class="headerlink" title="1. 关注公众号"></a>1. 关注公众号</h2></li></ul><ul><li><h2 id="2-回复关键字"><a href="#2-回复关键字" class="headerlink" title="2. 回复关键字"></a>2. 回复关键字</h2></li></ul><ul><li><h3 id="2-1-学习路线"><a href="#2-1-学习路线" class="headerlink" title="2.1 学习路线"></a>2.1 学习路线</h3></li><li><h3 id="2-2-视频学习"><a href="#2-2-视频学习" class="headerlink" title="2.2 视频学习"></a>2.2 视频学习</h3></li><li><h3 id="2-3-电子书"><a href="#2-3-电子书" class="headerlink" title="2.3  电子书"></a>2.3  电子书</h3></li></ul><ul><li><h3 id="2-4-简历模板"><a href="#2-4-简历模板" class="headerlink" title="2.4 简历模板"></a>2.4 简历模板</h3></li></ul><ul><li><h3 id="2-5思维导图"><a href="#2-5思维导图" class="headerlink" title="2.5思维导图"></a>2.5思维导图</h3></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习资源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习资源 </tag>
+            
+            <tag> 公众号 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>消息中间件——RabbitMQ内容汇总！</title>
       <link href="/2021/03/20/rabbitmq/rabbitmq-dir/"/>
       <url>/2021/03/20/rabbitmq/rabbitmq-dir/</url>
